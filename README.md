@@ -1,6 +1,6 @@
 # Code Institute: Python Project by Rafaela Wetzel
 
-The third milestone is about creating a Python terminal project and showcasing the Python skills I have attained over the past 5 weeks at Code Institute. It is deployed on a Code Institute mock terminal on Heroku and the third out of five projects.  
+The third milestone project is about creating a Python command-line application and showcasing the Python skills I have attained over the past 5 weeks at Code Institute. It is deployed on a Code Institute mock terminal on Heroku and the third out of five projects.  
 
 # Sorting Hat
 
@@ -37,6 +37,8 @@ The third milestone is about creating a Python terminal project and showcasing t
 # How to Play  
 
 # Flowchart
+
+![image](assets/readme_assets/sorting-hat-flowchart.png)
 
 # Technologies
 

@@ -1,32 +1,95 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Code Institute: Python Project by Rafaela Wetzel
 
-Welcome,
+The third milestone is about creating a Python terminal project and showcasing the Python skills I have attained over the past 5 weeks at Code Institute. It is deployed on a Code Institute mock terminal on Heroku and the third out of five projects.  
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+# Sorting Hat
 
-## Reminders
+# Table of Contents
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+- [Code Institute: Python Project by Rafaela Wetzel](#)
+- [Sorting Hat](#sorting-hat)
+- [Table of Contents](#table-of-contents)
+- [Live Demo](#live-demo)
+- [How to Play](#how-to-play)
+- [Flowchart](#flowchart)
+- [Technologies](#technologies)
+- [Features](#features)
+  - [First Section](#first-section)
+  - [Second Section](#second-section)
+  - [Features Left to Implement](#features-left-to-implement)
+- [Testing](#testing)
+  - [Testing App Functions](#testing-homepage-functions)
+  - [Validator Testing](#validator-testing)
+  - [Bugs & Problems](#bugs--problems)
+  - [Unfixed Bugs](#unfixed-bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
+  - [Tutorials](#tutorials)
+  - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 
-## Creating the Heroku app
+# Live Demo 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+![A screenshot of the Sorting Hat app on different screen sizes]()
 
-1. `heroku/python`
-2. `heroku/nodejs`
+**You can see a deployed version of my app [here]()**
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+# How to Play  
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+# Flowchart
 
-Connect your GitHub repository and deploy as normal.
+# Technologies
 
-## Constraints
+- Python for creating the sorting hat quiz code
+- Heroku for deployment in a mock terminal
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+# Features 
 
----
+## First Section
 
-Happy coding!
+## Second Section
+
+## Features Left to Implement
+
+### Accessibility
+
+# Testing 
+
+## Testing App Functions
+    
+## Validator Testing
+
+- I confirm that no errors were returned when passing through the CI Python Linter [pep8ci](https://pep8ci.herokuapp.com/).
+
+<br /><br />
+![A screenshot of the CI Python Linter result]()  
+
+## Bugs & Problems
+
+## Unfixed Bugs
+
+No unfixed bugs.
+
+# Deployment
+
+The live project can be found here:
+
+# Credits 
+
+## Tutorials 
+
+[1]
+
+[2]  
+
+[3]
+
+[4]  
+
+[5] 
+
+## Media
+
+## Acknowledgements
+
+- Help and feedback from my mentor Oluwafemi Medale

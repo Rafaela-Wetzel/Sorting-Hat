@@ -80,7 +80,8 @@ The live project can be found here:
 
 ## Tutorials 
 
-[1]
+[1] How to clear the console
+https://www.youtube.com/watch?v=VAStmLsFQZ8
 
 [2]  
 

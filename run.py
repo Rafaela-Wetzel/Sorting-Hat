@@ -43,19 +43,21 @@ def enter_hogwarts():
     """
     Ask user if they want to enter Hogwarts (= start the game)
     """
-    enter = input("                   =======================\n                   ENTER HOGWARTS (yes/no)\n                   =======================\n")
+    enter = input("                       =======================\n                       ENTER HOGWARTS (yes/no)\n                       =======================\n")
     if enter == "yes":
         #welcome_greeting()
         print("Hello")
     elif enter == "no":
         print("\nYou just missed your chance to become a great wizard*ess...\n")
-        input("Press enter to take the Hogwarts Express back to London")
+        input("Press any key to take the Hogwarts Express back to London")
         os.system('clear')
+        print_hogwarts_emblem()
         enter_hogwarts()
     else:
-        print("\nPlease enter yes or no\n")
-        enter_hogwarts()
-        os.system('cls')
+        print("\nOnly yes or no answers are valid\n")
+        input("Press any key to return")
+        os.system('clear')
+        print_hogwarts_emblem()
         enter_hogwarts()
 
 

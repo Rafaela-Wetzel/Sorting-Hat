@@ -50,7 +50,7 @@ def print_hogwarts_emblem():
 
 def enter_hogwarts():
     """
-    Asks user if they want to start the game
+    Asks user if they want to start the game, and sends them back to start screen when 'no' or anything else than 'yes' or 'no' is entered 
     """
     enter = input("                       =======================\n                       ENTER HOGWARTS (yes/no)\n                       =======================\n")
     if enter == "yes":
@@ -71,7 +71,7 @@ def enter_hogwarts():
 
 def welcome_greeting():
     """
-    Prints welcome text and asks for users name
+    Prints welcome text and asks for user name input
     """
     print("\nWelcome to Hogwarts School of Witchcraft and Wizardry!\n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies.\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nThere is the house of Gryffindor known for its bravery and determination;\nalong with the house of Ravenclaw represented by its intelligence and wisdom;\nthe house of Slytherin characterized by its ambition and leadership\nand the house of Hufflepuff which brings forth hard-working, loyal and honest wizards.\n\nPlease, have a seat on this ceremony chair. The Sorting Hat will know where you belong...\n")
 
@@ -82,12 +82,11 @@ def welcome_greeting():
 
 def need_more_information():
     """
-    Asks user if they are ready to start answering the Sorting Hats' questions
+    Asks user if they are ready to start answering the Sorting Hats' questions and sends them back to start screen when 'no' or anything else than 'yes' or 'no' is entered 
     """
     confirm_start = input("\n\nAre you ready to dive deeper with me? (yes/no) ").lower()
     if confirm_start == "yes":
-        #first_question()
-        print("You entered yes!")
+        ask_questions()
     elif confirm_start == "no": 
         print("\nMaybe this is not yet the right time for you to discover the world of wizardry.\nI might see you again in a couple of years...\n")
         input("Press any key to take the Hogwarts Express back to London ")
@@ -98,6 +97,13 @@ def need_more_information():
         print("\nOnly yes or no answers are valid\n")
         need_more_information()
     
+def ask_questions():
+    """
+    Asks quiz questions
+    """
+    question_1 = "First placeholder question"
+    answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
+
 
 def main():
     """

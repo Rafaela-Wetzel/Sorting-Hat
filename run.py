@@ -4,13 +4,9 @@ from random import shuffle
 answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
 answers_2 = ["Gryffindor 2", "Slytherin 2", "Ravenclaw 2", "Hufflepuff 2"]
 
-global gryffindor
 gryffindor = 0
-global slytherin
 slytherin = 0
-global ravenclaw
 ravenclaw = 0
-global hufflepuff
 hufflepuff = 0
 
 def print_hogwarts_emblem():

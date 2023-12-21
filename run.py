@@ -1,4 +1,5 @@
 import os
+from random import shuffle
 
 def print_hogwarts_emblem():
     """
@@ -71,7 +72,7 @@ def welcome_greeting():
 
     your_name = input("\x1B[3mYoung wizard*ess, what is your name? \x1B[0m")
     print("\x1B[3m\nHello " + your_name + "!\n\nLet me see what house will bring forth the best in you...\n.\n..\n...\n")
-    print("....Now, this is peculiar! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you...")
+    print("....Now, this is unexpected! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you...")
     need_more_information()
 
 def need_more_information():

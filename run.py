@@ -103,7 +103,30 @@ def need_more_information():
     else:
         print("\nOnly yes or no answers are valid\n")
         need_more_information()
-    
+
+
+def second_question():
+    """
+    Same as above
+    """
+    question_2 = "\nSecond placeholder question: \n"
+    print(question_2)
+    answers_2_copy = list(answers_2)
+    shuffle(answers_2_copy)
+    print(*answers_2_copy, sep = '\n', end = '\n\n')  
+    second_input = input()
+    increase_score(second_input)
+    '''
+    If the increase_score function returns True (= if a house has gained one point) it will trigger the next question
+    If the increase_score function returns False (= no house has gained any point / the user has entered invalid input) 
+    it will trigger the same question again until the user has entered valid input
+    '''
+    if increase_score(second_input) == True:
+        #third_question()
+        print("Score increased!")
+    else:
+        second_question()
+
 
 def first_question():
     """
@@ -127,29 +150,6 @@ def first_question():
         second_question()
     else:
         first_question()
-
-
-def second_question():
-    """
-    Same as above
-    """
-    question_2 = "\nSecond placeholder question: \n"
-    print(question_2)
-    answers_2_copy = list(answers_1)
-    shuffle(answers_2_copy)
-    print(*answers_2_copy, sep = '\n', end = '\n\n')  
-    second_input = input()
-    increase_score(second_input)
-    '''
-    If the increase_score function returns True (= if a house has gained one point) it will trigger the next question
-    If the increase_score function returns False (= no house has gained any point / the user has entered invalid input) 
-    it will trigger the same question again until the user has entered valid input
-    '''
-    if increase_score(second_input) == True:
-        #third_question()
-        print("Score increased!")
-    else:
-        second_question()
 
 
 def increase_score(input):

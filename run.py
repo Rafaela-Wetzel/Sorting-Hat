@@ -96,8 +96,8 @@ def need_more_information():
 
 def first_question():
     """
-    Triggers quiz questions. Creates a copy of all answer lists for each question and shuffles the copies. 
-    The original answer lists are not touched so it is still possible to target the elements by index later on
+    Triggers first quiz question, input field and increase_score() function. Creates a copy of the answer list 
+    and shuffles the copies. The original answer list is not touched so it is still possible to target the elements by index later on
     to increase the house scores. This would not be possible if the order of elements in the original list constantly changed.
     """
     question_1 = "\nFirst placeholder question: \n"
@@ -135,7 +135,7 @@ def increase_score():
         print("Hufflepuff: " + str(hufflepuff))
     else:
         print("\nPlease enter one of the given answers")
-        first_question()
+
 
 def main():
     """

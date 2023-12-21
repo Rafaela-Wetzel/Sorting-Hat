@@ -1,6 +1,9 @@
 import os
 from random import shuffle
 
+answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
+answers_2 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
+
 global gryffindor
 gryffindor = 0
 global slytherin
@@ -110,12 +113,9 @@ def first_question():
     """
     question_1 = "\nFirst placeholder question: \n"
     print(question_1)
-    global answers_1
-    answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
     answers_1_copy = list(answers_1)
     shuffle(answers_1_copy)
     print(*answers_1_copy, sep = '\n', end = '\n\n')  
-    global first_input
     first_input = input()
     increase_score(first_input)
     '''
@@ -135,12 +135,9 @@ def second_question():
     """
     question_2 = "\nSecond placeholder question: \n"
     print(question_2)
-    global answers_2
-    answers_2 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
     answers_2_copy = list(answers_1)
     shuffle(answers_2_copy)
     print(*answers_2_copy, sep = '\n', end = '\n\n')  
-    global second_input
     second_input = input()
     increase_score(second_input)
     '''

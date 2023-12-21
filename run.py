@@ -117,7 +117,7 @@ def first_question():
     print(*answers_1_copy, sep = '\n', end = '\n\n')  
     global first_input
     first_input = input()
-    increase_score()
+    increase_score(first_input)
     '''
     If the increase_score function returns True (= if a house has gained one point) it will trigger the next question
     If the increase_score function returns False (= no house has gained any point / the user has entered invalid input) 
@@ -142,7 +142,7 @@ def second_question():
     print(*answers_2_copy, sep = '\n', end = '\n\n')  
     global second_input
     second_input = input()
-    increase_score()
+    increase_score(second_input)
     '''
     If the increase_score function returns True (= if a house has gained one point) it will trigger the next question
     If the increase_score function returns False (= no house has gained any point / the user has entered invalid input) 

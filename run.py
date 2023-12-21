@@ -99,10 +99,15 @@ def need_more_information():
     
 def ask_questions():
     """
-    Asks quiz questions
+    Triggers quiz questions. Creates a copy of all answer lists for each question and shuffles the copies. 
+    The original answer lists are not touched so it is still possible to target the elements by index later on
+    to increase the house scores. This would not be possible if the order of elements in the original list constantly changed.
     """
     question_1 = "First placeholder question"
     answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
+    answers_1_copy = list(answers_1)
+    shuffle(answers_1_copy)
+    print(*answers_1_copy, sep = '\n')  
 
 
 def main():

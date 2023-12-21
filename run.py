@@ -1,6 +1,14 @@
 import os
 from random import shuffle
 
+global gryffindor
+gryffindor = 0
+global slytherin
+slytherin = 0
+global ravenclaw
+ravenclaw = 0
+global hufflepuff
+hufflepuff = 0
 
 def print_hogwarts_emblem():
     """
@@ -151,11 +159,6 @@ def increase_score():
     """
     Checks which answer the user chose and increases resp. house score by one
     """
-    gryffindor = 0
-    slytherin = 0
-    ravenclaw = 0
-    hufflepuff = 0
-
     if first_input == answers_1[0]: #or second_input == answers_2[0]:
         gryffindor += 1
         print("Gryffindor: " + str(gryffindor))

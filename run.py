@@ -121,6 +121,32 @@ def first_question():
         first_question()
 
 
+def second_question():
+    """
+    Same as above
+    """
+    question_2 = "\nSecond placeholder question: \n"
+    print(question_2)
+    global answers_2
+    answers_2 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
+    answers_2_copy = list(answers_1)
+    shuffle(answers_2_copy)
+    print(*answers_2_copy, sep = '\n', end = '\n\n')  
+    global second_input
+    second_input = input()
+    increase_score()
+    '''
+    If the increase_score function returns True (= if a house has gained one point) it will trigger the next question
+    If the increase_score function returns False (= no house has gained any point / the user has entered invalid input) 
+    it will trigger the same question again until the user has entered valid input
+    '''
+    if increase_score() == True:
+        #third_question()
+        print("Score increased!")
+    else:
+        second_question()
+
+
 def increase_score():
     """
     Checks which answer the user chose and increases resp. house score by one

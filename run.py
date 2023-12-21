@@ -1,6 +1,11 @@
 import os
 from random import shuffle
 
+gryffindor = 0
+slytherin = 0
+ravenclaw = 0
+hufflepuff = 0
+
 def print_hogwarts_emblem():
     """
     Prints Hogwarts Coat of Arms

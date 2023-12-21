@@ -155,23 +155,23 @@ def second_question():
         second_question()
 
 
-def increase_score():
+def increase_score(input):
     """
     Checks which answer the user chose and increases resp. house score by one
     """
-    if first_input == answers_1[0]: #or second_input == answers_2[0]:
+    if input == answers_1[0]: or input == answers_2[0]:
         gryffindor += 1
         print("Gryffindor: " + str(gryffindor))
         return True
-    elif first_input == answers_1[1]: #or second_input == answers_2[1]:
+    elif input == answers_1[1]: or input == answers_2[1]:
         slytherin += 1
         print("Slytherin: " + str(slytherin))
         return True
-    elif first_input == answers_1[2]: #or second_input == answers_2[2]:
+    elif input == answers_1[2]: or input == answers_2[2]:
         ravenclaw += 1
         print("Ravenclaw: " + str(ravenclaw))
         return True
-    elif first_input == answers_1[3]: #or second_input == answers_2[3]:
+    elif input == answers_1[3]: or input == answers_2[3]:
         hufflepuff += 1
         print("Hufflepuff: " + str(hufflepuff))
         return True

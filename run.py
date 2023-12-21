@@ -100,14 +100,15 @@ def first_question():
     The original answer lists are not touched so it is still possible to target the elements by index later on
     to increase the house scores. This would not be possible if the order of elements in the original list constantly changed.
     """
-    question_1 = "\nFirst placeholder question: "
+    question_1 = "\nFirst placeholder question: \n"
+    print(question_1)
     global answers_1
     answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
     answers_1_copy = list(answers_1)
     shuffle(answers_1_copy)
-    print(*answers_1_copy, sep = '\n')  
+    print(*answers_1_copy, sep = '\n', end = '\n\n')  
     global first_input
-    first_input = input(question_1)
+    first_input = input()
     increase_score()
 
 
@@ -133,8 +134,8 @@ def increase_score():
         hufflepuff += 1
         print("Hufflepuff: " + str(hufflepuff))
     else:
-        print("Please enter one of the given answers")
-
+        print("\nPlease enter one of the given answers")
+        first_question()
 
 def main():
     """

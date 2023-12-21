@@ -160,25 +160,20 @@ def increase_score(input):
         global gryffindor
         gryffindor += 1
         print("Gryffindor: " + str(gryffindor))
-        return True
     elif input == answers_1[1] or input == answers_2[1]:
         global slytherin
         slytherin += 1
         print("Slytherin: " + str(slytherin))
-        return True
     elif input == answers_1[2] or input == answers_2[2]:
         global ravenclaw
         ravenclaw += 1
         print("Ravenclaw: " + str(ravenclaw))
-        return True
     elif input == answers_1[3] or input == answers_2[3]:
         global hufflepuff
         hufflepuff += 1
         print("Hufflepuff: " + str(hufflepuff))
-        return True
     else:
         print("\nPlease enter one of the given answers")
-        return False
 
 
 def check_if_true(input):

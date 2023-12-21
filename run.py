@@ -123,7 +123,7 @@ def first_question():
     If the increase_score function returns False (= no house has gained any point / the user has entered invalid input) 
     it will trigger the same question again until the user has entered valid input
     '''
-    if increase_score() == True:
+    if increase_score(first_input) == True:
         second_question()
     else:
         first_question()
@@ -148,7 +148,7 @@ def second_question():
     If the increase_score function returns False (= no house has gained any point / the user has entered invalid input) 
     it will trigger the same question again until the user has entered valid input
     '''
-    if increase_score() == True:
+    if increase_score(second_input) == True:
         #third_question()
         print("Score increased!")
     else:
@@ -159,19 +159,23 @@ def increase_score(input):
     """
     Checks which answer the user chose and increases resp. house score by one
     """
-    if input == answers_1[0]: or input == answers_2[0]:
+    if input == answers_1[0] or input == answers_2[0]:
+        global gryffindor
         gryffindor += 1
         print("Gryffindor: " + str(gryffindor))
         return True
-    elif input == answers_1[1]: or input == answers_2[1]:
+    elif input == answers_1[1] or input == answers_2[1]:
+        global slytherin
         slytherin += 1
         print("Slytherin: " + str(slytherin))
         return True
-    elif input == answers_1[2]: or input == answers_2[2]:
+    elif input == answers_1[2] or input == answers_2[2]:
+        global ravenclaw
         ravenclaw += 1
         print("Ravenclaw: " + str(ravenclaw))
         return True
-    elif input == answers_1[3]: or input == answers_2[3]:
+    elif input == answers_1[3] or input == answers_2[3]:
+        global hufflepuff
         hufflepuff += 1
         print("Hufflepuff: " + str(hufflepuff))
         return True

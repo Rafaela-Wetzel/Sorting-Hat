@@ -180,6 +180,20 @@ def increase_score(input):
         print("\nPlease enter one of the given answers")
         return False
 
+
+def check_if_true(input):
+    if input == answers_1[0] or input == answers_2[0]:
+        return True
+    elif input == answers_1[1] or input == answers_2[1]:
+        return True
+    elif input == answers_1[2] or input == answers_2[2]:
+        return True
+    elif input == answers_1[3] or input == answers_2[3]:
+        return True
+    else:
+        return False
+
+
 def main():
     """
     Calls all functions

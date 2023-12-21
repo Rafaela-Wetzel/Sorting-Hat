@@ -121,7 +121,7 @@ def second_question():
     If the increase_score function returns False (= no house has gained any point / the user has entered invalid input) 
     it will trigger the same question again until the user has entered valid input
     '''
-    if increase_score(second_input) == True:
+    if check_if_true(second_input) == True:
         #third_question()
         print("Score increased!")
     else:
@@ -146,7 +146,7 @@ def first_question():
     If the increase_score function returns False (= no house has gained any point / the user has entered invalid input) 
     it will trigger the same question again until the user has entered valid input
     '''
-    if increase_score(first_input) == True:
+    if check_if_true(first_input) == True:
         second_question()
     else:
         first_question()

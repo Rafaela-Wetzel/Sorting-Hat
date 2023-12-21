@@ -1,10 +1,6 @@
 import os
 from random import shuffle
 
-gryffindor = 0
-slytherin = 0
-ravenclaw = 0
-hufflepuff = 0
 
 def print_hogwarts_emblem():
     """
@@ -86,7 +82,7 @@ def need_more_information():
     """
     confirm_start = input("\n\nAre you ready to dive deeper with me? (yes/no) ").lower()
     if confirm_start == "yes":
-        ask_questions()
+        first_question()
     elif confirm_start == "no": 
         print("\nMaybe this is not yet the right time for you to discover the world of wizardry.\nI might see you again in a couple of years...\n")
         input("Press any key to take the Hogwarts Express back to London ")
@@ -97,17 +93,20 @@ def need_more_information():
         print("\nOnly yes or no answers are valid\n")
         need_more_information()
     
-def ask_questions():
+
+def first_question():
     """
     Triggers quiz questions. Creates a copy of all answer lists for each question and shuffles the copies. 
     The original answer lists are not touched so it is still possible to target the elements by index later on
     to increase the house scores. This would not be possible if the order of elements in the original list constantly changed.
     """
-    question_1 = "First placeholder question"
+    question_1 = "\nFirst placeholder question: "
+    global answers_1
     answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
     answers_1_copy = list(answers_1)
     shuffle(answers_1_copy)
     print(*answers_1_copy, sep = '\n')  
+    global first_input
     first_input = input(question_1)
     increase_score()
 
@@ -116,26 +115,23 @@ def increase_score():
     """
     Checks which answer the user chose and increases resp. house score by one
     """
-    if first_input == answers_1[0] or second_input == answers_2[0]:
+    gryffindor = 0
+    slytherin = 0
+    ravenclaw = 0
+    hufflepuff = 0
+
+    if first_input == answers_1[0]: #or second_input == answers_2[0]:
         gryffindor += 1
         print("Gryffindor: " + str(gryffindor))
-        return
-
-    elif first_input == answers_1[1] or second_input == answers_2[1]:
+    elif first_input == answers_1[1]: #or second_input == answers_2[1]:
         slytherin += 1
         print("Slytherin: " + str(slytherin))
-        return
-    
-    elif first_input == answers_1[2] or second_input == answers_2[2]:
+    elif first_input == answers_1[2]: #or second_input == answers_2[2]:
         ravenclaw += 1
         print("Ravenclaw: " + str(ravenclaw))
-        return
-    
-    elif first_input == answers_1[3] or second_input == answers_2[3]:
+    elif first_input == answers_1[3]: #or second_input == answers_2[3]:
         hufflepuff += 1
         print("Hufflepuff: " + str(hufflepuff))
-        return
-    
     else:
         print("Please enter one of the given answers")
 

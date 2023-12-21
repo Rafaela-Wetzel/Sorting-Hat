@@ -108,6 +108,8 @@ def ask_questions():
     answers_1_copy = list(answers_1)
     shuffle(answers_1_copy)
     print(*answers_1_copy, sep = '\n')  
+    x = input(question_1)
+    check_house()
 
 
 def main():

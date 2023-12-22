@@ -150,43 +150,38 @@ def second_question():
 """
 
 
-"""
-def second_question():
-    print(question_2)
-    answers_2_copy = list(answers_2)
-    shuffle(answers_2_copy)
-    print(*answers_2_copy, sep = '\n', end = '\n\n')  
-    second_input = input()
-    increase_score(second_input)
-    '''
-    If the increase_score function returns True (= if a house has gained one point) it will trigger the next question
-    If the increase_score function returns False (= no house has gained any point / the user has entered invalid input) 
-    it will trigger the same question again until the user has entered valid input
-    '''
-    if check_if_true(second_input) == True:
-        #third_question()
-        print("Score increased!")
-    else:
-        second_question()
-"""
-"""
 def first_question():
+    """
+    Triggers first question and asks user for answer input
+    """
     print(question_1)
     answers_1_copy = list(answers_1)
     shuffle(answers_1_copy)
     print(*answers_1_copy, sep = '\n', end = '\n\n')  
     first_input = input()
     increase_score(first_input)
-    '''
-    If the increase_score function returns True (= if a house has gained one point) it will trigger the next question
-    If the increase_score function returns False (= no house has gained any point / the user has entered invalid input) 
-    it will trigger the same question again until the user has entered valid input
-    '''
+
     if check_if_true(first_input) == True:
         second_question()
     else:
         first_question()
-"""
+
+def second_question():
+    """
+    Triggers second question and asks user for answer input
+    """
+    print(question_2)
+    answers_2_copy = list(answers_2)
+    shuffle(answers_2_copy)
+    print(*answers_2_copy, sep = '\n', end = '\n\n')  
+    second_input = input()
+    increase_score(second_input)
+    if check_if_true(second_input) == True:
+        #third_question()
+        print("Score increased!")
+    else:
+        second_question()
+
 
 def increase_score(input):
     """
@@ -213,13 +208,13 @@ def increase_score(input):
 
 
 def check_if_true(input):
-    if input == answers_1[0] or input == answers_2[0]:
-        return True
-    elif input == answers_1[1] or input == answers_2[1]:
-        return True
-    elif input == answers_1[2] or input == answers_2[2]:
-        return True
-    elif input == answers_1[3] or input == answers_2[3]:
+    """
+    If the check_if_true function returns True (= if a house has gained one point) it will trigger the next question
+    If the check_if_true function returns False (= no house has gained any point / the user has entered invalid input) 
+    it will trigger the same question again until the user has entered valid input
+    """
+    #if input == answers_1[0] or input == answers_2[0]:
+    if input in gryffindor_answers or slytherin_answers or ravenclaw_answers or hufflepuff_answers:
         return True
     else:
         return False

@@ -121,10 +121,15 @@ def need_more_information():
         need_more_information()
 
 
+"""
 def questions(question_x, answers_x_copy, answers_x, x_input, true_input, false_input):
-    """
-    Template for all quiz questions that takes parameters
-    """
+    '''
+    This was supposed to be a template for all quiz questions that takes parameters 
+    but it does not work. Error message: line 142, in first_question
+    questions(question_1, answers_1, first_input, second_question(), first_question())
+                                     ^^^^^^^^^^^
+    NameError: name 'first_input' is not defined
+    '''
     print(question_x)
     answers_x_copy = list(answers_x)
     shuffle(answers_x_copy)
@@ -137,13 +142,12 @@ def questions(question_x, answers_x_copy, answers_x, x_input, true_input, false_
     else:
         false_input
 
-
 def first_question():
     questions(question_1, answers_1, first_input, second_question(), first_question())
 
-
 def second_question():
     question(question_2, answers_2_copy, answers_2, second_input, print("Score increased!"), second_question())
+"""
 
 
 """

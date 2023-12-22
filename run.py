@@ -187,19 +187,23 @@ def increase_score(input):
     """
     Checks which answer the user chose and increases resp. house score by one
     """
-    if input == answers_1[0] or input == answers_2[0]:
+    #if input == answers_1[0] or input == answers_2[0]:
+    if input in gryffindor_answers:
         global gryffindor
         gryffindor += 1
         print("Gryffindor: " + str(gryffindor))
-    elif input == answers_1[1] or input == answers_2[1]:
+    #elif input == answers_1[1] or input == answers_2[1]:
+    elif input in slytherin_answers:
         global slytherin
         slytherin += 1
         print("Slytherin: " + str(slytherin))
-    elif input == answers_1[2] or input == answers_2[2]:
+    #elif input == answers_1[2] or input == answers_2[2]:
+    elif input in ravenclaw_answers:
         global ravenclaw
         ravenclaw += 1
         print("Ravenclaw: " + str(ravenclaw))
-    elif input == answers_1[3] or input == answers_2[3]:
+    #elif input == answers_1[3] or input == answers_2[3]:
+    elif input in hufflepuff_answers:
         global hufflepuff
         hufflepuff += 1
         print("Hufflepuff: " + str(hufflepuff))

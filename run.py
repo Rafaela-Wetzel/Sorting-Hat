@@ -2,8 +2,16 @@ import os
 import re 
 from random import shuffle
 
+question_1 = "\nFirst placeholder question: \n"
+question_2 = "\nSecond placeholder question: \n"
+
 answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
 answers_2 = ["Gryffindor 2", "Slytherin 2", "Ravenclaw 2", "Hufflepuff 2"]
+
+gryffindor_answers = ["Gryffindor 1", "Gryffindor 2", "Gryffindor 3", "Gryffindor 4"]
+slytherin_answers = ["Slytherin 1", "Slytherin 2", "Slytherin 3", "Slytherin 4"]
+ravenclaw_answers = ["Ravenclaw 1", "Ravenclaw 2", "Ravenclaw 3", "Ravenclaw 4"]
+hufflepuff_answers = ["Hufflepuff 1", "Hufflepuff 2", "Hufflepuff 3", "Hufflepuff 4"]
 
 gryffindor = 0
 slytherin = 0
@@ -113,11 +121,33 @@ def need_more_information():
         need_more_information()
 
 
+def questions(question_x, answers_x_copy, answers_x, x_input, true_input, false_input):
+    """
+    Template for all quiz questions that takes parameters
+    """
+    print(question_x)
+    answers_x_copy = list(answers_x)
+    shuffle(answers_x_copy)
+    print(*answers_x_copy, sep = '\n', end = '\n\n')  
+    x_input = input()
+    increase_score(x_input)
+
+    if check_if_true(x_input) == True:
+        true_input
+    else:
+        false_input
+
+
+def first_question():
+    questions(question_1, answers_1, first_input, second_question(), first_question())
+
+
 def second_question():
-    """
-    Same as above
-    """
-    question_2 = "\nSecond placeholder question: \n"
+    question(question_2, answers_2_copy, answers_2, second_input, print("Score increased!"), second_question())
+
+
+"""
+def second_question():
     print(question_2)
     answers_2_copy = list(answers_2)
     shuffle(answers_2_copy)
@@ -134,15 +164,9 @@ def second_question():
         print("Score increased!")
     else:
         second_question()
-
-
+"""
+"""
 def first_question():
-    """
-    Triggers first quiz question, input field and increase_score() function. Creates a copy of the answer list 
-    and shuffles the copies. The original answer list is not touched so it is still possible to target the elements by index later on
-    to increase the house scores. This would not be possible if the order of elements in the original list constantly changed.
-    """
-    question_1 = "\nFirst placeholder question: \n"
     print(question_1)
     answers_1_copy = list(answers_1)
     shuffle(answers_1_copy)
@@ -158,7 +182,7 @@ def first_question():
         second_question()
     else:
         first_question()
-
+"""
 
 def increase_score(input):
     """

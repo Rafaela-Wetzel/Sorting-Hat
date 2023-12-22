@@ -1,4 +1,5 @@
 import os
+import re 
 from random import shuffle
 
 answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
@@ -74,14 +75,25 @@ def enter_hogwarts():
 
 def welcome_greeting():
     """
-    Prints welcome text and asks for user name input
+    Prints welcome text
     """
     print("\nWelcome to Hogwarts School of Witchcraft and Wizardry!\n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies.\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nThere is the house of Gryffindor known for its bravery and determination;\nalong with the house of Ravenclaw represented by its intelligence and wisdom;\nthe house of Slytherin characterized by its ambition and leadership\nand the house of Hufflepuff which brings forth hard-working, loyal and honest wizards.\n\nPlease, have a seat on this ceremony chair. The Sorting Hat will know where you belong...\n")
+    check_name()
 
+
+def check_name():
+    """
+    Asks for user name input and checks if it is a valid string
+    """
     your_name = input("\x1B[3mYoung wizard*ess, what is your name? \x1B[0m")
-    print("\x1B[3m\nHello " + your_name + "!\n\nLet me see what house will bring forth the best in you...\n.\n..\n...\n")
-    print("....Now, this is unexpected! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you...")
-    need_more_information()
+    if re.match(r"[a-zA-Z]", your_name):
+        print("\x1B[3m\nHello " + your_name + "!\n\nLet me see what house will bring forth the best in you...\n.\n..\n...\n")
+        print("....Now, this is unexpected! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you...")
+        need_more_information()
+    else:
+        print("\nPlease enter a string that consists of letters a-z or A-Z\n")
+        check_name()
+
 
 def need_more_information():
     """

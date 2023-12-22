@@ -85,7 +85,8 @@ The live project can be found here:
 [1] How to clear the console
 https://www.youtube.com/watch?v=VAStmLsFQZ8
 
-[2]  
+[2] How to add input validation
+https://www.copahost.com/blog/input-python/#:~:text=Input%20validation%20using%20the%20module,print(%22Entry%20is%20valid!
 
 [3]
 

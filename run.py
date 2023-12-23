@@ -2,11 +2,21 @@ import os
 import re 
 from random import shuffle
 
-question_1 = "\nFirst placeholder question: \n"
-question_2 = "\nSecond placeholder question: \n"
-
+question_1 = "\n1. First placeholder question: \n"
 answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
+
+question_2 = "\n2. Second placeholder question: \n"
 answers_2 = ["Gryffindor 2", "Slytherin 2", "Ravenclaw 2", "Hufflepuff 2"]
+
+question_3 = "\n3. Third placeholder question: \n"
+answers_3 = ["Gryffindor 3", "Slytherin 3", "Ravenclaw 3", "Hufflepuff 3"]
+
+question_4 = "\n4. Fourth placeholder question: \n"
+answers_4 = ["Gryffindor 4", "Slytherin 4", "Ravenclaw 4", "Hufflepuff 4"]
+
+question_5 = "\n5. Fifth placeholder question: \n" 
+answers_5 = ["Gryffindor 5", "Slytherin 5", "Ravenclaw 5", "Hufflepuff 5"]
+# and so on...
 
 gryffindor_answers = ["Gryffindor 1", "Gryffindor 2", "Gryffindor 3", "Gryffindor 4"]
 slytherin_answers = ["Slytherin 1", "Slytherin 2", "Slytherin 3", "Slytherin 4"]

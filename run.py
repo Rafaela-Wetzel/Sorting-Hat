@@ -1,29 +1,6 @@
 import os
 import re 
-from random import shuffle
 
-# All questions and answers in pairs
-question_1 = "\n1. First placeholder question: \n"
-answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
-
-question_2 = "\n2. Second placeholder question: \n"
-answers_2 = ["Gryffindor 2", "Slytherin 2", "Ravenclaw 2", "Hufflepuff 2"]
-
-question_3 = "\n3. Third placeholder question: \n"
-answers_3 = ["Gryffindor 3", "Slytherin 3", "Ravenclaw 3", "Hufflepuff 3"]
-
-question_4 = "\n4. Fourth placeholder question: \n"
-answers_4 = ["Gryffindor 4", "Slytherin 4", "Ravenclaw 4", "Hufflepuff 4"]
-
-question_5 = "\n5. Fifth placeholder question: \n" 
-answers_5 = ["Gryffindor 5", "Slytherin 5", "Ravenclaw 5", "Hufflepuff 5"]
-# and so on...
-
-# All answers sorted by houses
-gryffindor_answers = ["Gryffindor 1", "Gryffindor 2", "Gryffindor 3", "Gryffindor 4"]
-slytherin_answers = ["Slytherin 1", "Slytherin 2", "Slytherin 3", "Slytherin 4"]
-ravenclaw_answers = ["Ravenclaw 1", "Ravenclaw 2", "Ravenclaw 3", "Ravenclaw 4"]
-hufflepuff_answers = ["Hufflepuff 1", "Hufflepuff 2", "Hufflepuff 3", "Hufflepuff 4"]
 
 # House score
 gryffindor = 0
@@ -31,6 +8,7 @@ slytherin = 0
 ravenclaw = 0
 hufflepuff = 0
 
+# Functions
 
 def print_hogwarts_emblem():
     """
@@ -135,15 +113,6 @@ def need_more_information():
         need_more_information()
 
 
-def print_question_answers(question_x, answers_x):
-    """
-    Prints answers and questions
-    """
-    print(question_x)
-    shuffle(answers_x)
-    print(*answers_x, sep = '\n', end = '\n\n')  
-
-
 def increase_score(input):
     """
     Checks which answer the user chose and increases resp. house score by one
@@ -176,51 +145,26 @@ def check_if_true(input):
         return False    
 
 
-def first_question():
-    """
-    Triggers first question and asks user for answer input
-    """
-    print_question_answers(question_1, answers_1) 
-    first_input = input()
-    increase_score(first_input)
-
-    if check_if_true(first_input) == True:
-        second_question()
+# FIRST DRAFT TO CHECK FINAL SCORE
+"""
+def check_score():
+    '''
+    Checks final score. If one house has the most points this particular house function will be triggered
+    If there is a tie, there will be more questions until one house has gained the majority of points
+    '''
+    if gryffindor > slytherin and hufflepuff and ravenclaw:
+        gryffindor_win()
+    elif slytherin > gryffindor and hufflepuff and ravenclaw:
+        slytherin_win()
+    elif hufflepuff > gryffindor and slytherin and ravenclaw:
+        hufflepuff_win()
+    elif ravenclaw > hufflepuff and gryffindor and slytherin:
+        ravenclaw_win()
     else:
-        first_question()
+        next_question()
+"""
 
 
-def second_question():
-    """
-    Triggers second question and asks user for answer input
-    """
-    print_question_answers(question_2, answers_2) 
-    second_input = input()
-    increase_score(second_input)
-    
-    if check_if_true(second_input) == True:
-        third_question()
-    else:
-        second_question()
-
-
-def third_question():
-    """
-    Triggers third question and asks user for answer input
-    """
-    print_question_answers(question_3, answers_3)
-    third_input = input()
-    increase_score(third_input)
-    if check_if_true(third_input) == True:
-        #fourth_question()
-        print("\nCurrent scores:\n")
-        print("Gryffindor: " + str(gryffindor))
-        print("Slytherin: " + str(slytherin))
-        print("Ravenclaw: " + str(ravenclaw))
-        print("Hufflepuff: " + str(hufflepuff))
-    else:
-        third_question()
-
-
+# Call first two functions
 print_hogwarts_emblem()
 enter_hogwarts()

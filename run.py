@@ -2,6 +2,7 @@ import os
 import re 
 from random import shuffle
 
+# All questions and answers in pairs
 question_1 = "\n1. First placeholder question: \n"
 answers_1 = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
 
@@ -18,15 +19,18 @@ question_5 = "\n5. Fifth placeholder question: \n"
 answers_5 = ["Gryffindor 5", "Slytherin 5", "Ravenclaw 5", "Hufflepuff 5"]
 # and so on...
 
+# All answers sorted by houses
 gryffindor_answers = ["Gryffindor 1", "Gryffindor 2", "Gryffindor 3", "Gryffindor 4"]
 slytherin_answers = ["Slytherin 1", "Slytherin 2", "Slytherin 3", "Slytherin 4"]
 ravenclaw_answers = ["Ravenclaw 1", "Ravenclaw 2", "Ravenclaw 3", "Ravenclaw 4"]
 hufflepuff_answers = ["Hufflepuff 1", "Hufflepuff 2", "Hufflepuff 3", "Hufflepuff 4"]
 
+# House score
 gryffindor = 0
 slytherin = 0
 ravenclaw = 0
 hufflepuff = 0
+
 
 def print_hogwarts_emblem():
     """
@@ -105,8 +109,8 @@ def check_name():
     """
     your_name = input("\x1B[3mYoung wizard*ess, what is your name? \x1B[0m")
     if re.match(r"[a-zA-Z]", your_name):
-        print("\x1B[3m\nHello " + your_name + "!\n\nLet me see what house will bring forth the best in you...\n.\n..\n...\n")
-        print("....Now, this is unexpected! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you...")
+        print("\x1B[3m\nHello " + your_name + "!\n\nLet me see what house will bring forth the best in you...\n\n...\n...\n...\n")
+        print("....Now, this is unexpected! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you.")
         need_more_information()
     else:
         print("\nPlease enter a string that consists of letters a-z or A-Z\n")
@@ -131,61 +135,13 @@ def need_more_information():
         need_more_information()
 
 
-def print_answer_question(question_x, answers_x):
+def print_question_answers(question_x, answers_x):
     """
     Prints answers and questions
     """
     print(question_x)
     shuffle(answers_x)
     print(*answers_x, sep = '\n', end = '\n\n')  
-
-
-def first_question():
-    """
-    Triggers first question and asks user for answer input
-    """
-    print_answer_question(question_1, answers_1) 
-    first_input = input()
-    increase_score(first_input)
-
-    if check_if_true(first_input) == True:
-        second_question()
-    else:
-        first_question()
-
-
-def second_question():
-    """
-    Triggers second question and asks user for answer input
-    """
-    print_answer_question(question_2, answers_2) 
-    second_input = input()
-    increase_score(second_input)
-    
-    if check_if_true(second_input) == True:
-        #third_question()
-        print("Score increased!")
-    else:
-        second_question()
-
-
-
-def third_question():
-    """
-    Triggers third question and asks user for answer input
-    """
-    print_answer_and_question(question_3, answers_3)
-    third_input = input()
-    increase_score(third_input)
-    if check_if_true(third_input) == True:
-        #fourth_question()
-        print("\nFinal scores:\n")
-        print("Gryffindor: " + str(gryffindor))
-        print("Slytherin: " + str(slytherin))
-        print("Ravenclaw: " + str(ravenclaw))
-        print("Hufflepuff: " + str(hufflepuff))
-    else:
-        third_question()
 
 
 def increase_score(input):
@@ -195,19 +151,15 @@ def increase_score(input):
     if input in gryffindor_answers:
         global gryffindor
         gryffindor += 1
-        print("Gryffindor: " + str(gryffindor))
     elif input in slytherin_answers:
         global slytherin
         slytherin += 1
-        print("Slytherin: " + str(slytherin))
     elif input in ravenclaw_answers:
         global ravenclaw
         ravenclaw += 1
-        print("Ravenclaw: " + str(ravenclaw))
     elif input in hufflepuff_answers:
         global hufflepuff
         hufflepuff += 1
-        print("Hufflepuff: " + str(hufflepuff))
     else:
         print("\nPlease enter one of the given answers")
 
@@ -221,14 +173,54 @@ def check_if_true(input):
     if input in gryffindor_answers or slytherin_answers or ravenclaw_answers or hufflepuff_answers:
         return True
     else:
-        return False
+        return False    
 
 
-def main():
+def first_question():
     """
-    Calls all functions
+    Triggers first question and asks user for answer input
     """
-    print_hogwarts_emblem()
-    enter_hogwarts()
+    print_question_answers(question_1, answers_1) 
+    first_input = input()
+    increase_score(first_input)
 
-main()
+    if check_if_true(first_input) == True:
+        second_question()
+    else:
+        first_question()
+
+
+def second_question():
+    """
+    Triggers second question and asks user for answer input
+    """
+    print_question_answers(question_2, answers_2) 
+    second_input = input()
+    increase_score(second_input)
+    
+    if check_if_true(second_input) == True:
+        third_question()
+    else:
+        second_question()
+
+
+def third_question():
+    """
+    Triggers third question and asks user for answer input
+    """
+    print_question_answers(question_3, answers_3)
+    third_input = input()
+    increase_score(third_input)
+    if check_if_true(third_input) == True:
+        #fourth_question()
+        print("\nCurrent scores:\n")
+        print("Gryffindor: " + str(gryffindor))
+        print("Slytherin: " + str(slytherin))
+        print("Ravenclaw: " + str(ravenclaw))
+        print("Hufflepuff: " + str(hufflepuff))
+    else:
+        third_question()
+
+
+print_hogwarts_emblem()
+enter_hogwarts()

@@ -121,43 +121,20 @@ def need_more_information():
         need_more_information()
 
 
-"""
-def questions(question_x, answers_x_copy, answers_x, x_input, true_input, false_input):
-    '''
-    This was supposed to be a template for all quiz questions that takes parameters 
-    but it does not work. Error message: line 142, in first_question
-    questions(question_1, answers_1, first_input, second_question(), first_question())
-                                     ^^^^^^^^^^^
-    NameError: name 'first_input' is not defined
-    '''
+def print_answer_and_question(question_x, answers_x):
+    """
+    Prints answers and questions
+    """
     print(question_x)
-    answers_x_copy = list(answers_x)
-    shuffle(answers_x_copy)
-    print(*answers_x_copy, sep = '\n', end = '\n\n')  
-    x_input = input()
-    increase_score(x_input)
-
-    if check_if_true(x_input) == True:
-        true_input
-    else:
-        false_input
-
-def first_question():
-    questions(question_1, answers_1, first_input, second_question(), first_question())
-
-def second_question():
-    question(question_2, answers_2_copy, answers_2, second_input, print("Score increased!"), second_question())
-"""
+    shuffle(answers_x)
+    print(*answers_x, sep = '\n', end = '\n\n')  
 
 
 def first_question():
     """
     Triggers first question and asks user for answer input
     """
-    print(question_1)
-    answers_1_copy = list(answers_1)
-    shuffle(answers_1_copy)
-    print(*answers_1_copy, sep = '\n', end = '\n\n')  
+    print_answer_and_question(question_1, answers_1)
     first_input = input()
     increase_score(first_input)
 
@@ -170,12 +147,10 @@ def second_question():
     """
     Triggers second question and asks user for answer input
     """
-    print(question_2)
-    answers_2_copy = list(answers_2)
-    shuffle(answers_2_copy)
-    print(*answers_2_copy, sep = '\n', end = '\n\n')  
+    print_answer_and_question(question_2, answers_2)
     second_input = input()
     increase_score(second_input)
+    
     if check_if_true(second_input) == True:
         #third_question()
         print("Score increased!")
@@ -187,22 +162,18 @@ def increase_score(input):
     """
     Checks which answer the user chose and increases resp. house score by one
     """
-    #if input == answers_1[0] or input == answers_2[0]:
     if input in gryffindor_answers:
         global gryffindor
         gryffindor += 1
         print("Gryffindor: " + str(gryffindor))
-    #elif input == answers_1[1] or input == answers_2[1]:
     elif input in slytherin_answers:
         global slytherin
         slytherin += 1
         print("Slytherin: " + str(slytherin))
-    #elif input == answers_1[2] or input == answers_2[2]:
     elif input in ravenclaw_answers:
         global ravenclaw
         ravenclaw += 1
         print("Ravenclaw: " + str(ravenclaw))
-    #elif input == answers_1[3] or input == answers_2[3]:
     elif input in hufflepuff_answers:
         global hufflepuff
         hufflepuff += 1
@@ -217,7 +188,6 @@ def check_if_true(input):
     If the check_if_true function returns False (= no house has gained any point / the user has entered invalid input) 
     it will trigger the same question again until the user has entered valid input
     """
-    #if input == answers_1[0] or input == answers_2[0]:
     if input in gryffindor_answers or slytherin_answers or ravenclaw_answers or hufflepuff_answers:
         return True
     else:

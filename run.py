@@ -121,7 +121,7 @@ def need_more_information():
         need_more_information()
 
 
-def print_answer_and_question(question_x, answers_x):
+def print_answer_question(question_x, answers_x):
     """
     Prints answers and questions
     """
@@ -134,7 +134,7 @@ def first_question():
     """
     Triggers first question and asks user for answer input
     """
-    print_answer_and_question(question_1, answers_1)
+    print_answer_question(question_1, answers_1) 
     first_input = input()
     increase_score(first_input)
 
@@ -143,11 +143,12 @@ def first_question():
     else:
         first_question()
 
+
 def second_question():
     """
     Triggers second question and asks user for answer input
     """
-    print_answer_and_question(question_2, answers_2)
+    print_answer_question(question_2, answers_2) 
     second_input = input()
     increase_score(second_input)
     
@@ -156,6 +157,25 @@ def second_question():
         print("Score increased!")
     else:
         second_question()
+
+
+
+def third_question():
+    """
+    Triggers third question and asks user for answer input
+    """
+    print_answer_and_question(question_3, answers_3)
+    third_input = input()
+    increase_score(third_input)
+    if check_if_true(third_input) == True:
+        #fourth_question()
+        print("\nFinal scores:\n")
+        print("Gryffindor: " + str(gryffindor))
+        print("Slytherin: " + str(slytherin))
+        print("Ravenclaw: " + str(ravenclaw))
+        print("Hufflepuff: " + str(hufflepuff))
+    else:
+        third_question()
 
 
 def increase_score(input):

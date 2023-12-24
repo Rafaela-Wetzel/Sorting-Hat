@@ -2,6 +2,10 @@ from random import shuffle
 import os
 import re 
 
+import colorama
+from colorama import Fore, Back, Style
+colorama.init()
+
 # Variables
 
 # All questions and answers in pairs
@@ -135,10 +139,10 @@ def welcome_greeting():
     """
     Prints welcome text
     """
-    print("\nWelcome to Hogwarts School of Witchcraft and Wizardry!\n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies.\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nThere is the house of Gryffindor known for its bravery and determination;\nalong with the house of Ravenclaw represented by its intelligence and wisdom;\nthe house of Slytherin characterized by its ambition and leadership\nand the house of Hufflepuff which brings forth hard-working, loyal and honest wizards.\n\nPlease, have a seat on this ceremony chair. The Sorting Hat will know where you belong...\n")
+    print('\nWelcome to Hogwarts School of Witchcraft and Wizardry! \n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies.\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nThere is the house of' + Fore.RED + ' \x1B[3mGryffindor\033[1m ' + Fore.RESET + 'known for its bravery and determination;\nalong with the house of' + Fore.BLUE + ' \x1B[3mRavenclaw\033[1m ' + Fore.RESET + 'represented by its intelligence and wisdom;\nthe house of' + Fore.GREEN + ' \x1B[3mSlytherin\033[1m ' + Fore.RESET + 'characterized by its ambition and leadership\nand the house of' + Fore.YELLOW + ' \x1B[3mHufflepuff\033[1m ' + Fore.RESET + 'which brings forth hard-working, loyal and honest wizards.\n\nPlease, have a seat on this ceremony chair. The Sorting Hat will know where you belong...\n')
     check_name()
 
-
+ 
 def check_name():
     """
     Asks for user name input and checks if it is a valid string
@@ -230,10 +234,10 @@ def check_score():
         print("Slytherin wins!")
     elif hufflepuff > gryffindor and hufflepuff > slytherin and hufflepuff > ravenclaw:
         enter_hufflepuff()
-        print("Ravenclaw wins!")
+        print("Hufflepuff wins!")
     elif ravenclaw > hufflepuff and ravenclaw > gryffindor and ravenclaw > slytherin:
         enter_ravenclaw()
-        print("Hufflepuff wins!")
+        print("Ravenclaw wins!")
     else:
         print("Nobody wins")
 

@@ -30,7 +30,7 @@ question_eight = "\n5. Eighth placeholder question: \n"
 answers_eight = ["Gryffindor 8", "Slytherin 8", "Ravenclaw 8", "Hufflepuff 8"]
 
 question_nine = "\n5. Ninth placeholder question: \n" 
-answers_nind = ["Gryffindor 9", "Slytherin 9", "Ravenclaw 9", "Hufflepuff 9"]
+answers_nine = ["Gryffindor 9", "Slytherin 9", "Ravenclaw 9", "Hufflepuff 9"]
 
 question_ten = "\n5. Tenth placeholder question: \n" 
 answers_ten = ["Gryffindor 10", "Slytherin 10", "Ravenclaw 10", "Hufflepuff 10"]
@@ -51,7 +51,7 @@ question_fifteen = "\n5. Fifteenth placeholder question: \n"
 answers_fifteen = ["Gryffindor 15", "Slytherin 15", "Ravenclaw 15", "Hufflepuff 15"]
 
 question_sixteen = "\n5. Sixteenth placeholder question: \n" 
-answers_sixteenn = ["Gryffindor 16", "Slytherin 16", "Ravenclaw 16", "Hufflepuff 16"]
+answers_sixteen = ["Gryffindor 16", "Slytherin 16", "Ravenclaw 16", "Hufflepuff 16"]
 
 # All answers sorted by houses
 gryffindor_answers = ["Gryffindor 1", "Gryffindor 2", "Gryffindor 3", "Gryffindor 4", "Gryffindor 5", "Gryffindor 6", "Gryffindor 7", "Gryffindor 8", "Gryffindor 9", "Gryffindor 10", "Gryffindor 11", "Gryffindor 12", "Gryffindor 13", "Gryffindor 14", "Gryffindor 15", "Gryffindor 16"]
@@ -196,7 +196,7 @@ def check_if_true(input):
     If the check_if_true function returns False (= no house has gained any point / the user has entered invalid input) 
     it will trigger the same question again until the user has entered valid input
     """
-    if input in gryffindor_answers or slytherin_answers or ravenclaw_answers or hufflepuff_answers:
+    if input in gryffindor_answers or input in slytherin_answers or input in ravenclaw_answers or input in hufflepuff_answers:
         return True
     else:
         return False    
@@ -420,9 +420,13 @@ def sixteenth_question():
     increase_score(sixteenth_input)
 
     if check_if_true(sixteenth_input) == True:
-        check_score()
-    else:
-        sixteenth_question()
+        #check_score()
+        print("This was the last question!")
+        print("\nFinal scores:\n")
+        print("Gryffindor: " + str(gryffindor))
+        print("Slytherin: " + str(slytherin))
+        print("Ravenclaw: " + str(ravenclaw))
+        print("Hufflepuff: " + str(hufflepuff))
 
 
 # Call first two functions

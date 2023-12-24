@@ -54,10 +54,10 @@ question_sixteen = "\n5. Sixteenth placeholder question: \n"
 answers_sixteenn = ["Gryffindor 16", "Slytherin 16", "Ravenclaw 16", "Hufflepuff 16"]
 
 # All answers sorted by houses
-gryffindor_answers = ["Gryffindor 1", "Gryffindor 2", "Gryffindor 3", "Gryffindor 4"]
-slytherin_answers = ["Slytherin 1", "Slytherin 2", "Slytherin 3", "Slytherin 4"]
-ravenclaw_answers = ["Ravenclaw 1", "Ravenclaw 2", "Ravenclaw 3", "Ravenclaw 4"]
-hufflepuff_answers = ["Hufflepuff 1", "Hufflepuff 2", "Hufflepuff 3", "Hufflepuff 4"]
+gryffindor_answers = ["Gryffindor 1", "Gryffindor 2", "Gryffindor 3", "Gryffindor 4", "Gryffindor 5", "Gryffindor 6", "Gryffindor 7", "Gryffindor 8", "Gryffindor 9", "Gryffindor 10", "Gryffindor 11", "Gryffindor 12", "Gryffindor 13", "Gryffindor 14", "Gryffindor 15", "Gryffindor 16"]
+slytherin_answers = ["Slytherin 1", "Slytherin 2", "Slytherin 3", "Slytherin 4", "Slytherin 5", "Slytherin 6", "Slytherin 7", "Slytherin 8", "Slytherin 9", "Slytherin 10", "Slytherin 11", "Slytherin 12", "Slytherin 13", "Slytherin 14", "Slytherin 15", "Slytherin 16"]
+ravenclaw_answers = ["Ravenclaw 1", "Ravenclaw 2", "Ravenclaw 3", "Ravenclaw 4", "Ravenclaw 5", "Ravenclaw 6", "Ravenclaw 7", "Ravenclaw 8", "Ravenclaw 9", "Ravenclaw 10", "Ravenclaw 11", "Ravenclaw 12", "Ravenclaw 13", "Ravenclaw 14", "Ravenclaw 15", "Ravenclaw 16"]
+hufflepuff_answers = ["Hufflepuff 1", "Hufflepuff 2", "Hufflepuff 3", "Hufflepuff 4", "Hufflepuff 5", "Hufflepuff 6", "Hufflepuff 7", "Hufflepuff 8", "Hufflepuff 9", "Hufflepuff 10", "Hufflepuff 11", "Hufflepuff 12", "Hufflepuff 14", "Hufflepuff 15", "Hufflepuff 16"]
 
 # House score
 gryffindor = 0

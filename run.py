@@ -156,8 +156,9 @@ def need_more_information():
     """
     Asks user if they are ready to start answering the Sorting Hats' questions and sends them back to start screen when 'no' or anything else than 'yes' or 'no' is entered 
     """
-    confirm_start = input("\n\nAre you ready to dive deeper with me? (yes/no) ").lower()
+    confirm_start = input("\n\nAre you ready to dive deeper with me? (yes/no) \n\n").lower()
     if confirm_start == "yes":
+        print("\nINSTRUCTIONS: Choose the answer for each question that describes your personality best. Please enter the identical answer in the input field. After the Sorting Hat has learned enough about you it will place you in the house you belong to...good luck!\n")
         first_question()
     elif confirm_start == "no": 
         print("\nMaybe this is not yet the right time for you to discover the world of wizardry.\nI might see you again in a couple of years...\n")

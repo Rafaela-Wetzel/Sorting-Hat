@@ -222,16 +222,16 @@ def check_score():
     Checks final score. If one house has the most points this particular house function will be triggered
     If there is a tie, there will be more questions until one house has gained the majority of points
     '''
-    if gryffindor > slytherin and hufflepuff and ravenclaw:
+    if gryffindor > slytherin and gryffindor > hufflepuff and gryffindor > ravenclaw:
         enter_gryffindor()
         print("Gryffindor wins!")
-    elif slytherin > gryffindor and hufflepuff and ravenclaw:
+    elif slytherin > gryffindor and slytherin > hufflepuff and slytherin > ravenclaw:
         enter_slytherin()
         print("Slytherin wins!")
-    elif hufflepuff > gryffindor and slytherin and ravenclaw:
+    elif hufflepuff > gryffindor and hufflepuff > slytherin and hufflepuff > ravenclaw:
         enter_hufflepuff()
         print("Ravenclaw wins!")
-    elif ravenclaw > hufflepuff and gryffindor and slytherin:
+    elif ravenclaw > hufflepuff and ravenclaw > gryffindor and ravenclaw > slytherin:
         enter_ravenclaw()
         print("Hufflepuff wins!")
     else:

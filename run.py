@@ -19,7 +19,39 @@ answers_four = ["Gryffindor 4", "Slytherin 4", "Ravenclaw 4", "Hufflepuff 4"]
 
 question_five = "\n5. Fifth placeholder question: \n" 
 answers_five = ["Gryffindor 5", "Slytherin 5", "Ravenclaw 5", "Hufflepuff 5"]
-# and so on...
+
+question_six = "\n5. Sixth placeholder question: \n" 
+answers_six = ["Gryffindor 6", "Slytherin 6", "Ravenclaw 6", "Hufflepuff 6"]
+
+question_seven = "\n5. Seventh placeholder question: \n" 
+answers_seven = ["Gryffindor 7", "Slytherin 7", "Ravenclaw 7", "Hufflepuff 7"]
+
+question_eight = "\n5. Eighth placeholder question: \n" 
+answers_eight = ["Gryffindor 8", "Slytherin 8", "Ravenclaw 8", "Hufflepuff 8"]
+
+question_nine = "\n5. Ninth placeholder question: \n" 
+answers_nind = ["Gryffindor 9", "Slytherin 9", "Ravenclaw 9", "Hufflepuff 9"]
+
+question_ten = "\n5. Tenth placeholder question: \n" 
+answers_ten = ["Gryffindor 10", "Slytherin 10", "Ravenclaw 10", "Hufflepuff 10"]
+
+question_eleven = "\n5. Eleventh placeholder question: \n" 
+answers_eleven = ["Gryffindor 11", "Slytherin 11", "Ravenclaw 11", "Hufflepuff 11"]
+
+question_twelve = "\n5. Twelfth placeholder question: \n" 
+answers_twelve = ["Gryffindor 12", "Slytherin 12", "Ravenclaw 12", "Hufflepuff 12"]
+
+question_thirteen = "\n5. Thirteenth placeholder question: \n" 
+answers_thirteen = ["Gryffindor 13", "Slytherin 13", "Ravenclaw 13", "Hufflepuff 13"]
+
+question_fourteen = "\n5. Fourteenth placeholder question: \n" 
+answers_fourteen = ["Gryffindor 14", "Slytherin 14", "Ravenclaw 14", "Hufflepuff 14"]
+
+question_fifteen = "\n5. Fifteenth placeholder question: \n" 
+answers_fifteen = ["Gryffindor 15", "Slytherin 15", "Ravenclaw 15", "Hufflepuff 15"]
+
+question_sixteen = "\n5. Sixteenth placeholder question: \n" 
+answers_sixteenn = ["Gryffindor 16", "Slytherin 16", "Ravenclaw 16", "Hufflepuff 16"]
 
 # All answers sorted by houses
 gryffindor_answers = ["Gryffindor 1", "Gryffindor 2", "Gryffindor 3", "Gryffindor 4"]

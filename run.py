@@ -170,61 +170,6 @@ def check_if_true(input):
         return False    
 
 
-def print_question_answers(question_x, answers_x):
-    """
-    Prints answers and questions
-    """
-    print(question_x)
-    shuffle(answers_x)
-    print(*answers_x, sep = '\n', end = '\n\n')  
-
-
-def first_question():
-    """
-    Triggers first question and asks user for answer input
-    """
-    print_question_answers(question_one, answers_one) 
-    first_input = input()
-    increase_score(first_input)
-
-    if check_if_true(first_input) == True:
-        second_question()
-    else:
-        first_question()
-
-
-def second_question():
-    """
-    Triggers second question and asks user for answer input
-    """
-    print_question_answers(question_two, answers_two) 
-    second_input = input()
-    increase_score(second_input)
-    
-    if check_if_true(second_input) == True:
-        third_question()
-    else:
-        second_question()
-
-
-def third_question():
-    """
-    Triggers third question and asks user for answer input
-    """
-    print_question_answers(question_three, answers_three)
-    third_input = input()
-    increase_score(third_input)
-    if check_if_true(third_input) == True:
-        #fourth_question()
-        print("\nCurrent scores:\n")
-        print("Gryffindor: " + str(gryffindor))
-        print("Slytherin: " + str(slytherin))
-        print("Ravenclaw: " + str(ravenclaw))
-        print("Hufflepuff: " + str(hufflepuff))
-    else:
-        third_question()
-
-
 # FIRST DRAFT TO CHECK FINAL SCORE
 """
 def check_score():
@@ -243,6 +188,209 @@ def check_score():
     else:
         next_question()
 """
+
+
+def print_question_answers(question_x, answers_x):
+    """
+    Prints answers and questions
+    """
+    print(question_x)
+    shuffle(answers_x)
+    print(*answers_x, sep = '\n', end = '\n\n')  
+
+
+def first_question():
+    """
+    Triggers first question and asks user for answer input.
+    Same function description for all questions.
+    """
+    print_question_answers(question_one, answers_one) 
+    first_input = input()
+    increase_score(first_input)
+
+    if check_if_true(first_input) == True:
+        second_question()
+    else:
+        first_question()
+
+
+def second_question():
+
+    print_question_answers(question_two, answers_two) 
+    second_input = input()
+    increase_score(second_input)
+    
+    if check_if_true(second_input) == True:
+        third_question()
+    else:
+        second_question()
+
+
+def third_question():
+
+    print_question_answers(question_three, answers_three)
+    third_input = input()
+    increase_score(third_input)
+    if check_if_true(third_input) == True:
+        fourth_question()
+    else:
+        third_question()
+
+
+def fourth_question():
+   
+    print_question_answers(question_four, answers_four) 
+    fourth_input = input()
+    increase_score(fourth_input)
+
+    if check_if_true(fourth_input) == True:
+        fifth_question()
+    else:
+        fourth_question()
+
+
+def fifth_question():
+
+    print_question_answers(question_five, answers_five) 
+    fifth_input = input()
+    increase_score(fifth_input)
+
+    if check_if_true(fifth_input) == True:
+        sixth_question()
+    else:
+        fifth_question()
+
+
+def sixth_question():
+
+    print_question_answers(question_six, answers_six) 
+    sixth_input = input()
+    increase_score(sixth_input)
+
+    if check_if_true(sixth_input) == True:
+        seventh_question()
+    else:
+        sixth_question()
+
+
+def seventh_question():
+
+    print_question_answers(question_seven, answers_seven) 
+    seventh_input = input()
+    increase_score(seventh_input)
+
+    if check_if_true(seventh_input) == True:
+        eighth_question()
+    else:
+        seventh_question()
+
+
+def eighth_question():
+
+    print_question_answers(question_eight, answers_eight) 
+    eighth_input = input()
+    increase_score(eighth_input)
+
+    if check_if_true(eighth_input) == True:
+        ninth_question()
+    else:
+        eighth_question()
+
+
+def ninth_question():
+
+    print_question_answers(question_nine, answers_nine) 
+    ninth_input = input()
+    increase_score(ninth_input)
+
+    if check_if_true(ninth_input) == True:
+        tenth_question()
+    else:
+        ninth_question()
+
+
+def tenth_question():
+
+    print_question_answers(question_ten, answers_ten) 
+    tenth_input = input()
+    increase_score(tenth_input)
+
+    if check_if_true(tenth_input) == True:
+        eleventh_question()
+    else:
+        tenth_question()
+
+
+def eleventh_question():
+
+    print_question_answers(question_eleven, answers_eleven) 
+    eleventh_input = input()
+    increase_score(eleventh_input)
+
+    if check_if_true(eleventh_input) == True:
+        twelfth_question()
+    else:
+        eleventh_question()
+
+
+def twelfth_question():
+
+    print_question_answers(question_twelve, answers_twelve) 
+    twelfth_input = input()
+    increase_score(twelfth_input)
+
+    if check_if_true(twelfth_input) == True:
+        thirteenth_question()
+    else:
+        twelfth_question()
+
+
+def thirteenth_question():
+
+    print_question_answers(question_thirteen, answers_thirteen) 
+    thirteenth_input = input()
+    increase_score(thirteenth_input)
+
+    if check_if_true(thirteenth_input) == True:
+        fourteenth_question()
+    else:
+        thirteenth_question()
+
+
+def fourteenth_question():
+
+    print_question_answers(question_fourteen, answers_fourteen) 
+    fourteenth_input = input()
+    increase_score(fourteenth_input)
+
+    if check_if_true(fourteenth_input) == True:
+        fifteenth_question()
+    else:
+        fourteenth_question()
+
+
+def fifteenth_question():
+
+    print_question_answers(question_fifteen, answers_fifteen) 
+    fifteenth_input = input()
+    increase_score(fifteenth_input)
+
+    if check_if_true(fifteenth_input) == True:
+        sixteenth_question()
+    else:
+        fifteenth_question()
+
+
+def sixteenth_question():
+
+    print_question_answers(question_sixteen, answers_sixteen) 
+    sixteenth_input = input()
+    increase_score(sixteenth_input)
+
+    if check_if_true(sixteenth_input) == True:
+        check_score()
+    else:
+        sixteenth_question()
 
 
 # Call first two functions

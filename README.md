@@ -90,7 +90,8 @@ https://www.youtube.com/watch?v=VAStmLsFQZ8
 [2] How to add input validation
 https://www.copahost.com/blog/input-python/#:~:text=Input%20validation%20using%20the%20module,print(%22Entry%20is%20valid!
 
-[3]
+[3] How to add Colorama
+https://www.youtube.com/watch?v=u51Zjlnui4Y 
 
 [4]  
 

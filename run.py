@@ -139,7 +139,7 @@ def welcome_greeting():
     """
     Prints welcome text
     """
-    print('\nWelcome to Hogwarts School of Witchcraft and Wizardry! \n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies.\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nThere is the house of' + Fore.RED + "\033[1m" + ' Gryffindor ' + "\033[22m" + Fore.RESET + 'known for its bravery and determination;\nalong with the house of' + Fore.BLUE + "\033[1m" + " Ravenclaw " + "\033[22m" + Fore.RESET + 'represented by its intelligence and wisdom;\nthe house of' + Fore.GREEN + "\033[1m" + " Slytherin " + "\033[22m" + Fore.RESET + 'characterized by its ambition and leadership\nand the house of' + Fore.YELLOW + "\033[1m" + " Hufflepuff " + "\033[22m" + Fore.RESET + 'which brings forth hard-working, loyal and honest wizards.\n\nPlease, have a seat on this ceremony chair. The Sorting Hat will know where you belong...\n')
+    print('\nWelcome to' + Fore.MAGENTA + "\033[1m" + ' Hogwarts School of Witchcraft and Wizardry!' + "\033[22m" + Fore.RESET + '\n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies.\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nThere is the house of' + Fore.RED + "\033[1m" + ' Gryffindor ' + "\033[22m" + Fore.RESET + 'known for its bravery and determination;\nalong with the house of' + Fore.BLUE + "\033[1m" + " Ravenclaw " + "\033[22m" + Fore.RESET + 'represented by its intelligence and wisdom;\nthe house of' + Fore.GREEN + "\033[1m" + " Slytherin " + "\033[22m" + Fore.RESET + 'characterized by its ambition and leadership\nand the house of' + Fore.YELLOW + "\033[1m" + " Hufflepuff " + "\033[22m" + Fore.RESET + 'which brings forth hard-working, loyal and honest wizards.\n\nPlease, have a seat on this ceremony chair. The Sorting Hat will know where you belong...\n')
     check_name()
 
  
@@ -147,9 +147,9 @@ def check_name():
     """
     Asks for user name input and checks if it is a valid string
     """
-    your_name = input("\x1B[3mYoung wizard*ess, what is your name? \x1B[0m")
+    your_name = input("\x1B[3mYoung wizard*ess, " + Fore.CYAN + "what is your name? \x1B[0m" + Fore.RESET)
     if re.match(r"[a-zA-Z]", your_name):
-        print("\x1B[3m\nHello " + your_name + "!\n\nLet me see what house will bring forth the best in you...\n\n...\n...\n...\n")
+        print("\x1B[3m\nHello " + Fore.CYAN + your_name + Fore.RESET + "!\n\nLet me see what house will bring forth the best in you...\n\n...\n...\n...\n")
         print("....Now, this is unexpected! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you.")
         need_more_information()
     else:
@@ -161,9 +161,9 @@ def need_more_information():
     """
     Asks user if they are ready to start answering the Sorting Hats' questions and sends them back to start screen when 'no' or anything else than 'yes' or 'no' is entered 
     """
-    confirm_start = input("\n\nAre you ready to dive deeper with me? (yes/no) \n\n").lower()
+    confirm_start = input(Fore.CYAN + "\n\nAre you ready to dive deeper with me? (yes/no) \n\n" + Fore.RESET).lower()
     if confirm_start == "yes":
-        print("\x1B[0m\nINSTRUCTIONS: Choose the answer for each question that describes your personality best. Please enter the identical answer in the input field. After the Sorting Hat has learned enough about you it will place you in the house you belong to...good luck!\n")
+        print(Fore.YELLOW + "\nINSTRUCTIONS: " + Fore.RESET + "Choose the answer for each question that describes your personality best. Please enter the identical answer in the input field. After the Sorting Hat has learned enough about you it will place you in the house you belong to...good luck!\n")
         first_question()
     elif confirm_start == "no": 
         print("\nMaybe this is not yet the right time for you to discover the world of wizardry.\nI might see you again in a couple of years...\n")
@@ -663,4 +663,4 @@ def sixteenth_question():
 
 # Call first two functions
 print_hogwarts_emblem()
-enter_hogwarts
+enter_hogwarts()

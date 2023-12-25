@@ -9,35 +9,35 @@ colorama.init()
 # Variables
 
 # All questions and answers in pairs
-question_one = "\n1. First placeholder question: \n"
-answers_one = ["Gryffindor 1", "Slytherin 1", "Ravenclaw 1", "Hufflepuff 1"]
+question_one = "\n1. Which element resonates most with you? \n"
+answers_one = ["fire", "water", "air", "earth"]
 
-question_two = "\n2. Second placeholder question: \n"
-answers_two = ["Gryffindor 2", "Slytherin 2", "Ravenclaw 2", "Hufflepuff 2"]
+question_two = "\n2. Which of the following would you most hate people to call you? \n"
+answers_two = ["cowardly", "ordinary", "ignorant", "selfish"]
 
-question_three = "\n3. Third placeholder question: \n"
-answers_three = ["Gryffindor 3", "Slytherin 3", "Ravenclaw 3", "Hufflepuff 3"]
+question_three = "\n3. How would you like to be known to history? \n"
+answers_three = ["the bold", "the great", "the wise", "the good"]
 
-question_four = "\n4. Fourth placeholder question: \n"
-answers_four = ["Gryffindor 4", "Slytherin 4", "Ravenclaw 4", "Hufflepuff 4"]
+question_four = "\n4. After you have died, what would you most like people to do when they hear your name? \n"
+answers_four = ["ask for more stories about your adventures", "i don't care what people think of me after i'm dead, it's what they think of me while I'm alive that counts", "think with admiration of your achievements", "miss you, but smile"]
 
-question_five = "\n5. Fifth placeholder question: \n" 
-answers_five = ["Gryffindor 5", "Slytherin 5", "Ravenclaw 5", "Hufflepuff 5"]
+question_five = "\n5. Given the choice, would you rather invent a potion that would guarantee you: \n" 
+answers_five = ["glory", "power", "wisdom", "love"]
 
-question_six = "\n6. Sixth placeholder question: \n" 
-answers_six = ["Gryffindor 6", "Slytherin 6", "Ravenclaw 6", "Hufflepuff 6"]
+question_six = "\n6. Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of: \n" 
+answers_six = ["a crackling log fire", "the sea", "fresh parchment", "home"]
 
-question_seven = "\n7. Seventh placeholder question: \n" 
-answers_seven = ["Gryffindor 7", "Slytherin 7", "Ravenclaw 7", "Hufflepuff 7"]
+question_seven = "\n7. Four goblets are placed before you. Which would you choose to drink? \n" 
+answers_seven = ["the golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room.", "The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions.", "the foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.", "the smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums."]
 
-question_eight = "\n8. Eighth placeholder question: \n" 
-answers_eight = ["Gryffindor 8", "Slytherin 8", "Ravenclaw 8", "Hufflepuff 8"]
+question_eight = "\n8. You enter an enchanted garden. What would you be most curious to examine first? \n" 
+answers_eight = ["the statue of an old wizard with a strangely twinkling eye", "the bubbling pool, in the depths of which something luminous is swirling", "the silver leafed tree bearing golden apples", "the fat red toadstools that appear to be talking to each other"]
 
-question_nine = "\n9. Ninth placeholder question: \n" 
-answers_nine = ["Gryffindor 9", "Slytherin 9", "Ravenclaw 9", "Hufflepuff 9"]
+question_nine = "\n9. Four boxes are placed before you. Which would you try and open? \n" 
+answers_nine = ["the small pewter box, unassuming and plain, with a scratched message upon it that reads ‘I open only for the worthy.'", "the gleaming jet black box with a silver lock and key, marked with a mysterious rune that you know to be the mark of Merlin.", "The ornate golden casket, standing on clawed feet, whose inscription warns that both secret knowledge and unbearable temptation lie within.", "the small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking."]
 
-question_ten = "\n10. Tenth placeholder question: \n" 
-answers_ten = ["Gryffindor 10", "Slytherin 10", "Ravenclaw 10", "Hufflepuff 10"]
+question_ten = "\n10. You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you: \n" 
+answers_ten = ["volunteer to fight", "suggest that all three of you should fight (without telling the troll)?", "attempt to confuse the troll into letting all three of you pass without fighting?", "suggest drawing lots to decide which of you will fight?"]
 
 question_eleven = "\n11. Eleventh placeholder question: \n" 
 answers_eleven = ["Gryffindor 11", "Slytherin 11", "Ravenclaw 11", "Hufflepuff 11"]
@@ -59,10 +59,10 @@ answers_sixteen = ["Gryffindor 16", "Slytherin 16", "Ravenclaw 16", "Hufflepuff 
 
 
 # All answers sorted by houses
-gryffindor_answers = ["Gryffindor 1", "Gryffindor 2", "Gryffindor 3", "Gryffindor 4", "Gryffindor 5", "Gryffindor 6", "Gryffindor 7", "Gryffindor 8", "Gryffindor 9", "Gryffindor 10", "Gryffindor 11", "Gryffindor 12", "Gryffindor 13", "Gryffindor 14", "Gryffindor 15", "Gryffindor 16"]
-slytherin_answers = ["Slytherin 1", "Slytherin 2", "Slytherin 3", "Slytherin 4", "Slytherin 5", "Slytherin 6", "Slytherin 7", "Slytherin 8", "Slytherin 9", "Slytherin 10", "Slytherin 11", "Slytherin 12", "Slytherin 13", "Slytherin 14", "Slytherin 15", "Slytherin 16"]
-ravenclaw_answers = ["Ravenclaw 1", "Ravenclaw 2", "Ravenclaw 3", "Ravenclaw 4", "Ravenclaw 5", "Ravenclaw 6", "Ravenclaw 7", "Ravenclaw 8", "Ravenclaw 9", "Ravenclaw 10", "Ravenclaw 11", "Ravenclaw 12", "Ravenclaw 13", "Ravenclaw 14", "Ravenclaw 15", "Ravenclaw 16"]
-hufflepuff_answers = ["Hufflepuff 1", "Hufflepuff 2", "Hufflepuff 3", "Hufflepuff 4", "Hufflepuff 5", "Hufflepuff 6", "Hufflepuff 7", "Hufflepuff 8", "Hufflepuff 9", "Hufflepuff 10", "Hufflepuff 11", "Hufflepuff 12", "Hufflepuff 14", "Hufflepuff 15", "Hufflepuff 16"]
+gryffindor_answers = ["fire", "cowardly", "the bold", "adventures", "glory", "log fire", "golden liquid", "statue", "plain box", "volunteer", "Gryffindor 11", "Gryffindor 12", "Gryffindor 13", "Gryffindor 14", "Gryffindor 15", "Gryffindor 16"]
+slytherin_answers = ["water", "ordinary", "the great", "don't care", "glory", "sea", "black liquid", "bubbling pool", "black box", "all three fight", "Slytherin 11", "Slytherin 12", "Slytherin 13", "Slytherin 14", "Slytherin 15", "Slytherin 16"]
+ravenclaw_answers = ["air", "ignorant", "the wise", "achievements", "wisdom", "parchment", "silvery liquid", "silver tree", "golden casket", "confuse troll", "Ravenclaw 11", "Ravenclaw 12", "Ravenclaw 13", "Ravenclaw 14", "Ravenclaw 15", "Ravenclaw 16"]
+hufflepuff_answers = ["earth", "selfish", "the good", "miss", "love", "home", "purple drink", "toadstools", "tortoiseshell box", "drawing lots", "Hufflepuff 11", "Hufflepuff 12", "Hufflepuff 14", "Hufflepuff 15", "Hufflepuff 16"]
 
 # House score
 gryffindor = 0

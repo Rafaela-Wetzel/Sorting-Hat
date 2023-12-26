@@ -57,12 +57,24 @@ answers_fifteen = ["ask what makes them think so?", "agree, and ask whether they
 question_sixteen = "\n16. Which road tempts you most? \n" 
 answers_sixteen = ["the wide, sunny, grassy lane", "the narrow, dark, lantern-lit alley", "the twisting, leaf-strewn path through woods", "the cobbled street lined with ancient buildings"]
 
+question_seventeen = "\n17. Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you: \n" 
+answers_seventeen = ["proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?", "draw your wand and try to discover the source of the noise?", "draw your wand and stand your ground?", "withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?"]
+
+question_eighteen = "\n18. One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do? \n" 
+answers_eighteen = ["lie and say you don't know (but hope that somebody else tells professor flitwick the truth).", "tell professor flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn't tell the truth, you will).", "tell professor flitwick the truth. if your classmate is prepared to win by cheating, he deserves to be found out. also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.", "you would not wait to be asked to tell professor flitwick the truth. If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started."]
+
+question_nineteen = "\n19. How would other people describe you? \n" 
+answers_nineteen = ["honest, brave and adventurous", "deceitful, malevolent and sexy", "curious, analytical and witty", "friendly, happy and dorky"]
+
+question_twenty = "\n20. Which house would you want to be in? \n" 
+answers_twenty = ["gryffindor", "slytherin", "ravenclaw", "hufflepuff"]
+
 
 # All answers sorted by houses
-gryffindor_answers = ["fire", "cowardly", "the bold", "adventures", "glory", "log fire", "golden liquid", "statue", "plain box", "volunteer", "trusted", "praised", "invisibility", "change past", "change appearance", "apparition", "flying", "centaurs", "ghosts", "werewolves", "bluffing", "woods"]
-slytherin_answers = ["water", "ordinary", "the great", "don't care", "glory", "sea", "black liquid", "bubbling pool", "black box", "all three fight", "envied", "feared", "read minds", "superhuman strength", "change past", "apparition", "hexes", "goblins", "merpeople", "trolls", "jinx", "dark alley"]
-ravenclaw_answers = ["air", "ignorant", "the wise", "achievements", "wisdom", "parchment", "silvery liquid", "silver tree", "golden casket", "confuse troll", "envied", "imitated", "read minds", "speak to animals", "change appearance",  "transfiguration", "every area", "centaurs", "goblins", "ghosts", "what makes them think so", "ancient buildings"]
-hufflepuff_answers = ["earth", "selfish", "the good", "miss", "love", "home", "purple drink", "toadstools", "tortoiseshell box", "drawing lots", "trusted", "liked", "invisibility", "superhuman strength", "speak to animals", "flying", "magical creatures", "merpeople", "werewolves", "trolls", "mental health", "sunny lane"]
+gryffindor_answers = ["fire", "cowardly", "the bold", "adventures", "glory", "log fire", "golden liquid", "statue", "plain box", "volunteer", "trusted", "praised", "invisibility", "change past", "change appearance", "apparition", "flying", "centaurs", "ghosts", "werewolves", "bluffing", "woods", "discover source", "ask classmate", "honest", "gryffindor"]
+slytherin_answers = ["water", "ordinary", "the great", "don't care", "glory", "sea", "black liquid", "bubbling pool", "black box", "all three fight", "envied", "feared", "read minds", "superhuman strength", "change past", "apparition", "hexes", "goblins", "merpeople", "trolls", "jinx", "dark alley", "stand your ground", "not wait", "deceitful", "slytherin"]
+ravenclaw_answers = ["air", "ignorant", "the wise", "achievements", "wisdom", "parchment", "silvery liquid", "silver tree", "golden casket", "confuse troll", "envied", "imitated", "read minds", "speak to animals", "change appearance",  "transfiguration", "every area", "centaurs", "goblins", "ghosts", "what makes them think so", "ancient buildings", "withdraw", "tell truth", "curious", "ravenclaw"]
+hufflepuff_answers = ["earth", "selfish", "the good", "miss", "love", "home", "purple drink", "toadstools", "tortoiseshell box", "drawing lots", "trusted", "liked", "invisibility", "superhuman strength", "speak to animals", "flying", "magical creatures", "merpeople", "werewolves", "trolls", "mental health", "sunny lane", "proceed with caution", "lie", "friendly", "hufflepuff"]
 
 # House score
 gryffindor = 0

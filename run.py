@@ -10,64 +10,64 @@ colorama.init()
 
 # All questions and answers in pairs
 question_one = "\n1. Which element resonates most with you? \n"
-answers_one = ["fire", "water", "air", "earth"]
+answers_one = ["Fire", "Water", "Air", "Earth"]
 
 question_two = "\n2. Which of the following would you most hate people to call you? \n"
-answers_two = ["cowardly", "ordinary", "ignorant", "selfish"]
+answers_two = ["Cowardly", "Ordinary", "Ignorant", "Selfish"]
 
 question_three = "\n3. How would you like to be known to history? \n"
-answers_three = ["the bold", "the great", "the wise", "the good"]
+answers_three = ["The Bold", "The Great", "The Wise", "The Good"]
 
 question_four = "\n4. After you have died, what would you most like people to do when they hear your name? \n"
-answers_four = ["ask for more stories about your adventures", "i don't care what people think of me after i'm dead, it's what they think of me while I'm alive that counts", "think with admiration of your achievements", "miss you, but smile"]
+answers_four = ["Ask for more stories about your adventures", "I don't care what people think of me after I'm dead, it's what they think of me while I'm alive that counts", "Think with admiration of your achievements", "Miss you, but smile"]
 
 question_five = "\n5. Given the choice, would you rather invent a potion that would guarantee you: \n" 
-answers_five = ["glory", "power", "wisdom", "love"]
+answers_five = ["Glory", "Power", "Wisdom", "Love"]
 
 question_six = "\n6. Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of: \n" 
-answers_six = ["a crackling log fire", "the sea", "fresh parchment", "home"]
+answers_six = ["A crackling log fire", "The sea", "Fresh parchment", "Home"]
 
 question_seven = "\n7. Four goblets are placed before you. Which would you choose to drink? \n" 
-answers_seven = ["the golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room.", "The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions.", "the foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.", "the smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums."]
+answers_seven = ["The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room.", "The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions.", "The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.", "The smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums."]
 
 question_eight = "\n8. You enter an enchanted garden. What would you be most curious to examine first? \n" 
-answers_eight = ["the statue of an old wizard with a strangely twinkling eye", "the bubbling pool, in the depths of which something luminous is swirling", "the silver leafed tree bearing golden apples", "the fat red toadstools that appear to be talking to each other"]
+answers_eight = ["The statue of an old wizard with a strangely twinkling eye", "The bubbling pool, in the depths of which something luminous is swirling", "The silver leafed tree bearing golden apples", "The fat red toadstools that appear to be talking to each other"]
 
 question_nine = "\n9. Four boxes are placed before you. Which would you try and open? \n" 
-answers_nine = ["the small pewter box, unassuming and plain, with a scratched message upon it that reads ‘I open only for the worthy.'", "the gleaming jet black box with a silver lock and key, marked with a mysterious rune that you know to be the mark of Merlin.", "The ornate golden casket, standing on clawed feet, whose inscription warns that both secret knowledge and unbearable temptation lie within.", "the small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking."]
+answers_nine = ["The small pewter box, unassuming and plain, with a scratched message upon it that reads ‘I open only for the worthy.'", "The gleaming jet black box with a silver lock and key, marked with a mysterious rune that you know to be the mark of Merlin.", "The ornate golden casket, standing on clawed feet, whose inscription warns that both secret knowledge and unbearable temptation lie within.", "The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking."]
 
 question_ten = "\n10. You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you: \n" 
-answers_ten = ["volunteer to fight", "suggest that all three of you should fight (without telling the troll)?", "attempt to confuse the troll into letting all three of you pass without fighting?", "suggest drawing lots to decide which of you will fight?"]
+answers_ten = ["Volunteer to fight", "Suggest that all three of you should fight (without telling the troll)?", "Attempt to confuse the troll into letting all three of you pass without fighting?", "Suggest drawing lots to decide which of you will fight?"]
 
 question_eleven = "\n11. Which would you rather be: \n" 
-answers_eleven = ["trusted", "praised", "envied", "feared", "imitated", "liked"]
+answers_eleven = ["Trusted", "Praised", "Envied", "Feared", "Imitated", "Liked"]
 
 question_twelve = "\n12. If you could have any power, which would you choose? \n" 
-answers_twelve = ["the power of invisibility", "the power to read minds", "the power to change your appearance at will", "the power to change the past", "the power of superhuman strength", "the power to speak to animals"]
+answers_twelve = ["The power of invisibility", "The power to read minds", "The power to change your appearance at will", "The power to change the past", "The power of superhuman strength", "The power to speak to animals"]
 
 question_thirteen = "\n13. What are you most looking forward to learning at Hogwarts? \n" 
-answers_thirteen = ["apparition and disapparition (being able to materialize and dematerialize at will)", "transfiguration (turning one object into another object)", "flying on a broomstick", "hexes and jinxes", "all about magical creatures, and how to befriend/care for them", "every area of magic I can"]
+answers_thirteen = ["Apparition and disapparition (being able to materialize and dematerialize at will)", "Transfiguration (turning one object into another object)", "Flying on a broomstick", "Hexes and jinxes", "All about magical creatures, and how to befriend/care for them", "Every area of magic I can"]
 
 question_fourteen = "\n14. Which of the following would you most like to study? \n" 
-answers_fourteen = ["centaurs", "ghosts", "werewolves", "goblins", "merpeople", "trolls"]
+answers_fourteen = ["Centaurs", "Ghosts", "Werewolves", "Goblins", "Merpeople", "Trolls"]
 
 question_fifteen = "\n15. A Muggle confronts you and says that they are sure you are a witch or wizard. Do you: \n" 
-answers_fifteen = ["ask what makes them think so?", "agree, and ask whether they'd like a free sample of a jinx?", "agree, and walk away, leaving them to wonder whether you are bluffing?", "tell them that you are worried about their mental health, and offer to call a doctor."]
+answers_fifteen = ["Ask what makes them think so?", "Agree, and ask whether they'd like a free sample of a jinx?", "Agree, and walk away, leaving them to wonder whether you are bluffing?", "Tell them that you are worried about their mental health, and offer to call a doctor."]
 
 question_sixteen = "\n16. Which road tempts you most? \n" 
-answers_sixteen = ["the wide, sunny, grassy lane", "the narrow, dark, lantern-lit alley", "the twisting, leaf-strewn path through woods", "the cobbled street lined with ancient buildings"]
+answers_sixteen = ["The wide, sunny, grassy lane", "The narrow, dark, lantern-lit alley", "The twisting, leaf-strewn path through woods", "The cobbled street lined with ancient buildings"]
 
 question_seventeen = "\n17. Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you: \n" 
-answers_seventeen = ["proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?", "draw your wand and try to discover the source of the noise?", "draw your wand and stand your ground?", "withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?"]
+answers_seventeen = ["Proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?", "Draw your wand and try to discover the source of the noise?", "Draw your wand and stand your ground?", "Withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?"]
 
 question_eighteen = "\n18. One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do? \n" 
-answers_eighteen = ["lie and say you don't know (but hope that somebody else tells professor flitwick the truth).", "tell professor flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn't tell the truth, you will).", "tell professor flitwick the truth. if your classmate is prepared to win by cheating, he deserves to be found out. also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.", "you would not wait to be asked to tell professor flitwick the truth. If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started."]
+answers_eighteen = ["Lie and say you don't know (but hope that somebody else tells professor flitwick the truth).", "Tell professor flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn't tell the truth, you will).", "Tell professor flitwick the truth. if your classmate is prepared to win by cheating, he deserves to be found out. also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.", "You would not wait to be asked to tell professor flitwick the truth. If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started."]
 
 question_nineteen = "\n19. How would other people describe you? \n" 
-answers_nineteen = ["honest, brave and adventurous", "deceitful, malevolent and sexy", "curious, analytical and witty", "friendly, happy and dorky"]
+answers_nineteen = ["Honest, brave and adventurous", "Deceitful, malevolent and sexy", "Curious, analytical and witty", "Friendly, happy and dorky"]
 
 question_twenty = "\n20. Which house would you want to be in? \n" 
-answers_twenty = ["gryffindor", "slytherin", "ravenclaw", "hufflepuff"]
+answers_twenty = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"]
 
 
 # All answers sorted by houses
@@ -430,7 +430,7 @@ def enter_ravenclaw():
 """ + Fore.RESET)
 
 
-# All quiz questions
+# All quiz questions & call for first two start functions
 
 def print_question_answers(question_x, answers_x):
     """
@@ -448,7 +448,7 @@ def first_question():
     Same function description for all questions.
     """
     print_question_answers(question_one, answers_one) 
-    first_input = input()
+    first_input = input().lower()
     increase_score(first_input)
     if first_input == "leave":
         exit()
@@ -462,7 +462,7 @@ def first_question():
 def second_question():
 
     print_question_answers(question_two, answers_two) 
-    second_input = input()
+    second_input = input().lower()
     increase_score(second_input)
     if second_input == "leave":
         exit()
@@ -476,7 +476,7 @@ def second_question():
 def third_question():
 
     print_question_answers(question_three, answers_three)
-    third_input = input()
+    third_input = input().lower()
     increase_score(third_input)
     if third_input == "leave":
         exit()
@@ -490,7 +490,7 @@ def third_question():
 def fourth_question():
    
     print_question_answers(question_four, answers_four) 
-    fourth_input = input()
+    fourth_input = input().lower()
     increase_score(fourth_input)
     if fourth_input == "leave":
         exit()
@@ -504,7 +504,7 @@ def fourth_question():
 def fifth_question():
 
     print_question_answers(question_five, answers_five) 
-    fifth_input = input()
+    fifth_input = input().lower()
     increase_score(fifth_input)
     if fifth_input == "leave":
         exit()
@@ -518,7 +518,7 @@ def fifth_question():
 def sixth_question():
 
     print_question_answers(question_six, answers_six) 
-    sixth_input = input()
+    sixth_input = input().lower()
     increase_score(sixth_input)
     if sixth_input == "leave":
         exit()
@@ -532,7 +532,7 @@ def sixth_question():
 def seventh_question():
 
     print_question_answers(question_seven, answers_seven) 
-    seventh_input = input()
+    seventh_input = input().lower()
     increase_score(seventh_input)
     if seventh_input == "leave":
         exit()
@@ -546,7 +546,7 @@ def seventh_question():
 def eighth_question():
 
     print_question_answers(question_eight, answers_eight) 
-    eighth_input = input()
+    eighth_input = input().lower()
     increase_score(eighth_input)
     if eighth_input == "leave":
         exit()
@@ -560,7 +560,7 @@ def eighth_question():
 def ninth_question():
 
     print_question_answers(question_nine, answers_nine) 
-    ninth_input = input()
+    ninth_input = input().lower()
     increase_score(ninth_input)
     if ninth_input == "leave":
         exit()
@@ -574,7 +574,7 @@ def ninth_question():
 def tenth_question():
 
     print_question_answers(question_ten, answers_ten) 
-    tenth_input = input()
+    tenth_input = input().lower()
     increase_score(tenth_input)
     if tenth_input == "leave":
         exit()
@@ -588,7 +588,7 @@ def tenth_question():
 def eleventh_question():
 
     print_question_answers(question_eleven, answers_eleven) 
-    eleventh_input = input()
+    eleventh_input = input().lower()
     increase_score(eleventh_input)
     if eleventh_input == "leave":
         exit()
@@ -602,7 +602,7 @@ def eleventh_question():
 def twelfth_question():
 
     print_question_answers(question_twelve, answers_twelve) 
-    twelfth_input = input()
+    twelfth_input = input().lower()
     increase_score(twelfth_input)
     if twelfth_input == "leave":
         exit()
@@ -616,7 +616,7 @@ def twelfth_question():
 def thirteenth_question():
 
     print_question_answers(question_thirteen, answers_thirteen) 
-    thirteenth_input = input()
+    thirteenth_input = input().lower()
     increase_score(thirteenth_input)
     if thirteenth_input == "leave":
         exit()
@@ -630,7 +630,7 @@ def thirteenth_question():
 def fourteenth_question():
 
     print_question_answers(question_fourteen, answers_fourteen) 
-    fourteenth_input = input()
+    fourteenth_input = input().lower()
     increase_score(fourteenth_input)
     if fourteenth_input == "leave":
         exit()
@@ -644,7 +644,7 @@ def fourteenth_question():
 def fifteenth_question():
 
     print_question_answers(question_fifteen, answers_fifteen) 
-    fifteenth_input = input()
+    fifteenth_input = input().lower()
     increase_score(fifteenth_input)
     if fifteenth_input == "leave":
         exit()
@@ -658,12 +658,68 @@ def fifteenth_question():
 def sixteenth_question():
 
     print_question_answers(question_sixteen, answers_sixteen) 
-    sixteenth_input = input()
+    sixteenth_input = input().lower()
     increase_score(sixteenth_input)
     if sixteenth_input == "leave":
         exit()
 
     if check_if_true(sixteenth_input) == True:
+        seventeenth_question()
+    else:
+        sixteenth_question
+
+
+def seventeenth_question():
+
+    print_question_answers(question_seven, answers_seven) 
+    seventeenth_input = input().lower()
+    increase_score(seventeenth_input)
+    if seventeenth_input == "leave":
+        exit()
+
+    if check_if_true(seventeenth_input) == True:
+        eighteenth_question()
+    else:
+        seventeenth_question()
+
+
+def eighteenth_question():
+
+    print_question_answers(question_eight, answers_eight) 
+    eighteenth_input = input().lower()
+    increase_score(eighteenth_input)
+    if eighteenth_input == "leave":
+        exit()
+
+    if check_if_true(eighteenth_input) == True:
+        nineteenth_question()
+    else:
+        eighteenth_question()
+
+
+def nineteenth_question():
+
+    print_question_answers(question_nine, answers_nine) 
+    nineteenth_input = input().lower()
+    increase_score(nineteenth_input)
+    if nineteenth_input == "leave":
+        exit()
+
+    if check_if_true(nineteenth_input) == True:
+        _question()
+    else:
+        nineteenth_question()
+
+
+def twentieth_question():
+
+    print_question_answers(question_twenty, answers_twenty) 
+    twentieth_input = input().lower()
+    increase_score(twentieth_input)
+    if twentieth_input == "leave":
+        exit()
+
+    if check_if_true(twentieth_input) == True:
         print("This was the last question!")
         print("\nFinal scores:\n")
         print("Gryffindor: " + str(gryffindor))

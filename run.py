@@ -39,30 +39,30 @@ answers_nine = ["the small pewter box, unassuming and plain, with a scratched me
 question_ten = "\n10. You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you: \n" 
 answers_ten = ["volunteer to fight", "suggest that all three of you should fight (without telling the troll)?", "attempt to confuse the troll into letting all three of you pass without fighting?", "suggest drawing lots to decide which of you will fight?"]
 
-question_eleven = "\n11. Eleventh placeholder question: \n" 
-answers_eleven = ["Gryffindor 11", "Slytherin 11", "Ravenclaw 11", "Hufflepuff 11"]
+question_eleven = "\n11. Which would you rather be: \n" 
+answers_eleven = ["trusted", "praised", "envied", "feared", "imitated", "liked"]
 
-question_twelve = "\n12. Twelfth placeholder question: \n" 
-answers_twelve = ["Gryffindor 12", "Slytherin 12", "Ravenclaw 12", "Hufflepuff 12"]
+question_twelve = "\n12. If you could have any power, which would you choose? \n" 
+answers_twelve = ["the power of invisibility", "the power to read minds", "the power to change your appearance at will", "the power to change the past", "the power of superhuman strength", "the power to speak to animals"]
 
-question_thirteen = "\n13. Thirteenth placeholder question: \n" 
-answers_thirteen = ["Gryffindor 13", "Slytherin 13", "Ravenclaw 13", "Hufflepuff 13"]
+question_thirteen = "\n13. What are you most looking forward to learning at Hogwarts? \n" 
+answers_thirteen = ["apparition and disapparition (being able to materialize and dematerialize at will)", "transfiguration (turning one object into another object)", "flying on a broomstick", "hexes and jinxes", "all about magical creatures, and how to befriend/care for them", "every area of magic I can"]
 
-question_fourteen = "\n14. Fourteenth placeholder question: \n" 
-answers_fourteen = ["Gryffindor 14", "Slytherin 14", "Ravenclaw 14", "Hufflepuff 14"]
+question_fourteen = "\n14. Which of the following would you most like to study? \n" 
+answers_fourteen = ["centaurs", "ghosts", "werewolves", "goblins", "merpeople", "trolls"]
 
-question_fifteen = "\n15. Fifteenth placeholder question: \n" 
-answers_fifteen = ["Gryffindor 15", "Slytherin 15", "Ravenclaw 15", "Hufflepuff 15"]
+question_fifteen = "\n15. A Muggle confronts you and says that they are sure you are a witch or wizard. Do you: \n" 
+answers_fifteen = ["ask what makes them think so?", "agree, and ask whether they'd like a free sample of a jinx?", "agree, and walk away, leaving them to wonder whether you are bluffing?", "tell them that you are worried about their mental health, and offer to call a doctor."]
 
-question_sixteen = "\n16. Sixteenth placeholder question: \n" 
-answers_sixteen = ["Gryffindor 16", "Slytherin 16", "Ravenclaw 16", "Hufflepuff 16"]
+question_sixteen = "\n16. Which road tempts you most? \n" 
+answers_sixteen = ["the wide, sunny, grassy lane", "the narrow, dark, lantern-lit alley", "the twisting, leaf-strewn path through woods", "the cobbled street lined with ancient buildings"]
 
 
 # All answers sorted by houses
-gryffindor_answers = ["fire", "cowardly", "the bold", "adventures", "glory", "log fire", "golden liquid", "statue", "plain box", "volunteer", "Gryffindor 11", "Gryffindor 12", "Gryffindor 13", "Gryffindor 14", "Gryffindor 15", "Gryffindor 16"]
-slytherin_answers = ["water", "ordinary", "the great", "don't care", "glory", "sea", "black liquid", "bubbling pool", "black box", "all three fight", "Slytherin 11", "Slytherin 12", "Slytherin 13", "Slytherin 14", "Slytherin 15", "Slytherin 16"]
-ravenclaw_answers = ["air", "ignorant", "the wise", "achievements", "wisdom", "parchment", "silvery liquid", "silver tree", "golden casket", "confuse troll", "Ravenclaw 11", "Ravenclaw 12", "Ravenclaw 13", "Ravenclaw 14", "Ravenclaw 15", "Ravenclaw 16"]
-hufflepuff_answers = ["earth", "selfish", "the good", "miss", "love", "home", "purple drink", "toadstools", "tortoiseshell box", "drawing lots", "Hufflepuff 11", "Hufflepuff 12", "Hufflepuff 14", "Hufflepuff 15", "Hufflepuff 16"]
+gryffindor_answers = ["fire", "cowardly", "the bold", "adventures", "glory", "log fire", "golden liquid", "statue", "plain box", "volunteer", "trusted", "praised", "invisibility", "change past", "change appearance", "apparition", "flying", "centaurs", "ghosts", "werewolves", "bluffing", "woods"]
+slytherin_answers = ["water", "ordinary", "the great", "don't care", "glory", "sea", "black liquid", "bubbling pool", "black box", "all three fight", "envied", "feared", "read minds", "superhuman strength", "change past", "apparition", "hexes", "goblins", "merpeople", "trolls", "jinx", "dark alley"]
+ravenclaw_answers = ["air", "ignorant", "the wise", "achievements", "wisdom", "parchment", "silvery liquid", "silver tree", "golden casket", "confuse troll", "envied", "imitated", "read minds", "speak to animals", "change appearance",  "transfiguration", "every area", "centaurs", "goblins", "ghosts", "what makes them think so", "ancient buildings"]
+hufflepuff_answers = ["earth", "selfish", "the good", "miss", "love", "home", "purple drink", "toadstools", "tortoiseshell box", "drawing lots", "trusted", "liked", "invisibility", "superhuman strength", "speak to animals", "flying", "magical creatures", "merpeople", "werewolves", "trolls", "mental health", "sunny lane"]
 
 # House score
 gryffindor = 0

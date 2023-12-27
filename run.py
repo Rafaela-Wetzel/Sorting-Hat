@@ -702,13 +702,13 @@ def nineteenth_question():
     print_question_answers(question_nine, answers_nine) 
     nineteenth_input = input().lower()
     increase_score(nineteenth_input)
-    if nineteenth_input == "leave":
-        exit()
-
-    if check_if_true(nineteenth_input) == True:
+    
+    if check_if_true(nineteenth_input) == True and check_score() == False:
         twentieth_question()
-    else:
+    elif check_if_true(nineteenth_input) == False:
         nineteenth_question()
+    elif nineteenth_input == "leave":
+        exit()
 
 
 def twentieth_question():
@@ -718,10 +718,7 @@ def twentieth_question():
     increase_score(twentieth_input)
     if twentieth_input == "leave":
         exit()
-
-    if check_if_true(twentieth_input) == True:
-       
-        check_score()
+        
 
  #print("This was the last question!")
         #print("\nFinal scores:\n")

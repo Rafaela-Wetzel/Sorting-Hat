@@ -468,7 +468,8 @@ def second_question():
         exit()
 
     if check_if_true(second_input) == True:
-        third_question()
+        #third_question()
+        nineteenth_question()
     else:
         second_question()
 
@@ -699,11 +700,17 @@ def eighteenth_question():
 
 def nineteenth_question():
 
-    print_question_answers(question_nine, answers_nine) 
+    print_question_answers(question_nineteen, answers_nineteen) 
     nineteenth_input = input().lower()
     increase_score(nineteenth_input)
 
     if check_if_true(nineteenth_input) == True and check_score() == False:
+        print("This was the last question!")
+        print("\nFinal scores:\n")
+        print("Gryffindor: " + str(gryffindor))
+        print("Slytherin: " + str(slytherin))
+        print("Ravenclaw: " + str(ravenclaw))
+        print("Hufflepuff: " + str(hufflepuff))
         twentieth_question()
     elif check_if_true(nineteenth_input) == False:
         nineteenth_question()
@@ -718,26 +725,19 @@ def twentieth_question():
     increase_score(twentieth_input)
 
     if check_if_true(twentieth_input) == True and check_score() == False:
-        if twentieth_input == gryffindor:
+        if twentieth_input == "gryffindor":
             enter_gryffindor()
-        elif twentieth_input == slytherin:
+        elif twentieth_input == "slytherin":
             enter_slytherin()
-        elif twentieth_input == ravenclaw:
+        elif twentieth_input == "ravenclaw":
             enter_ravenclaw()
-        elif twentieth_input == hufflepuff:
+        elif twentieth_input == "hufflepuff":
             enter_hufflepuff()
     elif check_if_true(twentieth_input) == False:
         twentieth_question()
     elif twentieth_input == "leave":
         exit()
-        
-
- #print("This was the last question!")
-        #print("\nFinal scores:\n")
-        #print("Gryffindor: " + str(gryffindor))
-        #print("Slytherin: " + str(slytherin))
-        #print("Ravenclaw: " + str(ravenclaw))
-        #print("Hufflepuff: " + str(hufflepuff))
+    
 
 # Call first two functions
 print_hogwarts_emblem()

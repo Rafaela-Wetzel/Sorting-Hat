@@ -1,6 +1,7 @@
 from random import shuffle
 import os
 import re 
+import sys 
 
 import colorama
 from colorama import Fore, Back, Style
@@ -705,12 +706,6 @@ def nineteenth_question():
     increase_score(nineteenth_input)
 
     if check_if_true(nineteenth_input) == True and check_score() == False:
-        print("This was the last question!")
-        print("\nFinal scores:\n")
-        print("Gryffindor: " + str(gryffindor))
-        print("Slytherin: " + str(slytherin))
-        print("Ravenclaw: " + str(ravenclaw))
-        print("Hufflepuff: " + str(hufflepuff))
         twentieth_question()
     elif check_if_true(nineteenth_input) == False:
         nineteenth_question()
@@ -718,13 +713,23 @@ def nineteenth_question():
         exit()
 
 
+# Disable
+def blockPrint():
+    sys.stdout = open(os.devnull, 'w')
+
+# Restore
+def enablePrint():
+    sys.stdout = sys.__stdout__
+
+
 def twentieth_question():
 
     print_question_answers(question_twenty, answers_twenty) 
     twentieth_input = input().lower()
     increase_score(twentieth_input)
-
+    blockPrint()
     if check_if_true(twentieth_input) == True and check_score() == False:
+        enablePrint()
         if twentieth_input == "gryffindor":
             enter_gryffindor()
         elif twentieth_input == "slytherin":

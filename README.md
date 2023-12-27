@@ -82,6 +82,10 @@ The live project can be found here:
 
 # Credits 
 
+- House descriptions by [wizardingworld.com](https://www.wizardingworld.com/news/discover-your-hogwarts-house-on-wizarding-world)
+- Quiz questions by [wizardmore.com](https://wizardmore.com/sorting-hat-x/) and [buzzfeed.com](https://www.buzzfeed.com/perpetua/lazy-harry-potter-hogwarts-sorting-hat-quiz)
+- ASCII art by [emojicombos.com](https://emojicombos.com/harry-potter-ascii-art)
+
 ## Tutorials 
 
 [1] How to clear the console
@@ -93,7 +97,8 @@ https://www.copahost.com/blog/input-python/#:~:text=Input%20validation%20using%2
 [3] How to add Colorama
 https://www.youtube.com/watch?v=u51Zjlnui4Y 
 
-[4]  
+[4] How to block calls to print
+https://stackoverflow.com/questions/8391411/how-to-block-calls-to-print
 
 [5] 
 

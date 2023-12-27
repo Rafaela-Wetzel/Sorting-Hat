@@ -14,7 +14,7 @@ question_one = "\n1. Which element resonates most with you? \n"
 answers_one = ["Fire", "Water", "Air", "Earth"]
 
 question_two = "\n2. Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you: \n"
-answers_two = ["Proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?", "Draw your wand and try to discover the source of the noise?", "Draw your wand and stand your ground?", "Withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?"]
+answers_two = ["Proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?", "Draw your wand and try to (discover the source of the noise?", "Draw your wand and stand your ground?", "Withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?"]
 
 question_three = "\n3. One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do? \n"
 answers_three = ["Lie and say you don't know (but hope that somebody else tells professor flitwick the truth).", "Tell professor flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn't tell the truth, you will).", "Tell professor flitwick the truth. if your classmate is prepared to win by cheating, he deserves to be found out. also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.", "You would not wait to be asked to tell professor flitwick the truth. If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started."]
@@ -482,9 +482,9 @@ def first_question():
     first_input = input().lower()
     increase_score(first_input)
 
-    if check_if_true(first_input) == True:
+    if check_if_true(first_input) is True:
         second_question()
-    elif check_if_true(first_input) == False:
+    elif check_if_true(first_input) is False:
         first_question()
     elif first_input == "leave":
         exit()
@@ -496,9 +496,9 @@ def second_question():
     second_input = input().lower()
     increase_score(second_input)
 
-    if check_if_true(second_input) == True:
+    if check_if_true(second_input) is True:
         third_question()
-    elif check_if_true(second_input) == False:
+    elif check_if_true(second_input) is False:
         second_question()
     elif second_input == "leave":
         exit()
@@ -510,9 +510,9 @@ def third_question():
     third_input = input().lower()
     increase_score(third_input)
 
-    if check_if_true(third_input) == True:
+    if check_if_true(third_input) is True:
         fourth_question()
-    elif check_if_true(third_input) == False:
+    elif check_if_true(third_input) is False:
         third_question()
     elif third_input == "leave":
         exit()
@@ -524,9 +524,9 @@ def fourth_question():
     fourth_input = input().lower()
     increase_score(fourth_input)
 
-    if check_if_true(fourth_input) == True:
+    if check_if_true(fourth_input) is True:
         fifth_question()
-    elif check_if_true(fourth_input) == False:
+    elif check_if_true(fourth_input) is False:
         fourth_question()
     elif fourth_input == "leave":
         exit()
@@ -538,9 +538,9 @@ def fifth_question():
     fifth_input = input().lower()
     increase_score(fifth_input)
 
-    if check_if_true(fifth_input) == True:
+    if check_if_true(fifth_input) is True:
         sixth_question()
-    elif check_if_true(fifth_input) == False:
+    elif check_if_true(fifth_input) is False:
         fifth_question()
     elif fifth_input == "leave":
         exit()
@@ -552,9 +552,9 @@ def sixth_question():
     sixth_input = input().lower()
     increase_score(sixth_input)
 
-    if check_if_true(sixth_input) == True:
+    if check_if_true(sixth_input) is True:
         seventh_question()
-    elif check_if_true(sixth_input) == False:
+    elif check_if_true(sixth_input) is False:
         sixth_question()
     elif sixth_input == "leave":
         exit()
@@ -566,9 +566,9 @@ def seventh_question():
     seventh_input = input().lower()
     increase_score(seventh_input)
 
-    if check_if_true(seventh_input) == True:
+    if check_if_true(seventh_input) is True:
         eighth_question()
-    elif check_if_true(seventh_input) == False:
+    elif check_if_true(seventh_input) is False:
         seventh_question()
     elif seventh_input == "leave":
         exit()
@@ -580,9 +580,9 @@ def eighth_question():
     eighth_input = input().lower()
     increase_score(eighth_input)
 
-    if check_if_true(eighth_input) == True:
+    if check_if_true(eighth_input) is True:
         ninth_question()
-    elif check_if_true(eighth_input) == False:
+    elif check_if_true(eighth_input) is False:
         eighth_question()
     elif eighth_input == "leave":
         exit()
@@ -594,9 +594,9 @@ def ninth_question():
     ninth_input = input().lower()
     increase_score(ninth_input)
 
-    if check_if_true(ninth_input) == True:
+    if check_if_true(ninth_input) is True:
         tenth_question()
-    elif check_if_true(ninth_input) == False:
+    elif check_if_true(ninth_input) is False:
         ninth_question()
     elif ninth_input == "leave":
         exit()
@@ -608,9 +608,9 @@ def tenth_question():
     tenth_input = input().lower()
     increase_score(tenth_input)
 
-    if check_if_true(tenth_input) == True:
+    if check_if_true(tenth_input) is True:
         eleventh_question()
-    elif check_if_true(tenth_input) == False:
+    elif check_if_true(tenth_input) is False:
         tenth_question()
     elif tenth_input == "leave":
         exit()
@@ -622,9 +622,9 @@ def eleventh_question():
     eleventh_input = input().lower()
     increase_score(eleventh_input)
 
-    if check_if_true(eleventh_input) == True:
+    if check_if_true(eleventh_input) is True:
         twelfth_question()
-    elif check_if_true(eleventh_input) == False:
+    elif check_if_true(eleventh_input) is False:
         eleventh_question()
     elif eleventh_input == "leave":
         exit()
@@ -636,9 +636,9 @@ def twelfth_question():
     twelfth_input = input().lower()
     increase_score(twelfth_input)
 
-    if check_if_true(twelfth_input) == True:
+    if check_if_true(twelfth_input) is True:
         thirteenth_question()
-    elif check_if_true(twelfth_input) == False:
+    elif check_if_true(twelfth_input) is False:
         twelfth_question()
     elif twelfth_input == "leave":
         exit()
@@ -650,9 +650,9 @@ def thirteenth_question():
     thirteenth_input = input().lower()
     increase_score(thirteenth_input)
 
-    if check_if_true(thirteenth_input) == True:
+    if check_if_true(thirteenth_input) is True:
         fourteenth_question()
-    elif check_if_true(thirteenth_input) == False:
+    elif check_if_true(thirteenth_input) is False:
         thirteenth_question()
     elif thirteenth_input == "leave":
         exit()
@@ -664,9 +664,9 @@ def fourteenth_question():
     fourteenth_input = input().lower()
     increase_score(fourteenth_input)
 
-    if check_if_true(fourteenth_input) == True:
+    if check_if_true(fourteenth_input) is True:
         fifteenth_question()
-    elif check_if_true(fourteenth_input) == False:
+    elif check_if_true(fourteenth_input) is False:
         fourteenth_question()
     elif fourteenth_input == "leave":
         exit()
@@ -678,9 +678,9 @@ def fifteenth_question():
     fifteenth_input = input().lower()
     increase_score(fifteenth_input)
 
-    if check_if_true(fifteenth_input) == True and check_score() == False:
+    if check_if_true(fifteenth_input) is True and check_score() is False:
         sixteenth_question()
-    elif check_if_true(fifteenth_input) == False:
+    elif check_if_true(fifteenth_input) is False:
         fifteenth_question()
     elif fifteenth_input == "leave":
         exit()
@@ -692,9 +692,9 @@ def sixteenth_question():
     sixteenth_input = input().lower()
     increase_score(sixteenth_input)
 
-    if check_if_true(sixteenth_input) == True and check_score() == False:
+    if check_if_true(sixteenth_input) is True and check_score() is False:
         seventeenth_question()
-    elif check_if_true(sixteenth_input) == False:
+    elif check_if_true(sixteenth_input) is False:
         sixteenth_question
     elif sixteenth_input == "leave":
         exit()
@@ -706,9 +706,9 @@ def seventeenth_question():
     seventeenth_input = input().lower()
     increase_score(seventeenth_input)
 
-    if check_if_true(seventeenth_input) == True and check_score() == False:
+    if check_if_true(seventeenth_input) is True and check_score() is False:
         eighteenth_question()
-    elif check_if_true(seventeenth_input) == False:
+    elif check_if_true(seventeenth_input) is False:
         seventeenth_question()
     elif seventeenth_input == "leave":
         exit()
@@ -720,9 +720,9 @@ def eighteenth_question():
     eighteenth_input = input().lower()
     increase_score(eighteenth_input)
 
-    if check_if_true(eighteenth_input) == True and check_score() == False:
+    if check_if_true(eighteenth_input) is True and check_score() is False:
         nineteenth_question()
-    elif check_if_true(eighteenth_input) == False:
+    elif check_if_true(eighteenth_input) is False:
         eighteenth_question()
     elif eighteenth_input == "leave":
         exit()
@@ -734,9 +734,9 @@ def nineteenth_question():
     nineteenth_input = input().lower()
     increase_score(nineteenth_input)
 
-    if check_if_true(nineteenth_input) == True and check_score() == False:
+    if check_if_true(nineteenth_input) is True and check_score() is False:
         twentieth_question()
-    elif check_if_true(nineteenth_input) == False:
+    elif check_if_true(nineteenth_input) is False:
         nineteenth_question()
     elif nineteenth_input == "leave":
         exit()
@@ -752,7 +752,7 @@ def twentieth_question():
     twentieth_input = input().lower()
     increase_score(twentieth_input)
     blockPrint()
-    if check_if_true(twentieth_input) == True and check_score() == False:
+    if check_if_true(twentieth_input) is True and check_score() is False:
         enablePrint()
         if twentieth_input == "gryffindor":
             enter_gryffindor()
@@ -762,7 +762,7 @@ def twentieth_question():
             enter_ravenclaw()
         elif twentieth_input == "hufflepuff":
             enter_hufflepuff()
-    elif check_if_true(twentieth_input) == False:
+    elif check_if_true(twentieth_input) is False:
         twentieth_question()
     elif twentieth_input == "leave":
         exit()

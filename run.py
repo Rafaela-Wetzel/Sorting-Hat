@@ -1,7 +1,7 @@
 from random import shuffle
 import os
-import re 
-import sys 
+import re
+import sys
 
 import colorama
 from colorama import Fore, Back, Style
@@ -13,61 +13,61 @@ colorama.init()
 question_one = "\n1. Which element resonates most with you? \n"
 answers_one = ["Fire", "Water", "Air", "Earth"]
 
-question_two = "\n2. Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you: \n" 
+question_two = "\n2. Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you: \n"
 answers_two = ["Proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?", "Draw your wand and try to discover the source of the noise?", "Draw your wand and stand your ground?", "Withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?"]
 
-question_three = "\n3. One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do? \n" 
+question_three = "\n3. One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do? \n"
 answers_three = ["Lie and say you don't know (but hope that somebody else tells professor flitwick the truth).", "Tell professor flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn't tell the truth, you will).", "Tell professor flitwick the truth. if your classmate is prepared to win by cheating, he deserves to be found out. also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.", "You would not wait to be asked to tell professor flitwick the truth. If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started."]
 
 question_four = "\n4. After you have died, what would you most like people to do when they hear your name? \n"
 answers_four = ["Ask for more stories about your adventures", "I don't care what people think of me after I'm dead, it's what they think of me while I'm alive that counts", "Think with admiration of your achievements", "Miss you, but smile"]
 
-question_five = "\n5. You enter an enchanted garden. What would you be most curious to examine first? \n" 
+question_five = "\n5. You enter an enchanted garden. What would you be most curious to examine first? \n"
 answers_five = ["The statue of an old wizard with a strangely twinkling eye", "The bubbling pool, in the depths of which something luminous is swirling", "The silver leafed tree bearing golden apples", "The fat red toadstools that appear to be talking to each other"]
 
-question_six = "\n6. Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of: \n" 
+question_six = "\n6. Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of: \n"
 answers_six = ["A crackling log fire", "The sea", "Fresh parchment", "Home"]
 
-question_seven = "\n7. Four goblets are placed before you. Which would you choose to drink? \n" 
+question_seven = "\n7. Four goblets are placed before you. Which would you choose to drink? \n"
 answers_seven = ["The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room.", "The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions.", "The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.", "The smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums."]
 
-question_eight = "\n8. Which road tempts you most? \n" 
+question_eight = "\n8. Which road tempts you most? \n"
 answers_eight = ["The wide, sunny, grassy lane", "The narrow, dark, lantern-lit alley", "The twisting, leaf-strewn path through woods", "The cobbled street lined with ancient buildings"]
 
-question_nine = "\n9. Four boxes are placed before you. Which would you try and open? \n" 
+question_nine = "\n9. Four boxes are placed before you. Which would you try and open? \n"
 answers_nine = ["The small pewter box, unassuming and plain, with a scratched message upon it that reads ‘I open only for the worthy.'", "The gleaming jet black box with a silver lock and key, marked with a mysterious rune that you know to be the mark of Merlin.", "The ornate golden casket, standing on clawed feet, whose inscription warns that both secret knowledge and unbearable temptation lie within.", "The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking."]
 
-question_ten = "\n10. You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you: \n" 
+question_ten = "\n10. You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you: \n"
 answers_ten = ["Volunteer to fight", "Suggest that all three of you should fight (without telling the troll)?", "Attempt to confuse the troll into letting all three of you pass without fighting?", "Suggest drawing lots to decide which of you will fight?"]
 
-question_eleven = "\n11. Which would you rather be: \n" 
+question_eleven = "\n11. Which would you rather be: \n"
 answers_eleven = ["Trusted", "Praised", "Envied", "Feared", "Imitated", "Liked"]
 
-question_twelve = "\n12. If you could have any power, which would you choose? \n" 
+question_twelve = "\n12. If you could have any power, which would you choose? \n"
 answers_twelve = ["The power of invisibility", "The power to read minds", "The power to change your appearance at will", "The power to change the past", "The power of superhuman strength", "The power to speak to animals"]
 
-question_thirteen = "\n13. What are you most looking forward to learning at Hogwarts? \n" 
+question_thirteen = "\n13. What are you most looking forward to learning at Hogwarts? \n"
 answers_thirteen = ["Apparition and disapparition (being able to materialize and dematerialize at will)", "Transfiguration (turning one object into another object)", "Flying on a broomstick", "Hexes and jinxes", "All about magical creatures, and how to befriend/care for them", "Every area of magic I can"]
 
-question_fourteen = "\n14. Which of the following would you most like to study? \n" 
+question_fourteen = "\n14. Which of the following would you most like to study? \n"
 answers_fourteen = ["Centaurs", "Ghosts", "Werewolves", "Goblins", "Merpeople", "Trolls"]
 
-question_fifteen = "\n15. A Muggle confronts you and says that they are sure you are a witch or wizard. Do you: \n" 
+question_fifteen = "\n15. A Muggle confronts you and says that they are sure you are a witch or wizard. Do you: \n"
 answers_fifteen = ["Ask what makes them think so?", "Agree, and ask whether they'd like a free sample of a jinx?", "Agree, and walk away, leaving them to wonder whether you are bluffing?", "Tell them that you are worried about their mental health, and offer to call a doctor."]
 
 question_sixteen = "\n16. How would you like to be known to history? \n"
 answers_sixteen = ["The Bold", "The Great", "The Wise", "The Good"]
 
-question_seventeen = "\n17. Given the choice, would you rather invent a potion that would guarantee you: \n" 
+question_seventeen = "\n17. Given the choice, would you rather invent a potion that would guarantee you: \n"
 answers_seventeen = ["Glory", "Power", "Wisdom", "Love"]
 
 question_eighteen = "\n18. Which of the following would you most hate people to call you? \n"
 answers_eighteen = ["Cowardly", "Ordinary", "Ignorant", "Selfish"]
 
-question_nineteen = "\n19. How would other people describe you? \n" 
+question_nineteen = "\n19. How would other people describe you? \n"
 answers_nineteen = ["Honest, brave and adventurous", "Deceitful, malevolent and sexy", "Curious, analytical and witty", "Friendly, happy and dorky"]
 
-question_twenty = "\n20. This seems to be a very special and unique situation. You have traits that fit more than one house... let me ask you: where would you like be placed? Will it be Gryffindor, Slytherin, Ravenclaw or Hufflepuff?\n" 
+question_twenty = "\n20. This seems to be a very special and unique situation. You have traits that fit more than one house... let me ask you: where would you like be placed? Will it be Gryffindor, Slytherin, Ravenclaw or Hufflepuff?\n"
 answers_twenty = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"]
 
 # All answers sorted by houses
@@ -83,6 +83,7 @@ ravenclaw = 0
 hufflepuff = 0
 
 # Functions
+
 
 def print_hogwarts_emblem():
     """
@@ -128,7 +129,7 @@ def print_hogwarts_emblem():
 
 def enter_hogwarts():
     """
-    Asks user if they want to start the game, and sends them back to start screen when 'no' or anything else than 'yes' or 'no' is entered 
+    Asks user if they want to start the game, and sends them back to start screen when 'no' or anything else than 'yes' or 'no' is entered
     """
     enter = input("                       =======================\n                       ENTER HOGWARTS (yes/no)\n                       =======================\n")
     if enter == "yes":
@@ -154,7 +155,7 @@ def welcome_greeting():
     print('\nWelcome to' + Fore.MAGENTA + "\033[1m" + ' Hogwarts School of Witchcraft and Wizardry!' + "\033[22m" + Fore.RESET + '\n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nYou might belong in' + Fore.RED + "\033[1m" + ' Gryffindor ' + "\033[22m" + Fore.RESET + '\nwhere dwell the brave at heart\ntheir daring, nerve and chivalry\nset Gryffindors apart.\n\nOr yet in wise old' + Fore.BLUE + "\033[1m" + " Ravenclaw " + "\033[22m" + Fore.RESET + '\nif you’ve a ready mind\nwhere those of wit and learning\nwill always find their kind.\n\nOr perhaps in' + Fore.GREEN + "\033[1m" + " Slytherin " + "\033[22m" + Fore.RESET + '\nyou’ll make your real friends,\nthose cunning folk use any means\nto achieve their ends.\n\nOr you might belong in' + Fore.YELLOW + "\033[1m" + " Hufflepuff " + "\033[22m" + Fore.RESET + '\nwhere they are just and loyal\nthose patient Hufflepuffs are true\nand unafraid of toil.\n\nPlease, have a seat on this ceremony chair. The Sorting Hat will know where you belong...\n')
     check_name()
 
- 
+
 def check_name():
     """
     Asks for user name input and checks if it is a valid string
@@ -171,18 +172,18 @@ def check_name():
 
 def need_more_information():
     """
-    Asks user if they are ready to start answering the Sorting Hats' questions and sends them back to start screen when 'no' or anything else than 'yes' or 'no' is entered 
+    Asks user if they are ready to start answering the Sorting Hats' questions and sends them back to start screen when 'no' or anything else than 'yes' or 'no' is entered
     """
     confirm_start = input(Fore.CYAN + "\n\nAre you ready to dive deeper with me? (yes/no) \n\n" + Fore.RESET).lower()
     if confirm_start == "yes":
         print(Fore.YELLOW + "\nINSTRUCTIONS: " + Fore.RESET + "Choose the answer for each question that describes your personality best. Please enter the identical answer in the input field. After the Sorting Hat has learned enough about you it will place you in the house you belong to...good luck!\n")
         first_question()
-    elif confirm_start == "no": 
+    elif confirm_start == "no":
         print("\nMaybe this is not yet the right time for you to discover the world of wizardry.\nI might see you again in a couple of years...\n")
         input("Press any key to take the Hogwarts Express back to London ")
         os.system('clear')
         print_hogwarts_emblem()
-        enter_hogwarts()       
+        enter_hogwarts()
     else:
         print("\nOnly yes or no answers are valid\n")
         need_more_information()
@@ -213,13 +214,13 @@ def increase_score(input):
 def check_if_true(input):
     """
     If the check_if_true function returns True (= if a house has gained one point) it will trigger the next question
-    If the check_if_true function returns False (= no house has gained any point / the user has entered invalid input) 
+    If the check_if_true function returns False (= no house has gained any point / the user has entered invalid input)
     it will trigger the same question again until the user has entered valid input
     """
     if input in gryffindor_answers or input in slytherin_answers or input in ravenclaw_answers or input in hufflepuff_answers:
         return True
     else:
-        return False    
+        return False
 
 
 def exit():
@@ -230,7 +231,7 @@ def exit():
     input("Press any key to go home\n\n")
     os.system('clear')
     print_hogwarts_emblem()
-    enter_hogwarts() 
+    enter_hogwarts()
 
 
 def check_score():
@@ -246,13 +247,13 @@ def check_score():
         return True
     elif hufflepuff > gryffindor and hufflepuff > slytherin and hufflepuff > ravenclaw:
         enter_hufflepuff()
-        return True 
+        return True
     elif ravenclaw > hufflepuff and ravenclaw > gryffindor and ravenclaw > slytherin:
         enter_ravenclaw()
         return True
     else:
         print("\nMmmmmhhhhh..... it is not an easy decision. I need more time to figure it out...")
-        return False 
+        return False
 
 
 def enter_gryffindor():
@@ -304,7 +305,7 @@ def enter_gryffindor():
     input("Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
-    enter_hogwarts() 
+    enter_hogwarts()
 
 
 def enter_slytherin():
@@ -350,12 +351,12 @@ def enter_slytherin():
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⣿⡿⠟⠋⠁⠀⠀⠀
 
 
-    """ + Fore.RESET) 
+    """ + Fore.RESET)
     print("Congratulations! I am prefect Gemma Farley, and I am delighted to welcome you to" + Fore.GREEN + '\033[1m' + ' SLYTHERIN HOUSE. ' + '\033[22m' + Fore.RESET + "Our emblem is the serpent, the wisest of creatures; our house colors are emerald green and silver, and our common room lies behind a concealed entrance down in the dungeons. As you will see, its windows look out into the depths of the Hogwarts lake. We often see the giant squid swooshing by - and sometimes more interesting creatures. We like to feel that our hangout has the aura of a mysterious, underwater shipwreck.\n\nNow, there are a few things you should know about Slytherin – and a few you should forget. Firstly, let us dispel a few myths. You might have heard rumours about Slytherin house – that we are all into the Dark Arts, and will only talk to you if your great-grandfather was a famous wizard, and rubbish like that. Well, you do not want to believe everything you hear from competing houses. I am not denying that we have produced our share of Dark wizards, but so have the other three houses – they just do not like admitting it. And yes, we have traditionally tended to take students who come from long lines of witches and wizards, but nowadays you will find plenty of people in Slytherin house who have at least one Muggle parent.\n\nHere is a little-known fact that the other three houses do not bring up much: Merlin was a Slytherin. Yes, Merlin himself, the most famous wizard in history! He learned all he knew in this very house! Do you want to follow in the footsteps of Merlin?\n\nSlytherin is the coolest and edgiest house in this school. We play to win because we care about the honour and traditions of Slytherin. We also get respect from our fellow students. Yes, some of that respect might be tinged with fear, because of our Dark reputation, but you know what? It can be fun, having a reputation for walking on the wild side. Chuck out a few hints that you have got access to a whole library of curses, and see whether anyone feels like nicking your pencil case.\n\nBut we are not bad people. We are like our emblem, the snake: sleek, powerful, and frequently misunderstood. Because you know what Salazar Slytherin looked for in his chosen students? The seeds of greatness. You have been chosen by this house because you have got the potential to be great, in the true sense of the word.\n\nA few more things you might need to know: our house ghost is the Bloody Baron. If you get on the right side of him, he will sometimes agree to frighten people for you. Just do not ask him how he got bloodstained; he does not like it.\n\nWell, I think that is all for now. I am sure you will like our dormitories. We sleep in ancient four-posters with green silk hangings, and bedspreads embroidered with silver thread. Medieval tapestries depicting the adventures of famous Slytherins cover the walls, and silver lanterns hang from the ceilings. You will sleep well; it is very soothing, listening to the lake water lapping against the windows at night.")
-       input("Press any key to go back to the main hall\n")
+    input("Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
-    enter_hogwarts() 
+    enter_hogwarts()
 
 
 def enter_hufflepuff():
@@ -403,7 +404,7 @@ def enter_hufflepuff():
     input("Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
-    enter_hogwarts() 
+    enter_hogwarts()
 
 
 def enter_ravenclaw():
@@ -456,7 +457,7 @@ def enter_ravenclaw():
     input("Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
-    enter_hogwarts() 
+    enter_hogwarts()
 
 
 # Quiz Questions
@@ -468,16 +469,16 @@ def print_question_answers(question_x, answers_x):
     print("\nEnter 'leave' to exit the Great Hall\n")
     print(question_x)
     shuffle(answers_x)
-    print(*answers_x, sep = '\n', end = '\n\n') 
+    print(*answers_x, sep='\n', end='\n\n')
 
 
 def first_question():
     """
     Triggers first question and asks user for answer input.
-    The same function description is applicable for all 
-    questions and therefore omitted after this one. 
+    The same function description is applicable for all
+    questions and therefore omitted after this one.
     """
-    print_question_answers(question_one, answers_one) 
+    print_question_answers(question_one, answers_one)
     first_input = input().lower()
     increase_score(first_input)
 
@@ -491,7 +492,7 @@ def first_question():
 
 def second_question():
 
-    print_question_answers(question_two, answers_two) 
+    print_question_answers(question_two, answers_two)
     second_input = input().lower()
     increase_score(second_input)
 
@@ -518,8 +519,8 @@ def third_question():
 
 
 def fourth_question():
-   
-    print_question_answers(question_four, answers_four) 
+
+    print_question_answers(question_four, answers_four)
     fourth_input = input().lower()
     increase_score(fourth_input)
 
@@ -528,12 +529,12 @@ def fourth_question():
     elif check_if_true(fourth_input) == False:
         fourth_question()
     elif fourth_input == "leave":
-        exit() 
+        exit()
 
 
 def fifth_question():
 
-    print_question_answers(question_five, answers_five) 
+    print_question_answers(question_five, answers_five)
     fifth_input = input().lower()
     increase_score(fifth_input)
 
@@ -547,7 +548,7 @@ def fifth_question():
 
 def sixth_question():
 
-    print_question_answers(question_six, answers_six) 
+    print_question_answers(question_six, answers_six)
     sixth_input = input().lower()
     increase_score(sixth_input)
 
@@ -561,7 +562,7 @@ def sixth_question():
 
 def seventh_question():
 
-    print_question_answers(question_seven, answers_seven) 
+    print_question_answers(question_seven, answers_seven)
     seventh_input = input().lower()
     increase_score(seventh_input)
 
@@ -575,7 +576,7 @@ def seventh_question():
 
 def eighth_question():
 
-    print_question_answers(question_eight, answers_eight) 
+    print_question_answers(question_eight, answers_eight)
     eighth_input = input().lower()
     increase_score(eighth_input)
 
@@ -589,7 +590,7 @@ def eighth_question():
 
 def ninth_question():
 
-    print_question_answers(question_nine, answers_nine) 
+    print_question_answers(question_nine, answers_nine)
     ninth_input = input().lower()
     increase_score(ninth_input)
 
@@ -603,7 +604,7 @@ def ninth_question():
 
 def tenth_question():
 
-    print_question_answers(question_ten, answers_ten) 
+    print_question_answers(question_ten, answers_ten)
     tenth_input = input().lower()
     increase_score(tenth_input)
 
@@ -617,7 +618,7 @@ def tenth_question():
 
 def eleventh_question():
 
-    print_question_answers(question_eleven, answers_eleven) 
+    print_question_answers(question_eleven, answers_eleven)
     eleventh_input = input().lower()
     increase_score(eleventh_input)
 
@@ -631,7 +632,7 @@ def eleventh_question():
 
 def twelfth_question():
 
-    print_question_answers(question_twelve, answers_twelve) 
+    print_question_answers(question_twelve, answers_twelve)
     twelfth_input = input().lower()
     increase_score(twelfth_input)
 
@@ -645,10 +646,10 @@ def twelfth_question():
 
 def thirteenth_question():
 
-    print_question_answers(question_thirteen, answers_thirteen) 
+    print_question_answers(question_thirteen, answers_thirteen)
     thirteenth_input = input().lower()
     increase_score(thirteenth_input)
-    
+
     if check_if_true(thirteenth_input) == True:
         fourteenth_question()
     elif check_if_true(thirteenth_input) == False:
@@ -659,7 +660,7 @@ def thirteenth_question():
 
 def fourteenth_question():
 
-    print_question_answers(question_fourteen, answers_fourteen) 
+    print_question_answers(question_fourteen, answers_fourteen)
     fourteenth_input = input().lower()
     increase_score(fourteenth_input)
 
@@ -673,7 +674,7 @@ def fourteenth_question():
 
 def fifteenth_question():
 
-    print_question_answers(question_fifteen, answers_fifteen) 
+    print_question_answers(question_fifteen, answers_fifteen)
     fifteenth_input = input().lower()
     increase_score(fifteenth_input)
 
@@ -682,12 +683,12 @@ def fifteenth_question():
     elif check_if_true(fifteenth_input) == False:
         fifteenth_question()
     elif fifteenth_input == "leave":
-        exit() 
+        exit()
 
 
 def sixteenth_question():
 
-    print_question_answers(question_sixteen, answers_sixteen) 
+    print_question_answers(question_sixteen, answers_sixteen)
     sixteenth_input = input().lower()
     increase_score(sixteenth_input)
 
@@ -701,7 +702,7 @@ def sixteenth_question():
 
 def seventeenth_question():
 
-    print_question_answers(question_seven, answers_seven) 
+    print_question_answers(question_seven, answers_seven)
     seventeenth_input = input().lower()
     increase_score(seventeenth_input)
 
@@ -715,7 +716,7 @@ def seventeenth_question():
 
 def eighteenth_question():
 
-    print_question_answers(question_eight, answers_eight) 
+    print_question_answers(question_eight, answers_eight)
     eighteenth_input = input().lower()
     increase_score(eighteenth_input)
 
@@ -729,7 +730,7 @@ def eighteenth_question():
 
 def nineteenth_question():
 
-    print_question_answers(question_nineteen, answers_nineteen) 
+    print_question_answers(question_nineteen, answers_nineteen)
     nineteenth_input = input().lower()
     increase_score(nineteenth_input)
 
@@ -743,11 +744,11 @@ def nineteenth_question():
 
 def twentieth_question():
     """
-    In the unlikely case that there should be a tie 
-    still after the twentieth question the user 
+    In the unlikely case that there should be a tie
+    still after the twentieth question the user
     can vote which house they want to belong to.
     """
-    print_question_answers(question_twenty, answers_twenty) 
+    print_question_answers(question_twenty, answers_twenty)
     twentieth_input = input().lower()
     increase_score(twentieth_input)
     blockPrint()
@@ -765,7 +766,7 @@ def twentieth_question():
         twentieth_question()
     elif twentieth_input == "leave":
         exit()
-    
+
 
 def blockPrint():
     """
@@ -785,7 +786,5 @@ def enablePrint():
 
 
 # Call first two functions
-#print_hogwarts_emblem()
-#enter_hogwarts()
-
-enter_gryffindor()
+print_hogwarts_emblem()
+enter_hogwarts()

@@ -702,7 +702,7 @@ def nineteenth_question():
     print_question_answers(question_nine, answers_nine) 
     nineteenth_input = input().lower()
     increase_score(nineteenth_input)
-    
+
     if check_if_true(nineteenth_input) == True and check_score() == False:
         twentieth_question()
     elif check_if_true(nineteenth_input) == False:
@@ -716,7 +716,19 @@ def twentieth_question():
     print_question_answers(question_twenty, answers_twenty) 
     twentieth_input = input().lower()
     increase_score(twentieth_input)
-    if twentieth_input == "leave":
+
+    if check_if_true(twentieth_input) == True and check_score() == False:
+        if twentieth_input == gryffindor:
+            enter_gryffindor()
+        elif twentieth_input == slytherin:
+            enter_slytherin()
+        elif twentieth_input == ravenclaw:
+            enter_ravenclaw()
+        elif twentieth_input == hufflepuff:
+            enter_hufflepuff()
+    elif check_if_true(twentieth_input) == False:
+        twentieth_question()
+    elif twentieth_input == "leave":
         exit()
         
 

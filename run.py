@@ -15,8 +15,8 @@ answers_one = ["Fire", "Water", "Air", "Earth"]
 question_two = "\n2. Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you: \n" 
 answers_two = ["Proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?", "Draw your wand and try to discover the source of the noise?", "Draw your wand and stand your ground?", "Withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?"]
 
-question_three = "\n3. Which house would you want to be in? \n" 
-answers_three = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"]
+question_three = "\n3. One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do? \n" 
+answers_three = ["Lie and say you don't know (but hope that somebody else tells professor flitwick the truth).", "Tell professor flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn't tell the truth, you will).", "Tell professor flitwick the truth. if your classmate is prepared to win by cheating, he deserves to be found out. also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.", "You would not wait to be asked to tell professor flitwick the truth. If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started."]
 
 question_four = "\n4. After you have died, what would you most like people to do when they hear your name? \n"
 answers_four = ["Ask for more stories about your adventures", "I don't care what people think of me after I'm dead, it's what they think of me while I'm alive that counts", "Think with admiration of your achievements", "Miss you, but smile"]
@@ -60,14 +60,14 @@ answers_sixteen = ["The Bold", "The Great", "The Wise", "The Good"]
 question_seventeen = "\n17. Given the choice, would you rather invent a potion that would guarantee you: \n" 
 answers_seventeen = ["Glory", "Power", "Wisdom", "Love"]
 
-question_eighteen = "\n18. One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do? \n" 
-answers_eighteen = ["Lie and say you don't know (but hope that somebody else tells professor flitwick the truth).", "Tell professor flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn't tell the truth, you will).", "Tell professor flitwick the truth. if your classmate is prepared to win by cheating, he deserves to be found out. also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.", "You would not wait to be asked to tell professor flitwick the truth. If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started."]
+question_eighteen = "\n18. Which of the following would you most hate people to call you? \n"
+answers_eighteen = ["Cowardly", "Ordinary", "Ignorant", "Selfish"]
 
 question_nineteen = "\n19. How would other people describe you? \n" 
 answers_nineteen = ["Honest, brave and adventurous", "Deceitful, malevolent and sexy", "Curious, analytical and witty", "Friendly, happy and dorky"]
 
-question_twenty = "\n20. Which of the following would you most hate people to call you? \n"
-answers_twenty = ["Cowardly", "Ordinary", "Ignorant", "Selfish"]
+question_twenty = "\n20. This seems to be a very special and unique situation. You have traits that fit more than one house... let me ask you: where would you like be placed? Will it be Gryffindor, Slytherin, Ravenclaw or Hufflepuff?\n" 
+answers_twenty = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"]
 
 # All answers sorted by houses
 gryffindor_answers = ["fire", "cowardly", "the bold", "adventures", "glory", "log fire", "golden liquid", "statue", "plain box", "volunteer", "trusted", "praised", "invisibility", "change past", "change appearance", "apparition", "flying", "centaurs", "ghosts", "werewolves", "bluffing", "woods", "discover source", "ask classmate", "honest", "gryffindor"]
@@ -239,18 +239,19 @@ def check_score():
     '''
     if gryffindor > slytherin and gryffindor > hufflepuff and gryffindor > ravenclaw:
         enter_gryffindor()
-        print("Gryffindor wins!")
+        return True
     elif slytherin > gryffindor and slytherin > hufflepuff and slytherin > ravenclaw:
         enter_slytherin()
-        print("Slytherin wins!")
+        return True
     elif hufflepuff > gryffindor and hufflepuff > slytherin and hufflepuff > ravenclaw:
         enter_hufflepuff()
-        print("Hufflepuff wins!")
+        return True 
     elif ravenclaw > hufflepuff and ravenclaw > gryffindor and ravenclaw > slytherin:
         enter_ravenclaw()
-        print("Ravenclaw wins!")
+        return True
     else:
         print("\nMmmmmhhhhh..... it is not an easy decision. I need more time to figure it out...")
+        return False 
 
 
 def enter_gryffindor():
@@ -719,14 +720,15 @@ def twentieth_question():
         exit()
 
     if check_if_true(twentieth_input) == True:
-        print("This was the last question!")
-        print("\nFinal scores:\n")
-        print("Gryffindor: " + str(gryffindor))
-        print("Slytherin: " + str(slytherin))
-        print("Ravenclaw: " + str(ravenclaw))
-        print("Hufflepuff: " + str(hufflepuff))
+       
         check_score()
 
+ #print("This was the last question!")
+        #print("\nFinal scores:\n")
+        #print("Gryffindor: " + str(gryffindor))
+        #print("Slytherin: " + str(slytherin))
+        #print("Ravenclaw: " + str(ravenclaw))
+        #print("Hufflepuff: " + str(hufflepuff))
 
 # Call first two functions
 print_hogwarts_emblem()

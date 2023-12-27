@@ -151,7 +151,7 @@ def welcome_greeting():
     """
     Prints welcome text
     """
-    print('\nWelcome to' + Fore.MAGENTA + "\033[1m" + ' Hogwarts School of Witchcraft and Wizardry!' + "\033[22m" + Fore.RESET + '\n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies.\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nThere is the house of' + Fore.RED + "\033[1m" + ' Gryffindor ' + "\033[22m" + Fore.RESET + 'known for its bravery and determination;\nalong with the house of' + Fore.BLUE + "\033[1m" + " Ravenclaw " + "\033[22m" + Fore.RESET + 'represented by its intelligence and wisdom;\nthe house of' + Fore.GREEN + "\033[1m" + " Slytherin " + "\033[22m" + Fore.RESET + 'characterized by its ambition and leadership\nand the house of' + Fore.YELLOW + "\033[1m" + " Hufflepuff " + "\033[22m" + Fore.RESET + 'which brings forth hard-working, loyal and honest wizards.\n\nPlease, have a seat on this ceremony chair. The Sorting Hat will know where you belong...\n')
+    print('\nWelcome to' + Fore.MAGENTA + "\033[1m" + ' Hogwarts School of Witchcraft and Wizardry!' + "\033[22m" + Fore.RESET + '\n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nYou might belong in' + Fore.RED + "\033[1m" + ' Gryffindor ' + "\033[22m" + Fore.RESET + '\nwhere dwell the brave at heart\ntheir daring, nerve and chivalry\nset Gryffindors apart.\n\nOr yet in wise old' + Fore.BLUE + "\033[1m" + " Ravenclaw " + "\033[22m" + Fore.RESET + '\nif you’ve a ready mind\nwhere those of wit and learning\nwill always find their kind.\n\nOr perhaps in' + Fore.GREEN + "\033[1m" + " Slytherin " + "\033[22m" + Fore.RESET + '\nyou’ll make your real friends,\nthose cunning folk use any means\nto achieve their ends.\n\nOr you might belong in' + Fore.YELLOW + "\033[1m" + " Hufflepuff " + "\033[22m" + Fore.RESET + '\nwhere they are just and loyal\nthose patient Hufflepuffs are true\nand unafraid of toil.\n\nPlease, have a seat on this ceremony chair. The Sorting Hat will know where you belong...\n')
     check_name()
 
  
@@ -713,15 +713,6 @@ def nineteenth_question():
         exit()
 
 
-# Disable
-def blockPrint():
-    sys.stdout = open(os.devnull, 'w')
-
-# Restore
-def enablePrint():
-    sys.stdout = sys.__stdout__
-
-
 def twentieth_question():
 
     print_question_answers(question_twenty, answers_twenty) 
@@ -743,6 +734,23 @@ def twentieth_question():
     elif twentieth_input == "leave":
         exit()
     
+
+def blockPrint():
+    """
+    Marks beginning of blocking the print function.
+    Here used within twentieth_question to prevent check_score
+    print statement to be shown which in this case is
+    not applicable anymore
+    """
+    sys.stdout = open(os.devnull, 'w')
+
+
+def enablePrint():
+    """
+    Marks ending of blocking the print function.
+    """
+    sys.stdout = sys.__stdout__
+
 
 # Call first two functions
 print_hogwarts_emblem()

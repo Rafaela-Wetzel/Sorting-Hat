@@ -250,7 +250,7 @@ def check_score():
         enter_ravenclaw()
         print("Ravenclaw wins!")
     else:
-        print("Nobody wins")
+        print("\nMmmmmhhhhh..... it is not an easy decision. I need more time to figure it out...")
 
 
 def enter_gryffindor():

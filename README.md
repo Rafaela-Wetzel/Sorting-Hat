@@ -83,8 +83,13 @@ The live project can be found here:
 # Credits 
 
 - House descriptions by [wizardingworld.com](https://www.wizardingworld.com/news/discover-your-hogwarts-house-on-wizarding-world)
+
 - Quiz questions by [wizardmore.com](https://wizardmore.com/sorting-hat-x/) and [buzzfeed.com](https://www.buzzfeed.com/perpetua/lazy-harry-potter-hogwarts-sorting-hat-quiz)
+
 - ASCII art by [emojicombos.com](https://emojicombos.com/harry-potter-ascii-art)
+
+- House welcome texts taken from [harry-potter.fandom.com](https://harry-potter.fandom.com/de/wiki/Kategorie:Begriffskl%C3%A4rung?from=B)
+
 
 ## Tutorials 
 

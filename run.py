@@ -1,5 +1,4 @@
 from random import shuffle
-from string import ascii_lowercase
 import os
 import re
 import sys
@@ -234,6 +233,18 @@ def exit():
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
+    reset_score()
+
+
+def reset_score():
+    global gryffindor
+    gryffindor = null
+    global slytherin
+    slytherin = null
+    global ravenclaw
+    ravenclaw = null
+    global hufflepuff
+    hufflepuff = null
 
 
 def check_score():
@@ -308,6 +319,7 @@ def enter_gryffindor():
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
+    reset_score()
 
 
 def enter_slytherin():
@@ -359,6 +371,7 @@ def enter_slytherin():
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
+    reset_score()
 
 
 def enter_hufflepuff():
@@ -407,6 +420,7 @@ def enter_hufflepuff():
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
+    reset_score()
 
 
 def enter_ravenclaw():
@@ -460,6 +474,7 @@ def enter_ravenclaw():
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
+    reset_score()
 
 
 # Quiz Questions
@@ -541,6 +556,11 @@ def fifth_question():
     increase_score(fifth_input)
 
     if check_if_true(fifth_input) is True:
+        print("\nCurrent scores:\n")
+        print("Gryffindor: " + str(gryffindor))
+        print("Slytherin: " + str(slytherin))
+        print("Ravenclaw: " + str(ravenclaw))
+        print("Hufflepuff: " + str(hufflepuff))
         sixth_question()
     elif check_if_true(fifth_input) is False:
         fifth_question()
@@ -667,6 +687,11 @@ def fourteenth_question():
     increase_score(fourteenth_input)
 
     if check_if_true(fourteenth_input) is True:
+        print("\nCurrent scores:\n")
+        print("Gryffindor: " + str(gryffindor))
+        print("Slytherin: " + str(slytherin))
+        print("Ravenclaw: " + str(ravenclaw))
+        print("Hufflepuff: " + str(hufflepuff))
         fifteenth_question()
     elif check_if_true(fourteenth_input) is False:
         fourteenth_question()

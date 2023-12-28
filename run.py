@@ -132,7 +132,7 @@ def enter_hogwarts():
     """
     Asks user if they want to start the game, and sends them back to start screen when 'no' or anything else than 'yes' or 'no' is entered
     """
-    enter = input("                       =======================\n                       ENTER HOGWARTS (yes/no)\n                       =======================\n")
+    enter = input("                       =========================\n                       ENTER HOGWARTS (YES / NO)\n                       =========================\n")
     if enter == "yes":
         welcome_greeting()
     elif enter == "no":
@@ -162,9 +162,9 @@ def check_name():
     """
     Asks for user name input and checks if it is a valid string
     """
-    your_name = input(Fore.CYAN + "\x1B[3mYoung wizard*ess, \033[1mwhat is your name?\033[0m \x1B[0m\n" + Fore.RESET)
+    your_name = input(Fore.CYAN + "\x1B[3m\033[1mYoung wizard*ess, what is your name?\033[0m \x1B[0m\n" + Fore.RESET)
     if re.match(r"[a-zA-Z]", your_name):
-        print("\x1B[3m\nHello " + Fore.CYAN + '\033[1m' + your_name + '\033[0m' + Fore.RESET + "!\n\nLet me see what house will bring forth the best in you...\n\n...\n...\n...\n")
+        print(Fore.CYAN + '\033[1m' "\x1B[3m\nHello " + your_name + "!\n\nLet me see what house will bring forth the best in you...\n\n...\n...\n...\n")
         print("....now, this is unexpected! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you.")
         need_more_information()
     else:
@@ -176,13 +176,13 @@ def need_more_information():
     """
     Asks user if they are ready to start answering the Sorting Hats' questions and sends them back to start screen when 'no' or anything else than 'yes' or 'no' is entered
     """
-    confirm_start = input(Fore.CYAN + "\033[1m\n\nAre you ready to dive deeper with me? (yes/no) \n\n\033[0m" + Fore.RESET).lower()
+    confirm_start = input("\033[1m\n\nAre you ready to dive deeper with me? (YES / NO) \n\033[0m\n" + Fore.RESET).lower()
     if confirm_start == "yes":
-        print(Fore.YELLOW + "\033[1m\nINSTRUCTIONS: \033[0m" + Fore.RESET + "Choose the answer for each question that describes your personality best. Please enter the identical answer in the input field. After the Sorting Hat has learned enough about you it will place you in the house you belong to...good luck!\n")
+        print(Fore.YELLOW + "\033[1m\nI N S T R U C T I O N S: \033[0m" + Fore.RESET + "Choose the answer for each question that describes your personality best. Please enter the identical answer in the input field. After the Sorting Hat has learned enough about you it will place you in the house you belong to...good luck!\n")
         first_question()
     elif confirm_start == "no":
         print("\nMaybe this is not yet the right time for you to discover the world of wizardry.\nI might see you again in a couple of years...\n")
-        input("Press any key to take the Hogwarts Express back to London ")
+        input("Press any key to take the Hogwarts Express back to London \n")
         os.system('clear')
         print_hogwarts_emblem()
         enter_hogwarts()
@@ -468,7 +468,7 @@ def print_question_answers(question_x, answers_x):
     """
     Template to print answers and questions
     """
-    print("\nEnter" + Fore.RED + "\033[1m" + " leave " + "\033[0m" + "to exit the Great Hall\n" + Fore.RESET)
+    print("\nEnter" + Fore.YELLOW + "\033[1m" + " L E A V E " + "\033[0m" + "to exit the Great Hall\n" + Fore.RESET)
     print(question_x)
     shuffle(answers_x)
     print(*answers_x, sep='\n', end='\n\n')

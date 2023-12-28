@@ -50,14 +50,14 @@ The user starts on the main page that shows the Hogwarts Coat of Arms and enters
 
 # Technologies
 
-- Python for creating the sorting hat quiz code
+- Python for creating the Sorting Hat quiz code
 - Heroku for deployment in a mock terminal
 
 # Features 
 
-## First Section
+## Start Section
 
-## Second Section
+## Welcome Section
 
 ## Features Left to Implement
 

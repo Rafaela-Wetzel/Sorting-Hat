@@ -206,7 +206,9 @@ def increase_score(input):
         global hufflepuff
         hufflepuff += 1
     elif input == "leave":
-        print("...")
+        os.system('clear')
+        print_hogwarts_emblem()
+        enter_hogwarts()
     else:
         print("\nPlease enter one of the given answers")
 

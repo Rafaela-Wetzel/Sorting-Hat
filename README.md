@@ -20,9 +20,12 @@ I chose to create this application because the story of Harry Potter had been a 
 - [Flowchart](#flowchart)
 - [Technologies](#technologies)
 - [Features](#features)
-  - [First Section](#first-section)
-  - [Second Section](#second-section)
-  - [Features Left to Implement](#features-left-to-implement)
+  - [Start Section](#start-section)
+  - [Welcome Section](#welcome-section)
+  - [Sorting Ceremony Section](#sorting-ceremony-section)
+  - [Question Section](#question-section)
+  - [House Result Section](#house-result-section)
+- [Features Left to Implement](#features-left-to-implement)
 - [Testing](#testing)
   - [Testing App Functions](#testing-homepage-functions)
   - [Validator Testing](#validator-testing)
@@ -59,7 +62,15 @@ The user starts on the main page that shows the Hogwarts Coat of Arms and enters
 
 ## Welcome Section
 
-## Features Left to Implement
+## Sorting Ceremony Section
+
+## Question Section
+
+## House Result Section
+
+# Features Left to Implement
+
+- A continuation of the quiz could be that depending on the house result the user will get specific questions about that house that test their Harry Potter knowledge
 
 ### Accessibility
 

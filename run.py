@@ -10,64 +10,64 @@ colorama.init()
 # Variables
 
 # All questions and answers in pairs
-question_one = "\n1. Which element resonates most with you? \n"
+question_one = Fore.MAGENTA + '\033[1m' + "\n1. Which element resonates most with you? \n" + '\033[0m' + Fore.RESET
 answers_one = ["- Fire\n", "- Water\n", "- Air\n", "- Earth\n"]
 
-question_two = "\n2. Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you: \n"
+question_two = Fore.MAGENTA + '\033[1m' + "\n2. Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you: \n" + '\033[0m' + Fore.RESET
 answers_two = ["- Proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?\n", "- Draw your wand and try to (discover the source of the noise?\n", "- Draw your wand and stand your ground?\n", "- Withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?\n"]
 
-question_three = "\n3. One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do? \n"
+question_three = Fore.MAGENTA + '\033[1m' + "\n3. One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened. He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill. What do you do? \n" + '\033[0m' + Fore.RESET
 answers_three = ["- Lie and say you don't know (but hope that somebody else tells professor flitwick the truth).\n", "- Tell professor flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn't tell the truth, you will).\n", "- Tell professor flitwick the truth. if your classmate is prepared to win by cheating, he deserves to be found out. also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.\n", "- You would not wait to be asked to tell professor flitwick the truth. If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started.\n"]
 
-question_four = "\n4. After you have died, what would you most like people to do when they hear your name? \n"
+question_four = Fore.MAGENTA + '\033[1m' + "\n4. After you have died, what would you most like people to do when they hear your name? \n" + '\033[0m' + Fore.RESET
 answers_four = ["- Ask for more stories about your adventures\n", "- I don't care what people think of me after I'm dead, it's what they think of me while I'm alive that counts\n", "- Think with admiration of your achievements\n", "- Miss you, but smile\n"]
 
-question_five = "\n5. You enter an enchanted garden. What would you be most curious to examine first? \n"
+question_five = Fore.MAGENTA + '\033[1m' + "\n5. You enter an enchanted garden. What would you be most curious to examine first? \n" + '\033[0m' + Fore.RESET
 answers_five = ["- The statue of an old wizard with a strangely twinkling eye\n", "- The bubbling pool, in the depths of which something luminous is swirling\n", "- The silver leafed tree bearing golden apples\n", "- The fat red toadstools that appear to be talking to each other\n"]
 
-question_six = "\n6. Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of: \n"
+question_six = Fore.MAGENTA + '\033[1m' + "\n6. Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of: \n" + '\033[0m' + Fore.RESET
 answers_six = ["- A crackling log fire\n", "- The sea\n", "- Fresh parchment\n", "- Home\n"]
 
-question_seven = "\n7. Four goblets are placed before you. Which would you choose to drink? \n"
+question_seven = Fore.MAGENTA + '\033[1m' + "\n7. Four goblets are placed before you. Which would you choose to drink? \n" + '\033[0m' + Fore.RESET
 answers_seven = ["- The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room.\n", "- The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions.\n", "- The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.\n", "- The smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums.\n"]
 
-question_eight = "\n8. Which road tempts you most? \n"
+question_eight = Fore.MAGENTA + '\033[1m' + "\n8. Which road tempts you most? \n" + '\033[0m' + Fore.RESET
 answers_eight = ["- The wide, sunny, grassy lane\n", "- The narrow, dark, lantern-lit alley\n", "- The twisting, leaf-strewn path through woods\n", "- The cobbled street lined with ancient buildings\n"]
 
-question_nine = "\n9. Four boxes are placed before you. Which would you try and open? \n"
+question_nine = Fore.MAGENTA + '\033[1m' + "\n9. Four boxes are placed before you. Which would you try and open? \n" + '\033[0m' + Fore.RESET
 answers_nine = ["- The small pewter box, unassuming and plain, with a scratched message upon it that reads ‘I open only for the worthy.'\n", "- The gleaming jet black box with a silver lock and key, marked with a mysterious rune that you know to be the mark of Merlin.\n", "- The ornate golden casket, standing on clawed feet, whose inscription warns that both secret knowledge and unbearable temptation lie within.\n", "- The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking.\n"]
 
-question_ten = "\n10. You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you: \n"
+question_ten = Fore.MAGENTA + '\033[1m' + "\n10. You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you: \n" + '\033[0m' + Fore.RESET
 answers_ten = ["- Volunteer to fight\n", "- Suggest that all three of you should fight (without telling the troll)?\n", "- Attempt to confuse the troll into letting all three of you pass without fighting?\n", "- Suggest drawing lots to decide which of you will fight?\n"]
 
-question_eleven = "\n11. Which would you rather be: \n"
+question_eleven = Fore.MAGENTA + '\033[1m' + "\n11. Which would you rather be: \n" + '\033[0m' + Fore.RESET
 answers_eleven = ["- Trusted\n", "- Praised\n", "- Envied\n", "- Feared\n", "- Imitated\n", "- Liked\n"]
 
-question_twelve = "\n12. If you could have any power, which would you choose? \n"
+question_twelve = Fore.MAGENTA + '\033[1m' + "\n12. If you could have any power, which would you choose? \n" + '\033[0m' + Fore.RESET
 answers_twelve = ["- The power of invisibility\n", "- The power to read minds\n", "- The power to change your appearance at will\n", "- The power to change the past\n", "- The power of superhuman strength\n", "- The power to speak to animals\n"]
 
-question_thirteen = "\n13. What are you most looking forward to learning at Hogwarts? \n"
+question_thirteen = Fore.MAGENTA + '\033[1m' + "\n13. What are you most looking forward to learning at Hogwarts? \n" + '\033[0m' + Fore.RESET
 answers_thirteen = ["- Apparition and disapparition (being able to materialize and dematerialize at will)\n", "- Transfiguration (turning one object into another object)\n", "- Flying on a broomstick\n", "- Hexes and jinxes\n", "- All about magical creatures, and how to befriend/care for them\n", "- Every area of magic I can\n"]
 
-question_fourteen = "\n14. Which of the following would you most like to study? \n"
+question_fourteen = Fore.MAGENTA + '\033[1m' + "\n14. Which of the following would you most like to study? \n" + '\033[0m' + Fore.RESET
 answers_fourteen = ["- Centaurs\n", "- Ghosts\n", "- Werewolves\n", "- Goblins\n", "- Merpeople\n", "- Trolls\n"]
 
-question_fifteen = "\n15. A Muggle confronts you and says that they are sure you are a witch or wizard. Do you: \n"
+question_fifteen = Fore.MAGENTA + '\033[1m' + "\n15. A Muggle confronts you and says that they are sure you are a witch or wizard. Do you: \n" + '\033[0m' + Fore.RESET
 answers_fifteen = ["- Ask what makes them think so?\n", "- Agree, and ask whether they'd like a free sample of a jinx?\n", "- Agree, and walk away, leaving them to wonder whether you are bluffing?\n", "- Tell them that you are worried about their mental health, and offer to call a doctor.\n"]
 
-question_sixteen = "\n16. How would you like to be known to history? \n"
+question_sixteen = Fore.MAGENTA + '\033[1m' + "\n16. How would you like to be known to history? \n" + '\033[0m' + Fore.RESET
 answers_sixteen = ["- The Bold\n", "- The Great\n", "- The Wise\n", "- The Good\n"]
 
-question_seventeen = "\n17. Given the choice, would you rather invent a potion that would guarantee you: \n"
+question_seventeen = Fore.MAGENTA + '\033[1m' + "\n17. Given the choice, would you rather invent a potion that would guarantee you: \n" + '\033[0m' + Fore.RESET
 answers_seventeen = ["- Glory\n", "- Power\n", "- Wisdom\n", "- Love\n"]
 
-question_eighteen = "\n18. Which of the following would you most hate people to call you? \n"
+question_eighteen = Fore.MAGENTA + '\033[1m' + "\n18. Which of the following would you most hate people to call you? \n" + '\033[0m' + Fore.RESET
 answers_eighteen = ["- Cowardly\n", "- Ordinary\n", "- Ignorant\n", "- Selfish\n"]
 
-question_nineteen = "\n19. How would other people describe you? \n"
+question_nineteen = Fore.MAGENTA + '\033[1m' + "\n19. How would other people describe you? \n" + '\033[0m' + Fore.RESET
 answers_nineteen = ["- Honest, brave and adventurous\n", "- Deceitful, malevolent and sexy\n", "- Curious, analytical and witty\n", "- Friendly, happy and dorky\n"]
 
-question_twenty = "\n20. This seems to be a very special and unique situation. You have traits that fit more than one house... let me ask you: where would you like be placed? Will it be Gryffindor, Slytherin, Ravenclaw or Hufflepuff?\n"
+question_twenty = Fore.MAGENTA + '\033[1m' + "\n20. This seems to be a very special and unique situation. You have traits that fit more than one house... let me ask you: where would you like be placed? Will it be Gryffindor, Slytherin, Ravenclaw or Hufflepuff?\n" + '\033[0m' + Fore.RESET
 answers_twenty = ["- Gryffindor\n", "- Slytherin\n", "- Ravenclaw\n", "- Hufflepuff\n"]
 
 # All answers sorted by houses
@@ -152,7 +152,7 @@ def welcome_greeting():
     """
     Prints welcome text
     """
-    print('\nWelcome to' + Fore.MAGENTA + "\033[1m" + ' Hogwarts School of Witchcraft and Wizardry!' + "\033[22m" + Fore.RESET + '\n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nYou might belong in' + Fore.RED + "\033[1m" + ' Gryffindor ' + "\033[22m" + Fore.RESET + '\nwhere dwell the brave at heart\ntheir daring, nerve and chivalry\nset Gryffindors apart.\n\nOr yet in wise old' + Fore.BLUE + "\033[1m" + " Ravenclaw " + "\033[22m" + Fore.RESET + '\nif you’ve a ready mind\nwhere those of wit and learning\nwill always find their kind.\n\nOr perhaps in' + Fore.GREEN + "\033[1m" + " Slytherin " + "\033[22m" + Fore.RESET + '\nyou’ll make your real friends,\nthose cunning folk use any means\nto achieve their ends.\n\nOr you might belong in' + Fore.YELLOW + "\033[1m" + " Hufflepuff " + "\033[22m" + Fore.RESET + '\nwhere they are just and loyal\nthose patient Hufflepuffs are true\nand unafraid of toil.\n\nPlease, have a seat on this ceremony chair. The Sorting Hat will know where you belong...\n')
+    print('\nWelcome to' + Fore.MAGENTA + "\033[1m" + ' Hogwarts School of Witchcraft and Wizardry!' + "\033[22m" + Fore.RESET + '\n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nYou might belong in' + Fore.RED + "\033[1m" + ' Gryffindor ' + "\033[22m" + Fore.RESET + '\nwhere dwell the brave at heart\ntheir daring, nerve and chivalry\nset Gryffindors apart.\n\nOr yet in wise old' + Fore.BLUE + "\033[1m" + " Ravenclaw " + "\033[22m" + Fore.RESET + '\nif you’ve a ready mind\nwhere those of wit and learning\nwill always find their kind.\n\nOr perhaps in' + Fore.GREEN + "\033[1m" + " Slytherin " + "\033[22m" + Fore.RESET + '\nyou’ll make your real friends,\nthose cunning folk use any means\nto achieve their ends.\n\nOr you might belong in' + Fore.YELLOW + "\033[1m" + " Hufflepuff " + "\033[22m" + Fore.RESET + '\nwhere they are just and loyal\nthose patient Hufflepuffs are true\nand unafraid of toil.\n\nPlease, have a seat on this ceremony chair.\nThe Sorting Hat will know where you belong...\n')
     check_name()
 
 
@@ -160,10 +160,10 @@ def check_name():
     """
     Asks for user name input and checks if it is a valid string
     """
-    your_name = input("\x1B[3mYoung wizard*ess, " + Fore.CYAN + "what is your name? \x1B[0m\n" + Fore.RESET)
+    your_name = input("\x1B[3mYoung wizard*ess, " + Fore.CYAN + "\033[1mwhat is your name?\033[0m \x1B[0m\n" + Fore.RESET)
     if re.match(r"[a-zA-Z]", your_name):
-        print("\x1B[3m\nHello " + Fore.CYAN + your_name + Fore.RESET + "!\n\nLet me see what house will bring forth the best in you...\n\n...\n...\n...\n")
-        print("....Now, this is unexpected! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you.")
+        print("\x1B[3m\nHello " + Fore.CYAN + '\033[1m' + your_name + '\033[0m' + Fore.RESET + "!\n\nLet me see what house will bring forth the best in you...\n\n...\n...\n...\n")
+        print("....now, this is unexpected! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you.")
         need_more_information()
     else:
         print("\nPlease enter a string that consists of letters a-z or A-Z\n")
@@ -174,9 +174,9 @@ def need_more_information():
     """
     Asks user if they are ready to start answering the Sorting Hats' questions and sends them back to start screen when 'no' or anything else than 'yes' or 'no' is entered
     """
-    confirm_start = input(Fore.CYAN + "\n\nAre you ready to dive deeper with me? (yes/no) \n\n" + Fore.RESET).lower()
+    confirm_start = input(Fore.CYAN + "\033[1m\n\nAre you ready to dive deeper with me? (yes/no) \n\n\033[0m" + Fore.RESET).lower()
     if confirm_start == "yes":
-        print(Fore.YELLOW + "\nINSTRUCTIONS: " + Fore.RESET + "Choose the answer for each question that describes your personality best. Please enter the identical answer in the input field. After the Sorting Hat has learned enough about you it will place you in the house you belong to...good luck!\n")
+        print(Fore.YELLOW + "\033[1m\nINSTRUCTIONS: \033[0m" + Fore.RESET + "Choose the answer for each question that describes your personality best. Please enter the identical answer in the input field. After the Sorting Hat has learned enough about you it will place you in the house you belong to...good luck!\n")
         first_question()
     elif confirm_start == "no":
         print("\nMaybe this is not yet the right time for you to discover the world of wizardry.\nI might see you again in a couple of years...\n")
@@ -227,7 +227,7 @@ def exit():
     """
     Brings back user to quiz start page
     """
-    print("While you are trying to sneak away from the Sorting Ceremony you are being discovered by a grim looking Hogwarts teacher. You can hear him quietly whisper\x1B[3m\033[1m Obliviate \033[0m\x1B[0mbefore your memories start to fade... you find yourself at platform 9¾ at King's Cross Station in London and scratch your head while looking at the platform number. But platform 9¾ does not exist... or does it?\n")
+    print("\nWhile you are trying to sneak away from the Sorting Ceremony you are being discovered by a grim looking Hogwarts teacher. You can hear him quietly whisper\x1B[3m\033[1m Obliviate \033[0m\x1B[0mbefore your memories start to fade... you find yourself at platform 9¾ at King's Cross Station in London and scratch your head while looking at the platform number. But platform 9¾ does not exist... or does it?\n")
     input("Press any key to go home\n\n")
     os.system('clear')
     print_hogwarts_emblem()
@@ -466,7 +466,7 @@ def print_question_answers(question_x, answers_x):
     """
     Template to print answers and questions
     """
-    print("\nEnter 'leave' to exit the Great Hall\n")
+    print("\nEnter" + Fore.RED + "\033[1m" + " leave " + "\033[0m" + "to exit the Great Hall\n" + Fore.RESET)
     print(question_x)
     shuffle(answers_x)
     print(*answers_x, sep='\n', end='\n\n')

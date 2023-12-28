@@ -6,7 +6,7 @@ The third milestone project is about creating a Python command-line application 
 
 For my Sorting Hat project I am creating a quiz-like application that imitates the house sorting process in the story of Harry Potter. When he and his friends come to the wizarding school Hogwarts for the first time there is a welcome celebration in the Great Hall that involves a sorting ceremony. There are four houses in Hogwarts: Gryffindor, Slytherin, Ravenclaw and Hufflepuff. Depending on the students character and intentions they are being placed in one of the houses by a magical, speaking Sorting Hat. Every student is called onstage individually and puts the Sorting Hat onto their head. For some students the Sorting Hat shouts out the house to the crowd after just a moment; for others the Sorting Hat speaks to them so only the two of them can hear, and shares its thought process about the house placement. 
 
-In my application the user is the student that is coming to Hogwarts for the first time. They are being welcomed to the school and approach the sorting process. The Sorting Hat then speaks to them and says that the decision is not easy and that it needs more information about them to be able to make a decision. The quiz then starts and asks 15-20 questions that evaluate the users character and places them into one of the houses depending on their answers.
+In my application the user is the student that is coming to Hogwarts for the first time. They are being welcomed to the school and approach the sorting process. The Sorting Hat then speaks to them and says that the decision is not easy and that it needs more information about them to be able to make a decision. The quiz then starts and asks 15-20 questions that evaluate the user and places them into one of the houses depending on their answers. The questions are not about asking for specific knowledge but are aimed at analyzing the users character, values and fictional decisions. 
 
 I chose to create this application because the story of Harry Potter had been a big part of my childhood so this project can be seen as a hommage to these novels and the phase of life it is associated with. I also wanted to create a different project than the most common ideas suggested for Python beginners. 
 
@@ -38,9 +38,11 @@ I chose to create this application because the story of Harry Potter had been a 
 
 ![A screenshot of the Sorting Hat app on different screen sizes]()
 
-**You can see a deployed version of my app [here]()**
+**You can see a deployed version of my app [here](https://magical-sorting-hat-d52437409b26.herokuapp.com/)**
 
 # How to Play  
+
+The user starts on the main page that shows the Hogwarts Coat of Arms and enters the school by typing 'yes'. There is a short introduction about the procedure and the characteristics of the four houses. The Sorting Hat is put on the users head to determine which house they should attend. It asks for their name and says that the decision is more difficult than expected; that it needs to get to know them better to be able to sort them into a house. The user then can enter 'yes' to start the display of questions. For each question there are 4 - 6 answers the user can choose from. They need to enter their chosen answer in the input field and are forewarded to the next question. After 15 questions the house scores are evaluated for the first time. If there is a clear winner (a house that has received the most answers) the user will be forwarded and shown the winning houses' Coat of Arms as well as a 'Welcome to the House'-text. If there is a tie between two or more houses after question 15 it continues to question 16, 17, ... and 20 at last. In the unlikely case that the user ends up with the 20th question and there is still a tie they can choose which house they would like to belong to.
 
 # Flowchart
 
@@ -99,10 +101,7 @@ The live project can be found here: https://magical-sorting-hat-d52437409b26.her
 
 - Quiz questions by [wizardmore.com](https://wizardmore.com/sorting-hat-x/) and [buzzfeed.com](https://www.buzzfeed.com/perpetua/lazy-harry-potter-hogwarts-sorting-hat-quiz)
 
-- ASCII art by [emojicombos.com](https://emojicombos.com/harry-potter-ascii-art)
-
 - House welcome texts taken from [harry-potter.fandom.com](https://harry-potter.fandom.com/de/wiki/Kategorie:Begriffskl%C3%A4rung?from=B)
-
 
 ## Tutorials 
 
@@ -121,6 +120,8 @@ https://stackoverflow.com/questions/8391411/how-to-block-calls-to-print
 [5] 
 
 ## Media
+
+- ASCII art by [emojicombos.com](https://emojicombos.com/harry-potter-ascii-art)
 
 ## Acknowledgements
 

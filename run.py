@@ -1,4 +1,5 @@
 from random import shuffle
+from string import ascii_lowercase
 import os
 import re
 import sys
@@ -11,7 +12,7 @@ colorama.init()
 
 # All questions and answers in pairs
 question_one = Fore.MAGENTA + '\033[1m' + "\n1. Which element resonates most with you? \n" + '\033[0m' + Fore.RESET
-answers_one = ["- Fire\n", "- Water\n", "- Air\n", "- Earth\n"]
+answers_one = ["- FIRE\n", "- Water\n", "- AIR\n", "- Earth\n"]
 
 question_two = Fore.MAGENTA + '\033[1m' + "\n2. Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source. Do you: \n" + '\033[0m' + Fore.RESET
 answers_two = ["- Proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?\n", "- Draw your wand and try to (discover the source of the noise?\n", "- Draw your wand and stand your ground?\n", "- Withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?\n"]
@@ -153,6 +154,7 @@ def welcome_greeting():
     Prints welcome text
     """
     print('\nWelcome to' + Fore.MAGENTA + "\033[1m" + ' Hogwarts School of Witchcraft and Wizardry!' + "\033[22m" + Fore.RESET + '\n\nNow that you have come here it is time for you\nto create your own history and leave behind a legacy in Hogwarts\nonce you have completed your magical studies\nNow before you embark on your journey becoming a wizard*ess\nwe have to sort out an important detail:\nwhich house you will devote yourself to.\n\nYou might belong in' + Fore.RED + "\033[1m" + ' Gryffindor ' + "\033[22m" + Fore.RESET + '\nwhere dwell the brave at heart\ntheir daring, nerve and chivalry\nset Gryffindors apart.\n\nOr yet in wise old' + Fore.BLUE + "\033[1m" + " Ravenclaw " + "\033[22m" + Fore.RESET + '\nif you’ve a ready mind\nwhere those of wit and learning\nwill always find their kind.\n\nOr perhaps in' + Fore.GREEN + "\033[1m" + " Slytherin " + "\033[22m" + Fore.RESET + '\nyou’ll make your real friends,\nthose cunning folk use any means\nto achieve their ends.\n\nOr you might belong in' + Fore.YELLOW + "\033[1m" + " Hufflepuff " + "\033[22m" + Fore.RESET + '\nwhere they are just and loyal\nthose patient Hufflepuffs are true\nand unafraid of toil.\n\nPlease, have a seat on this ceremony chair.\nThe Sorting Hat will know where you belong...\n')
+    print("(The Sorting Hat is placed on your head and it starts talking to you)\n")
     check_name()
 
 
@@ -160,7 +162,7 @@ def check_name():
     """
     Asks for user name input and checks if it is a valid string
     """
-    your_name = input("\x1B[3mYoung wizard*ess, " + Fore.CYAN + "\033[1mwhat is your name?\033[0m \x1B[0m\n" + Fore.RESET)
+    your_name = input(Fore.CYAN + "\x1B[3mYoung wizard*ess, \033[1mwhat is your name?\033[0m \x1B[0m\n" + Fore.RESET)
     if re.match(r"[a-zA-Z]", your_name):
         print("\x1B[3m\nHello " + Fore.CYAN + '\033[1m' + your_name + '\033[0m' + Fore.RESET + "!\n\nLet me see what house will bring forth the best in you...\n\n...\n...\n...\n")
         print("....now, this is unexpected! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you.")

@@ -136,13 +136,13 @@ def enter_hogwarts():
         welcome_greeting()
     elif enter == "no":
         print("\nYou just missed your chance to become a great wizard*ess...\n")
-        input("Press any key to take the Hogwarts Express back to London")
+        input("Press any key to take the Hogwarts Express back to London\n")
         os.system('clear')
         print_hogwarts_emblem()
         enter_hogwarts()
     else:
         print("\nOnly yes or no answers are valid\n")
-        input("Press any key to return")
+        input("Press any key to return\n")
         os.system('clear')
         print_hogwarts_emblem()
         enter_hogwarts()
@@ -160,7 +160,7 @@ def check_name():
     """
     Asks for user name input and checks if it is a valid string
     """
-    your_name = input("\x1B[3mYoung wizard*ess, " + Fore.CYAN + "what is your name? \x1B[0m" + Fore.RESET)
+    your_name = input("\x1B[3mYoung wizard*ess, " + Fore.CYAN + "what is your name? \x1B[0m\n" + Fore.RESET)
     if re.match(r"[a-zA-Z]", your_name):
         print("\x1B[3m\nHello " + Fore.CYAN + your_name + Fore.RESET + "!\n\nLet me see what house will bring forth the best in you...\n\n...\n...\n...\n")
         print("....Now, this is unexpected! The decision is more complex than I thought.\nI will need to get to know you better to find the right house for you.")

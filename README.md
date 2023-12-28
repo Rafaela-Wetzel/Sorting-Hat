@@ -84,7 +84,14 @@ No unfixed bugs.
 
 # Deployment
 
-The live project can be found here:
+1. Add requirements for deployment in requirements.txt file
+2. Log in to Heroku and create new app
+3. Add Python and Nodejs Buildpacks
+4. Go to deployment section and connect to GitHub account
+5. Search for project repository and connect to Heroku
+6. Deploy branch via manual deploy
+
+The live project can be found here: https://magical-sorting-hat-d52437409b26.herokuapp.com/ 
 
 # Credits 
 

@@ -228,23 +228,24 @@ def exit():
     """
     Brings back user to quiz start page
     """
+    reset_score()
     print("\nWhile you are trying to sneak away from the Sorting Ceremony you are being discovered by a grim looking Hogwarts teacher. You can hear him quietly whisper\x1B[3m\033[1m Obliviate \033[0m\x1B[0mbefore your memories start to fade... you find yourself at platform 9¾ at King's Cross Station in London and scratch your head while looking at the platform number. But platform 9¾ does not exist... or does it?\n")
     input("Press any key to go home\n\n")
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
-    reset_score()
+    
 
 
 def reset_score():
     global gryffindor
-    gryffindor = null
+    gryffindor = 0
     global slytherin
-    slytherin = null
+    slytherin = 0
     global ravenclaw
-    ravenclaw = null
+    ravenclaw = 0
     global hufflepuff
-    hufflepuff = null
+    hufflepuff = 0
 
 
 def check_score():
@@ -314,12 +315,13 @@ def enter_gryffindor():
 
 
     """ + Fore.RESET)
+    reset_score()
     print("Congratulations! I am prefect Percy Weasley, and I am delighted to welcome you to" + Fore.RED + '\033[1m' + ' GRYFFINDOR HOUSE. ' + '\033[22m' + Fore.RESET + "Our emblem is the lion, the bravest of all creatures; our house colors are scarlet and gold, and our common room lies up in Gryffindor Tower.\n\nThis is, quite simply, the best house at Hogwarts. It is where the bravest and boldest end up - for instance: Albus Dumbledore! Yes, Dumbledore himself, the greatest wizard of our time, was a Gryffindor! If that is not enough for you, I do not know what is.\n\nI will not keep you long, as all you need to do to find out more about your house is to follow Harry Potter and his friends as I lead them up to their dormitories. Enjoy your time at Hogwarts - but how could you fail to? You have become part of the best house in the school.\n")
     input("Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
-    reset_score()
+    
 
 
 def enter_slytherin():
@@ -366,12 +368,12 @@ def enter_slytherin():
 
 
     """ + Fore.RESET)
+    reset_score()
     print("Congratulations! I am prefect Gemma Farley, and I am delighted to welcome you to" + Fore.GREEN + '\033[1m' + ' SLYTHERIN HOUSE. ' + '\033[22m' + Fore.RESET + "Our emblem is the serpent, the wisest of creatures; our house colors are emerald green and silver, and our common room lies behind a concealed entrance down in the dungeons. As you will see, its windows look out into the depths of the Hogwarts lake. We often see the giant squid swooshing by - and sometimes more interesting creatures. We like to feel that our hangout has the aura of a mysterious, underwater shipwreck.\n\nNow, there are a few things you should know about Slytherin – and a few you should forget. Firstly, let us dispel a few myths. You might have heard rumours about Slytherin house – that we are all into the Dark Arts, and will only talk to you if your great-grandfather was a famous wizard, and rubbish like that. Well, you do not want to believe everything you hear from competing houses. I am not denying that we have produced our share of Dark wizards, but so have the other three houses – they just do not like admitting it. And yes, we have traditionally tended to take students who come from long lines of witches and wizards, but nowadays you will find plenty of people in Slytherin house who have at least one Muggle parent.\n\nHere is a little-known fact that the other three houses do not bring up much: Merlin was a Slytherin. Yes, Merlin himself, the most famous wizard in history! He learned all he knew in this very house! Do you want to follow in the footsteps of Merlin?\n\nSlytherin is the coolest and edgiest house in this school. We play to win because we care about the honour and traditions of Slytherin. We also get respect from our fellow students. Yes, some of that respect might be tinged with fear, because of our Dark reputation, but you know what? It can be fun, having a reputation for walking on the wild side. Chuck out a few hints that you have got access to a whole library of curses, and see whether anyone feels like nicking your pencil case.\n\nBut we are not bad people. We are like our emblem, the snake: sleek, powerful, and frequently misunderstood. Because you know what Salazar Slytherin looked for in his chosen students? The seeds of greatness. You have been chosen by this house because you have got the potential to be great, in the true sense of the word.\n\nA few more things you might need to know: our house ghost is the Bloody Baron. If you get on the right side of him, he will sometimes agree to frighten people for you. Just do not ask him how he got bloodstained; he does not like it.\n\nWell, I think that is all for now. I am sure you will like our dormitories. We sleep in ancient four-posters with green silk hangings, and bedspreads embroidered with silver thread. Medieval tapestries depicting the adventures of famous Slytherins cover the walls, and silver lanterns hang from the ceilings. You will sleep well; it is very soothing, listening to the lake water lapping against the windows at night.\n")
     input("Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
-    reset_score()
 
 
 def enter_hufflepuff():
@@ -415,12 +417,12 @@ def enter_hufflepuff():
 
 
     """ + Fore.RESET)
+    reset_score()
     print("Congratulations! I am Prefect Gabriel Truman, and I am delighted to welcome you to" + Fore.YELLOW + '\033[1m' + ' HUFFLEPUFF HOUSE. ' + '\033[22m' + Fore.RESET + "Our emblem is the badger, an animal that is often underestimated, because it lives quietly until attacked, but which, when provoked, can fight off animals much larger than itself, including wolves. Our house colours are yellow and black, and our common room lies one floor below the ground, on the same corridor as the kitchens.\n\nHufflepuffs are trustworthy and loyal. We do not shoot our mouths off, but cross us at your peril; like our emblem, the badger, we will protect ourselves, our friends and our families against all-comers. Nobody intimidates us.\n\nWhat else do you need to know? Oh yes, the entrance to the common room is concealed in a stack of large barrels in a nook on the right hand side of the kitchen corridor. Tap the barrel two from the bottom, middle of the second row, in the rhythm of Helga Hufflepuff, and the lid will swing open. We are the only house at Hogwarts that also has a repelling device for would-be intruders. If the wrong lid is tapped, or if the rhythm of the tapping is wrong, the illegal entrant is doused in vinegar. Once you have opened the barrel, crawl inside and along the passageway behind it, and you will emerge into the cosiest common room of them all. It is round and earthy and low-ceilinged; it always feels sunny, and its circular windows have a view of rippling grass and dandelions. There is a lot of burnished copper about the place, and many plants, which either hang from the ceiling or sit on the windowsills. Our Head of house, Professor Pomona Sprout, is Head of Herbology, and she brings the most interesting specimens (some of which dance and talk) to decorate our room – one reason why Hufflepuffs are often very good at Herbology.\n\nOur house ghost is the friendliest of them all: the Fat Friar. You will recognise him easily enough; he is plump and wears monks robes, and he is very helpful if you get lost or are in any kind of trouble.\n\nI think that is nearly everything. Once again: congratulations on becoming a member of the friendliest, most decent and most tenacious house of them all.\n")
     input("Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
-    reset_score()
 
 
 def enter_ravenclaw():
@@ -469,12 +471,12 @@ def enter_ravenclaw():
 
 ⠀⠀⠀⠀⠀⠀
     """ + Fore.RESET)
+    reset_score()
     print("Congratulations! I am prefect Robert Hilliard, and I am delighted to welcome you to" + Fore.BLUE + '\033[1m' + ' RAVENCLAW HOUSE. ' + '\033[22m' + Fore.RESET + "Our emblem is the eagle, which soars where others cannot climb; our house colors are blue and bronze, and our common room is found at the top of Ravenclaw Tower, behind a door with an enchanted knocker. The arched windows set into the walls of our circular common room look down at the school grounds: the lake, the Forbidden Forest, the Quidditch pitch and the Herbology gardens. No other house in the school has such stunning views.\n\nWithout wishing to boast, this is the house where the cleverest witches and wizards live. Our founder, Rowena Ravenclaw, prized learning above all else – and so do we. Unlike the other houses, who all have concealed entrances to their common rooms, we do not need one. The door to our common room lies at the top of a tall, winding staircase. It has no handle, but an enchanted bronze knocker in the shape of an eagle. When you rap on the door, this knocker will ask you a question, and if you can answer it correctly, you are allowed in. This simple barrier has kept out everyone but Ravenclaws for nearly a thousand years. Some first-years are scared by having to answer the eagles questions, but do not worry. Ravenclaws learn quickly, and you will soon enjoy the challenges the door sets. It is not unusual to find twenty people standing outside the common room door, all trying to work out the answer to the days question together. This is a great way to meet fellow Ravenclaws from other years, and to learn from them – although it is a bit annoying if you have forgotten your Quidditch robes and need to get in and out in a hurry. In fact, I would advise you to triple-check your bag for everything you need before leaving Ravenclaw Tower.\n\nAnother cool thing about Ravenclaw is that our people are the most individual – some might even call them eccentrics. But geniuses are often out of step with ordinary folk, and unlike some other houses we could mention, we think you have got the right to wear what you like, believe what you want, and say what you feel. We are not put off by people who march to a different tune; on the contrary, we value them!\n\nI think that is nearly everything. Oh yes, our house ghost is the Grey Lady. The rest of the school thinks she never speaks, but she will talk to Ravenclaws. She is particularly useful if you are lost, or you have mislaid something. And once again: well done on becoming a member of the cleverest, quirkiest and most interesting house at Hogwarts!\n")
     input("Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
-    reset_score()
 
 
 # Quiz Questions

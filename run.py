@@ -24,7 +24,7 @@ down the street, you hear a peculiar cry that you believe to have a magical
 source. Do you: \n{'\033[0m' + Fore.RESET}"""
 
 answers_two = ["- PROCEED with caution, keeping one hand on your concealed \
-wand and an eye out for any disturbance?\n", "- Draw your wand and try to \
+wand and an eye \out for any disturbance?\n", "- Draw your wand and try to \
 DISCOVER the SOURCE of the noise?\n", "- Draw your wand and STAND YOUR \
 GROUND?\n", "- WITHDRAW into the shadows to await developments, while \
 mentally reviewing the most appropriate defensive and offensive spells, \

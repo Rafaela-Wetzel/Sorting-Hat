@@ -75,6 +75,8 @@ I used the following libraries:
 
 ## Start Section  
 
+<img src="assets/readme_assets/main.png" style="height:30rem;width:30rem;" alt="Screenshot of Harry Potter Sorting Hat Quiz main page">
+
 The first thing the user sees when opening the app is the Hogwarts Coat of Arms and an option that asks them if they want to enter Hogwarts or not ('yes / no'). When selecting 'no' the following message is displayed: 
 
 *"You just missed your chance to become a great wizard*ess... *Press any key to take the Hogwarts Express back to London".* Pressing any key will delete this message and show the Coat of Arms again.  
@@ -83,13 +85,21 @@ When entering nothing or something else than 'yes' or 'no' the following message
 
 ## Welcome Section  
 
+<img src="assets/readme_assets/welcome.png" style="height:35rem;width:35rem;" alt="Screenshot of Harry Potter Sorting Hat Quiz welcome section">
+
 By choosing the 'yes' option the user is greeted with a welcome text of the school mentioning that a house must be selected for the user to be placed in. After this the four houses are presented with a short text each: Gryffindor, Slytherin, Ravenclaw and Hufflepuff. 
 
 ## Sorting Ceremony Section
 
+<img src="assets/readme_assets/sorting-ceremony.png" style="height:35rem;width:35rem;" alt="Screenshot of Harry Potter Sorting Hat Sorting Ceremony section">
+
 The user is asked to sit down on the ceremony chair to get the Sorting Hat placed on their hat which will decide on the house placement. The user is asked by the talking Sorting Hat to enter their name. If the user enters nothing or something else than letters the following message is displayed: *"Please enter a string that consists of letters a-z or A-Z".* The next step is that the user is greeted by the Hat with their individual name. It is telling them that the selection procedure is more difficult than expected and that the Hat needs more time to get to know the user to decide which house they will be placed in. The user then has the option to enter that they are ready to go on or that they are not. Entering that they are not ready will display: *"Maybe this is not yet the right time for you to discover the world of wizardry. I might see you again in a couple of years...Press any key to take the Hogwarts Express back to London."* Pressing any key will bring them back to the start section. When the user enters empty oder invalid data it says *"Only yes or no answers are valid."* 
 
 ## Question Section
+
+<img src="assets/readme_assets/questions-1.png" style="height:25rem;width:35rem;" alt="Screenshot of Harry Potter Sorting Hat Question section">
+
+<img src="assets/readme_assets/questions-2.png" style="height:25rem;width:35rem;" alt="Screenshot of Harry Potter Sorting Hat Question section">
 
 The Question section begins with a short instruction of the game. Each of the 4-6 given answers for every question contains a *capitalized keyword* that needs to be entered in the input field depending on which answer the user chooses. After the Sorting Hat has learned enough about the user it will place them in one of the houses.
 
@@ -100,6 +110,8 @@ If the user chooses to play they have to answer at least 15 questions by typing 
 After each of the questions no. 16-20 the scores are checked until there is a house with a majority of points. In the very unlikely case that there should still be a tie after 19 questions the user can choose their preferred house at last.    
 
 ## House Result Section
+
+<img src="assets/readme_assets/enter-slytherin.png" style="height:60rem;width:35rem;" alt="Screenshot of Harry Potter Sorting Hat House Result section">
 
 Depending on the winning house the user is forwarded to the matching Result section. It shows the houses Coat of Arms in its house color (red, green, blue, yellow) and a welcome text by the houses prefect where the user is congratulated with their entered name. The text contains some information and funny anecdotes about the house. The user can then press any key to return to the Start section.  
 

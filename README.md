@@ -50,7 +50,7 @@ The user starts on the main page that shows the Hogwarts Coat of Arms and enters
 
 # Flowchart
 
-![image](assets/readme_assets/sorting-hat-flowchart.png)
+![image](assets/readme_assets/flowchart.png)
 
 # Technologies
 
@@ -97,9 +97,9 @@ The user is asked to sit down on the ceremony chair to get the Sorting Hat place
 
 ## Question Section
 
-<img src="assets/readme_assets/questions-1.png" style="height:25rem;width:35rem;" alt="Screenshot of Harry Potter Sorting Hat Question section">
+<img src="assets/readme_assets/questions-1.png" style="height:25rem;width:40rem;" alt="Screenshot of Harry Potter Sorting Hat Question section">
 
-<img src="assets/readme_assets/questions-2.png" style="height:25rem;width:35rem;" alt="Screenshot of Harry Potter Sorting Hat Question section">
+<img src="assets/readme_assets/questions-2.png" style="height:25rem;width:40rem;" alt="Screenshot of Harry Potter Sorting Hat Question section">
 
 The Question section begins with a short instruction of the game. Each of the 4-6 given answers for every question contains a *capitalized keyword* that needs to be entered in the input field depending on which answer the user chooses. After the Sorting Hat has learned enough about the user it will place them in one of the houses.
 
@@ -119,12 +119,26 @@ Depending on the winning house the user is forwarded to the matching Result sect
 
 - A continuation of the quiz could be that the user would be able to take another quiz with questions specific to their winning house. This would be a quiz to test their Harry Potter knowledge instead of a 'personality quiz'. 
 
-### Accessibility
-
 # Testing 
 
-## Testing App Functions
-    
+## Testing App Functions  
+
+- I confirm that 
+
+- I confirm that
+
+- I confirm that
+
+- I confirm that
+
+- I confirm that
+
+- I confirm that
+
+- I confirm that
+
+- I confirm that
+
 ## Validator Testing
 
 - I confirm that no errors were returned when passing through the CI Python Linter [pep8ci](https://pep8ci.herokuapp.com/).

@@ -58,11 +58,21 @@ The user starts on the main page that shows the Hogwarts Coat of Arms and enters
 
 # Features 
 
-## Start Section
+## Start Section  
 
-## Welcome Section
+The first thing the user sees when opening the app is the Hogwarts Coat of Arms and an option that asks them if they want to enter Hogwarts or not ('yes / no'). When selecting 'no' the following message is displayed: 
+
+*"You just missed your chance to become a great wizard*ess... *Press any key to take the Hogwarts Express back to London".* Pressing any key will delete this message and show the Coat of Arms again.  
+
+When entering nothing or something else than 'yes' or 'no' the following message is shown: *"Only yes or no answers are valid. Press any key to return"* and the same happens as described above. 
+
+## Welcome Section  
+
+By choosing the 'yes' option the user is greeted with a welcome text of the school mentioning that a house must be selected for the user to be placed in. After this the four houses are presented with a short text each: Gryffindor, Slytherin, Ravenclaw and Hufflepuff. 
 
 ## Sorting Ceremony Section
+
+The user is asked to sit down on the ceremony chair to get the Sorting Hat placed on their hat which will decide on the house placement. The user is asked by the talking Sorting Hat to enter their name. If the user enters nothing or something else than letters the following message is displayed: *"Please enter a string that consists of letters a-z or A-Z".* The next step is that the user is greeted by the Hat with their individual name. It is telling them that the selection procedure is more difficult than expected and that the Hat needs more time to get to know the user to decide which house they will be placed in. The user then has the option to enter that they are ready to go on or that they are not. Entering that they are not ready will display: *"Maybe this is not yet the right time for you to discover the world of wizardry. I might see you again in a couple of years...Press any key to take the Hogwarts Express back to London."* Pressing any key will bring them back to the start section. *"Only yes or no answers are valid"*
 
 ## Question Section
 
@@ -90,6 +100,8 @@ The user starts on the main page that shows the Hogwarts Coat of Arms and enters
 - When a user input would be checked within the increase_score function the score for the respective house was supposed to increase by 1. When the scores for all houses were printed after this step to double check if everything works correctly it would show an increase by 2 instead of 1 for the respective house. It took me a while to figure out that this was due to the step that comes straight after this: running the increase_score function again to see if the user input was valid (point gained = True) or invalid (no point gained = False) by checking for the returned value that would trigger the next question (True) or repeat the current one (False). In the process of running the increase_function a second time, even if it was only to check for a True or False return value, the respective house score would be increased by 1 for the second time so that the outcome would be 2 points instead of 1. My solution was to separate the increase_score function from the valid/invalid input check by creating a second function check_if_true. The latter would then only have the purpose to return either a True or False value and not increase any score.    
 
 - In the check if true function I first wrote: "if input in gryffindor_answers or slytherin_answers or ravenclaw_answers or hufflepuff_answers: return True" and was wondering why it did not work but skipped to the next question even if the answer was wrong. Later I realized that I would have to put "input in" before each of the houses, not only in the beginning.
+
+- reset_score positioned after os(clear) !!!!!!!!!!!
 
 ## Unfixed Bugs
 

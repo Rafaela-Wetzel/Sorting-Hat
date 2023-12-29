@@ -19,6 +19,7 @@ I chose to create this application because the story of Harry Potter had been a 
 - [How to Play](#how-to-play)
 - [Flowchart](#flowchart)
 - [Technologies](#technologies)
+- [Libraries](#libraries)
 - [Features](#features)
   - [Start Section](#start-section)
   - [Welcome Section](#welcome-section)
@@ -56,6 +57,9 @@ The user starts on the main page that shows the Hogwarts Coat of Arms and enters
 - Python for creating the Sorting Hat quiz code
 - Heroku for deployment in a mock terminal
 
+# Libraries
+
+
 # Features 
 
 ## Start Section  
@@ -72,15 +76,26 @@ By choosing the 'yes' option the user is greeted with a welcome text of the scho
 
 ## Sorting Ceremony Section
 
-The user is asked to sit down on the ceremony chair to get the Sorting Hat placed on their hat which will decide on the house placement. The user is asked by the talking Sorting Hat to enter their name. If the user enters nothing or something else than letters the following message is displayed: *"Please enter a string that consists of letters a-z or A-Z".* The next step is that the user is greeted by the Hat with their individual name. It is telling them that the selection procedure is more difficult than expected and that the Hat needs more time to get to know the user to decide which house they will be placed in. The user then has the option to enter that they are ready to go on or that they are not. Entering that they are not ready will display: *"Maybe this is not yet the right time for you to discover the world of wizardry. I might see you again in a couple of years...Press any key to take the Hogwarts Express back to London."* Pressing any key will bring them back to the start section. *"Only yes or no answers are valid"*
+The user is asked to sit down on the ceremony chair to get the Sorting Hat placed on their hat which will decide on the house placement. The user is asked by the talking Sorting Hat to enter their name. If the user enters nothing or something else than letters the following message is displayed: *"Please enter a string that consists of letters a-z or A-Z".* The next step is that the user is greeted by the Hat with their individual name. It is telling them that the selection procedure is more difficult than expected and that the Hat needs more time to get to know the user to decide which house they will be placed in. The user then has the option to enter that they are ready to go on or that they are not. Entering that they are not ready will display: *"Maybe this is not yet the right time for you to discover the world of wizardry. I might see you again in a couple of years...Press any key to take the Hogwarts Express back to London."* Pressing any key will bring them back to the start section. When the user enters empty oder invalid data it says *"Only yes or no answers are valid."* 
 
 ## Question Section
 
+The Question section begins with a short instruction of the game. Each of the 4-6 given answers for every question contains a *capitalized keyword* that needs to be entered in the input field depending on which answer the user chooses. After the Sorting Hat has learned enough about the user it will place them in one of the houses.
+
+While answering the questions there is always the option to exit the game by entering *leave*. A text is then displayed saying that the user is trying to sneak away from the ceremony but is being discovered by a teacher who casts a Memory Charm that makes the user forget. They are suddenly relocated at Kings Cross Station in London, having forgotten everything and wondering about the odd platform number 9¾. The user then can press enter to see the Start section again. 
+
+If the user chooses to play they have to answer at least 15 questions by typing in the capitalized keyword(s) that correlates with one of the four houses each. For every answer one point is assigned to the respective house score. If there is a clear winner after 15 questions the user will be forwarded to the Result section which is the placement in one of the four houses. If there is a tie between one or more houses after 15 questions there are additional questions no. 16-20. As long as there is a tie the console will display "Mmmmmhhhhh..... it is not an easy decision. I need more time to figure it out..." and move on to the next question. Invalid input is handled by the message "Please enter one of the capitalized keyword(s)".
+
+After each of the questions no. 16-20 the scores are checked until there is a house with a majority of points. In the very unlikely case that there should still be a tie after 19 questions the user can choose their preferred house at last.    
+
 ## House Result Section
+
+Depending on the winning house the user is forwarded to the matching Result section. It shows the houses Coat of Arms in its house color (red, green, blue, yellow) and a welcome text by the houses prefect where the user is congratulated with their entered name. The text contains some information and funny anecdotes about the house. The user can then press any key to return to the Start section.  
 
 # Features Left to Implement
 
 - A continuation of the quiz could be that depending on the house result the user will get specific questions about that house that test their Harry Potter knowledge
+- Choosing A, B, C, D
 
 ### Accessibility
 

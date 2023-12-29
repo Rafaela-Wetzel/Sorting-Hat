@@ -23,11 +23,11 @@ question_two = f"""{Fore.MAGENTA + '\033[1m'}\n2. Late at night, walking alone
 down the street, you hear a peculiar cry that you believe to have a magical
 source. Do you: \n{'\033[0m' + Fore.RESET}"""
 
-answers_two = ["- PROCEED WITH CAUTION, keeping one hand on your concealed\
-wand and an eye out for any disturbance?\n", "- Draw your wand and try to\
-DISCOVER the SOURCE of the noise?\n", "- Draw your wand and STAND YOUR\
-GROUND?\n", "- WITHDRAW into the shadows to await developments, while mentally\
-reviewing the most appropriate defensive and offensive spells, should\
+answers_two = ["- PROCEED with caution, keeping one hand on your concealed \
+wand and an eye out for any disturbance?\n", "- Draw your wand and try to \
+DISCOVER the SOURCE of the noise?\n", "- Draw your wand and STAND YOUR \
+GROUND?\n", "- WITHDRAW into the shadows to await developments, while mentally \
+reviewing the most appropriate defensive and offensive spells, should \
 trouble occur?\n"]
 
 question_three = f"""{Fore.MAGENTA + '\033[1m'}\n3. One of your house mates has
@@ -37,121 +37,121 @@ suspicious of what happened. He draws you to one side after his lesson and asks
 you whether or not your classmate used a forbidden quill. What do you do?
 \n{'\033[0m' + Fore.RESET}"""
 
-answers_three = ["- LIE and say you don't know (but hope that somebody else\
-tells Professor Flitwick the truth).\n", "- Tell Professor Flitwick that he\
-ought to ASK your CLASSMATE (and resolve to tell your classmate that if he\
-doesn't tell the truth, you will).\n", "- TELL Professor Flitwick the TRUTH.\
-If your classmate is prepared to win by cheating, he deserves to be found out.\
-also, as you are both in the same house, any points he loses will be regained\
-by you, for coming first in his place.\n", "- You would NOT WAIT to be asked\
-to tell Professor Flitwick the truth. If you knew that somebody was using a\
+answers_three = ["- LIE and say you don't know (but hope that somebody else \
+tells Professor Flitwick the truth).\n", "- Tell Professor Flitwick that he \
+ought to ask your CLASSMATE (and resolve to tell your classmate that if he \
+doesn't tell the truth, you will).\n", "- Tell Professor Flitwick the TRUTH. \
+If your classmate is prepared to win by cheating, he deserves to be found out. \
+also, as you are both in the same house, any points he loses will be regained \
+by you, for coming first in his place.\n", "- You would NOT WAIT to be asked \
+to tell Professor Flitwick the truth. If you knew that somebody was using a \
 forbidden quill, you would tell the teacher before the exam started.\n"]
 
 question_four = f"""{Fore.MAGENTA + '\033[1m'}\n4. After you have died, what
 would you most like people to do when they hear your name? \n"{'\033[0m' +
 Fore.RESET}"""
 
-answers_four = ["- Ask for more stories about your ADVENTURES\n", "- I DON'T\
-CARE what people think of me after I'm dead, it's what they think of me while\
-I'm alive that counts\n", "- Think with admiration of your\
+answers_four = ["- Ask for more stories about your ADVENTURES\n", "- I don't \
+care what people think of me after I'm dead, it's what they think of me while \
+I'm ALIVE that counts\n", "- Think with admiration of your \
 ACHIEVEMENTS\n", "- MISS you, but smile\n"]
 
 question_five = f"""{Fore.MAGENTA + '\033[1m'}\n5. You enter an enchanted
 garden. What would you be most curious to examine first? \n"{'\033[0m' +
 Fore.RESET}"""
 
-answers_five = ["- The STATUE of an old wizard with a strangely twinkling\
-eye\n", "- The BUBBLING POOL, in the depths of which something luminous is\
-swirling\n", "- The SILVER leafed TREE bearing golden apples\n", "- The fat\
+answers_five = ["- The STATUE of an old wizard with a strangely twinkling \
+eye\n", "- The bubbling POOL, in the depths of which something luminous is \
+swirling\n", "- The silver leafed TREE bearing golden apples\n", "- The fat \
 red TOADSTOOLS that appear to be talking to each other\n"]
 
 question_six = f"""{Fore.MAGENTA + '\033[1m'}\n6. Once every century, the
 Flutterby bush produces flowers that adapt their scent to attract the unwary.
 If it lured you, it would smell of: \n{'\033[0m' + Fore.RESET}"""
 
-answers_six = ["- A crackling LOG FIRE\n", "- The SEA\n", "- Fresh\
+answers_six = ["- A crackling LOG FIRE\n", "- The SEA\n", "- Fresh \
 PARCHMENT\n", "- HOME\n"]
 
 question_seven = f"""{Fore.MAGENTA + '\033[1m'}\n7. Four goblets are placed
 before you. Which would you choose to drink? \n{'\033[0m' + Fore.RESET}"""
 
-answers_seven = ["- The GOLDEN LIQUID so bright that it hurts the eye, and\
-which makes sunspots dance all around the room.\n", "- The mysterious BLACK\
-LIQUID that gleams like ink, and gives off fumes that make you see strange\
-visions.\n", "- The foaming, frothing, SILVERY LIQUID that sparkles as though\
-containing ground diamonds.\n", "- The smooth, thick, richly PURPLE DRINK that\
+answers_seven = ["- The GOLDEN liquid so bright that it hurts the eye, and \
+which makes sunspots dance all around the room.\n", "- The mysterious BLACK \
+liquid that gleams like ink, and gives off fumes that make you see strange \
+visions.\n", "- The foaming, frothing, SILVERY liquid that sparkles as though \
+containing ground diamonds.\n", "- The smooth, thick, richly PURPLE drink that \
 gives off a delicious smell of chocolate and plums.\n"]
 
 question_eight = f"""{Fore.MAGENTA + '\033[1m'}\n8. Which road tempts you most?
 \n{'\033[0m' + Fore.RESET}"""
 
-answers_eight = ["- The wide, sunny, grassy LANE\n", "- The narrow, dark,\
-lantern-lit ALLEY\n", "- The twisting, leaf-strewn path through\
+answers_eight = ["- The wide, sunny, grassy LANE\n", "- The narrow, dark, \
+lantern-lit ALLEY\n", "- The twisting, leaf-strewn path through \
 WOODS\n", "- The cobbled STREET lined with ancient buildings\n"]
 
 question_nine = f"""{Fore.MAGENTA + '\033[1m'}\n9. Four boxes are placed before
 you. Which would you try and open? \n{'\033[0m' + Fore.RESET}"""
 
-answers_nine = ["- The small PEWTER BOX, unassuming and plain, with a\
-scratched message upon it that reads ‘I open only for the worthy.'\n", "- The\
-gleaming jet BLACK BOX with a silver lock and key, marked with a mysterious\
-rune that you know to be the mark of Merlin.\n", "- The ornate GOLDEN CASKET,\
-standing on clawed feet, whose inscription warns that both secret knowledge\
-and unbearable temptation lie within.\n", "- The small TORTOISESHELL BOX,\
-embellished with gold, inside which some small creature seems to be\
+answers_nine = ["- The small PEWTER box, unassuming and plain, with a \
+scratched message upon it that reads ‘I open only for the worthy.'\n", "- The \
+gleaming jet BLACK BOX with a silver lock and key, marked with a mysterious \
+rune that you know to be the mark of Merlin.\n", "- The ornate golden CASKET, \
+standing on clawed feet, whose inscription warns that both secret knowledge \
+and unbearable temptation lie within.\n", "- The small TORTOISESHELL box, \
+embellished with gold, inside which some small creature seems to be \
 squeaking.\n"]
 
 question_ten = f"""{Fore.MAGENTA + '\033[1m'}\n10. You and two friends need to
 cross a bridge guarded by a river troll who insists on fighting one of you
 before he will let all of you pass. Do you: \n"{'\033[0m' + Fore.RESET}"""
 
-answers_ten = ["- VOLUNTEER to fight\n", "- Suggest that ALL THREE of you\
-should FIGHT (without telling the troll)?\n", "- Attempt to CONFUSE the troll\
-into letting all three of you pass without fighting?\n", "- Suggest DRAWING\
+answers_ten = ["- VOLUNTEER to fight\n", "- Suggest that ALL THREE of you \
+should FIGHT (without telling the troll)?\n", "- Attempt to CONFUSE the troll \
+into letting all three of you pass without fighting?\n", "- Suggest drawing \
 LOTS to decide which of you will fight?\n"]
 
 question_eleven = f"""{Fore.MAGENTA + '\033[1m'}\n11. Which would you rather
 be: \n{'\033[0m' + Fore.RESET}"""
 
-answers_eleven = ["- TRUSTED\n", "- PRAISED\n", "- ENVIED\n", "- FEARED\
+answers_eleven = ["- TRUSTED\n", "- PRAISED\n", "- ENVIED\n", "- FEARED \
 \n", "- IMITATED\n", "- LIKED\n"]
 
 question_twelve = f"""{Fore.MAGENTA + '\033[1m'}\n12. If you could have any
 power, which would you choose? \n{'\033[0m' + Fore.RESET}"""
 
-answers_twelve = ["- The power of INVISIBILITY\n", "- The power to READ\
-MINDS\n", "- The power to CHANGE your APPEARANCE at will\n", "- The power to\
-CHANGE the PAST\n", "- The power of SUPERHUMAN STRENGTH\n", "- The power to\
-SPEAK TO ANIMALS\n"]
+answers_twelve = ["- The power of INVISIBILITY\n", "- The power to read \
+MINDS\n", "- The power to change your APPEARANCE at will\n", "- The power to \
+change the PAST\n", "- The power of SUPERHUMAN strength\n", "- The power to \
+speak to ANIMALS\n"]
 
 question_thirteen = f"""{Fore.MAGENTA + '\033[1m'}\n13. What are you most
 looking forward to learning at Hogwarts? \n"{'\033[0m' + Fore.RESET}"""
 
-answers_thirteen = ["- APPARITION and disapparition (being able to materialize\
-and dematerialize at will)\n", "- TRANSFIGURATION (turning one object into\
-another object)\n", "- FLYING on a broomstick\n", "- HEXES and jinxes\
-\n", "- All about MAGICAL CREATURES, and how to befriend/care for them\
+answers_thirteen = ["- APPARITION and disapparition (being able to materialize \
+and dematerialize at will)\n", "- TRANSFIGURATION (turning one object into \
+another object)\n", "- FLYING on a broomstick\n", "- HEXES and jinxes \
+\n", "- All about magical CREATURES, and how to befriend/care for them \
 \n", "- EVERY AREA of magic I can\n"]
 
 question_fourteen = f"""{Fore.MAGENTA + '\033[1m'}\n14. Which of the following
 would you most like to study? \n{'\033[0m' + Fore.RESET}"""
 
-answers_fourteen = ["- CENTAURS\n", "- GHOSTS\n", "- WEREWOLVES\n", "- GOBLINS\
+answers_fourteen = ["- CENTAURS\n", "- GHOSTS\n", "- WEREWOLVES\n", "- GOBLINS \
 \n", "- MERPEOPLE\n", "- TROLLS\n"]
 
 question_fifteen = f"""{Fore.MAGENTA + '\033[1m'}\n15. A Muggle confronts you
 and says that they are sure you are a witch or wizard. Do you: \n{'\033[0m' +
 Fore.RESET}"""
 
-answers_fifteen = ["- Ask WHAT MAKES THEM THINK so?\n", "- Agree, and ask\
-whether they'd like a free sample of a JINX?\n", "- Agree, and walk away,\
-leaving them to wonder whether you are BLUFFING?\n", "- Tell them that you\
-are worried about their MENTAL HEALTH, and offer to call a doctor.\n"]
+answers_fifteen = ["- Ask WHAT MAKES THEM THINK so?\n", "- Agree, and ask \
+whether they'd like a free sample of a JINX?\n", "- Agree, and walk away, \
+leaving them to wonder whether you are BLUFFING?\n", "- Tell them that you \
+are worried about their mental HEALTH, and offer to call a doctor.\n"]
 
 question_sixteen = f"""{Fore.MAGENTA + '\033[1m'}\n16. How would you like to be
 known to history? \n{'\033[0m' + Fore.RESET}"""
 
-answers_sixteen = ["- The BOLD\n", "- The GREAT\n", "- The WISE\
+answers_sixteen = ["- The BOLD\n", "- The GREAT\n", "- The WISE \
 \n", "- The GOOD\n"]
 
 question_seventeen = f"""{Fore.MAGENTA + '\033[1m'}\n17. Given the choice,
@@ -160,17 +160,17 @@ Fore.RESET}"""
 
 answers_seventeen = ["- GLORY\n", "- POWER\n", "- WISDOM\n", "- LOVE\n"]
 
-question_eighteen = f"""{Fore.MAGENTA + '\033[1m'}\n18. Which of the following\
+question_eighteen = f"""{Fore.MAGENTA + '\033[1m'}\n18. Which of the following \
 would you most hate people to call you? \n{'\033[0m' + Fore.RESET}"""
 
-answers_eighteen = ["- COWARDLY\n", "- ORDINARY\n", "- IGNORANT\
+answers_eighteen = ["- COWARDLY\n", "- ORDINARY\n", "- IGNORANT \
 \n", "- SELFISH\n"]
 
 question_nineteen = f"""{Fore.MAGENTA + '\033[1m'}\n19. How would other people
 describe you? \n{'\033[0m' + Fore.RESET}"""
 
-answers_nineteen = ["- HONEST, brave and adventurous\n", "- DECEITFUL,\
-malevolent and sexy\n", "- CURIOUS, analytical and witty\n", "- FRIENDLY,\
+answers_nineteen = ["- HONEST, brave and adventurous\n", "- DECEITFUL, \
+malevolent and sexy\n", "- CURIOUS, analytical and witty\n", "- FRIENDLY, \
 happy and dorky\n"]
 
 question_twenty = f"""{Fore.MAGENTA + '\033[1m'}\n20. This seems to be a very
@@ -178,34 +178,34 @@ special and unique situation. You have traits that fit more than one house...
 let me ask you: where would you like be placed? Will it be Gryffindor,
 Slytherin, Ravenclaw or Hufflepuff?\n{'\033[0m' + Fore.RESET}"""
 
-answers_twenty = ["- GRYFFINDOR\n", "- SLYTHERIN\n", "- RAVENCLAW\
+answers_twenty = ["- GRYFFINDOR\n", "- SLYTHERIN\n", "- RAVENCLAW \
 \n", "- HUFFLEPUFF\n"]
 
 # All answers sorted by houses
 gryffindor_answers = ["fire", "cowardly", "bold", "adventures", "glory\
-", "log fire", "golden liquid", "statue", "pewter box", "volunteer", "trusted\
-", "praised", "invisibility", "change past", "change appearance", "apparition\
+", "log fire", "golden", "statue", "pewter", "volunteer", "trusted\
+", "praised", "invisibility", "past", "appearance", "apparition\
 ", "flying", "centaurs", "ghosts", "werewolves", "bluffing", "woods", "\
-discover source", "ask classmate", "honest", "gryffindor"]
+discover source", "classmate", "honest", "gryffindor"]
 
-slytherin_answers = ["water", "ordinary", "great", "don't care", "glory\
-", "sea", "black liquid", "bubbling pool", "black box", "all three fight", "\
-nvied", "feared", "read minds", "superhuman strength", "change past", "\
+slytherin_answers = ["water", "ordinary", "great", "alive", "glory\
+", "sea", "black", "pool", "black box", "all three fight", "\
+nvied", "feared", "minds", "superhuman", "past", "\
 apparition", "hexes", "goblins", "merpeople", "trolls", "jinx", "alley\
 ", "stand your ground", "not wait", "deceitful", "slytherin"]
 
 ravenclaw_answers = ["air", "ignorant", "wise", "achievements", "wisdom\
-", "parchment", "silvery liquid", "silver tree", "golden casket", "confuse \
-troll", "envied", "imitated", "read minds", "speak to animals", "change\
+", "parchment", "silvery", "tree", "casket", "confuse \
+troll", "envied", "imitated", "minds", "animals", "change\
 appearance",  "transfiguration", "every area", "centaurs", "goblins", "ghosts\
-", "what makes them think", "street", "withdraw", "tell truth\
+", "what makes them think", "street", "withdraw", "truth\
 ", "curious", "ravenclaw"]
 
 hufflepuff_answers = ["earth", "selfish", "good", "miss", "love", "home\
-", "purple drink", "toadstools", "tortoiseshell box", "drawing lots", "trusted\
-", "liked", "invisibility", "superhuman strength", "speak to animals", "flying\
-", "magical creatures", "merpeople", "werewolves", "trolls", "mental health\
-", "lane", "proceed with caution", "lie", "friendly", "hufflepuff"]
+", "purple", "toadstools", "tortoiseshell", "lots", "trusted\
+", "liked", "invisibility", "superhuman strength", "animals", "flying\
+", "creatures", "merpeople", "werewolves", "trolls", "health\
+", "lane", "proceed", "lie", "friendly", "hufflepuff"]
 
 # House score
 gryffindor = 0
@@ -367,14 +367,13 @@ def need_more_information():
     \n                           {Fore.RESET}""").lower()
     if confirm_start == "yes":
         print(f"""
-            {Fore.YELLOW + '\033[1m'}     I N S T R U C T I O N S:
-            {'\033[0m' + Fore.RESET}Choose the answer for each question
-            that describes your personality best.
-            Please enter the identical answer
-            in the input field. After the
-            Sorting Hat has learned enough about
-            you it will place you in the house
-            you belong to...good luck!\n""")
+            {Fore.YELLOW + '\033[1m'}     I N S T R U C T I O N S:\n
+            {'\033[0m' + Fore.RESET}Enter the {Fore.YELLOW + '\033[1m'}
+            CAPITALIZED keyword(s){'\033[0m' + Fore.RESET} of your
+            preferred answer in the input field. It does not need to be
+            capitalized. After the Sorting Hat has learned enough about
+            you it will place you in the house that fits you best...good
+            luck!\n""")
         first_question()
     elif confirm_start == "no":
         print(f"""\nMaybe this is not yet the right time for you to discover
@@ -408,7 +407,7 @@ def increase_score(input):
     elif input == "leave":
         exit()
     else:
-        print("\nPlease enter one of the given answers")
+        print("\nPlease enter one of the capitalized keywords")
 
 
 def check_if_true(input):
@@ -439,8 +438,8 @@ def exit():
     '\x1B[0m'}before your memories start to fade... you find yourself at
     platform 9¾ at King's Cross Station in London and scratch your head while
     looking at the platform number. But platform 9¾ does not exist... or does
-    it?\n")
-    input("Press any key to go home\n\n""")
+    it?\n""")
+    input("Press any key to go home\n\n")
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
@@ -536,18 +535,20 @@ def enter_gryffindor():
 
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations, {your_name}! I am prefect Percy Weasley, and I am delighted
-    to welcome you to {Fore.RED + '\033[1m'} GRYFFINDOR HOUSE. {'\033[22m' +
-    Fore.RESET}Our emblem is the lion, the bravest of all creatures; our house
-    colors are scarlet and gold, and our common room lies up in Gryffindor
-    Tower. This is, quite simply, the best house at Hogwarts. It is where the
-    bravest and boldest end up - for instance: Albus Dumbledore! Yes,
-    Dumbledore himself, the greatest wizard of our time, was a Gryffindor! If
-    that is not enough for you, I do not know what is.I will not keep you long,
-    as all you need to do to find out more about your house is to follow Harry
-    Potter and his friends as I lead them up to their dormitories. Enjoy your
-    time at Hogwarts - but how could you fail to? You have become part of the
-    best house in the school.\n""")
+    print(f"""Congratulations, {your_name}! I am prefect Percy Weasley, and
+    I am delighted to welcome you to {Fore.RED + '\033[1m'} GRYFFINDOR HOUSE
+    . {'\033[22m' + Fore.RESET}Our emblem is the lion, the bravest of all
+    creatures; our house colors are scarlet and gold, and our common room lies
+    up in Gryffindor Tower.
+
+    This is, quite simply, the best house at Hogwarts.
+    It is where the bravest and boldest end up - for instance: Albus
+    Dumbledore! Yes, Dumbledore himself, the greatest wizard of our time, was
+    a Gryffindor! If that is not enough for you, I do not know what is. I will
+    not keep you long, as all you need to do to find out more about your house
+    is to follow Harry Potter and his friends as I lead them up to their
+    dormitories. Enjoy your time at Hogwarts - but how could you fail to? You
+    have become part of the best house in the school.\n""")
     input("Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
@@ -600,14 +601,15 @@ def enter_slytherin():
 
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations, {your_name}! I am prefect Gemma Farley, and I am delighted to
-    welcome you to{Fore.GREEN + '\033[1m'} SLYTHERIN HOUSE. {'\033[22m' +
-    Fore.RESET}Our emblem is the serpent, the wisest of creatures; our house
-    colors are emerald green and silver, and our common room lies behind a
-    concealed entrance down in the dungeons. As you will see, its windows look
-    out into the depths of the Hogwarts lake. We often see the giant squid
-    swooshing by - and sometimes more interesting creatures. We like to feel
-    that our hangout has the aura of a mysterious, underwater shipwreck.
+    print(f"""Congratulations, {your_name}! I am prefect Gemma Farley, and I
+    am delighted to welcome you to{Fore.GREEN + '\033[1m'} SLYTHERIN HOUSE
+    . {'\033[22m' + Fore.RESET}Our emblem is the serpent, the wisest of
+    creatures; our house colors are emerald green and silver, and our common
+    room lies behind a concealed entrance down in the dungeons. As you will
+    see, its windows look out into the depths of the Hogwarts lake. We often
+    see the giant squid swooshing by - and sometimes more interesting
+    creatures. We like to feel that our hangout has the aura of a mysterious,
+    underwater shipwreck.
 
     Now, there are a few things you should know about Slytherin – and a few you
     should forget. Firstly, let us dispel a few myths. You might have heard
@@ -699,13 +701,13 @@ def enter_hufflepuff():
 
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations, {your_name}! I am Prefect Gabriel Truman, and I am delighted
-    to welcome you to{Fore.YELLOW + '\033[1m'} HUFFLEPUFF HOUSE.{'\033[22m' +
-    Fore.RESET} Our emblem is the badger, an animal that is often
-    underestimated, because it lives quietly until attacked, but which, when
-    provoked, can fight off animals much larger than itself, including wolves.
-    Our house colours are yellow and black, and our common room lies one floor
-    below the ground, on the same corridor as the kitchens.
+    print(f"""Congratulations, {your_name}! I am Prefect Gabriel Truman,
+    and I am delighted to welcome you to{Fore.YELLOW + '\033[1m'} HUFFLEPUFF
+    HOUSE.{'\033[22m' + Fore.RESET} Our emblem is the badger, an animal that
+    is often underestimated, because it lives quietly until attacked, but
+    which, when provoked, can fight off animals much larger than itself,
+    including wolves. Our house colours are yellow and black, and our common
+    room lies one floor below the ground, on the same corridor as the kitchens.
 
     Hufflepuffs are trustworthy and loyal. We do not shoot our mouths off,
     but cross us at your peril; like our emblem, the badger, we will protect
@@ -788,14 +790,15 @@ def enter_ravenclaw():
 ⠀⠀⠀⠀⠀⠀
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations, {your_name}! I am prefect Robert Hilliard, and I am delighted
-    to welcome you to{Fore.BLUE + '\033[1m'} RAVENCLAW HOUSE. {'\033[22m' +
-    Fore.RESET}Our emblem is the eagle, which soars where others cannot climb;
-    our house colors are blue and bronze, and our common room is found at the
-    top of Ravenclaw Tower, behind a door with an enchanted knocker. The arched
-    windows set into the walls of our circular common room look down at the
-    school grounds: the lake, the Forbidden Forest, the Quidditch pitch and the
-    Herbology gardens. No other house in the school has such stunning views.
+    print(f"""Congratulations, {your_name}! I am prefect Robert Hilliard, and
+    I am delighted to welcome you to{Fore.BLUE + '\033[1m'} RAVENCLAW HOUSE
+    . {'\033[22m' + Fore.RESET}Our emblem is the eagle, which soars where
+    others cannot climb; our house colors are blue and bronze, and our common
+    room is found at the top of Ravenclaw Tower, behind a door with an
+    enchanted knocker. The arched windows set into the walls of our circular
+    common room look down at the school grounds: the lake, the Forbidden
+    Forest, the Quidditch pitch and the Herbology gardens. No other house in
+    the school has such stunning views.
 
     Without wishing to boast, this is the house where the cleverest witches and
     wizards live. Our founder, Rowena Ravenclaw, prized learning above all else
@@ -839,7 +842,7 @@ def print_question_answers(question_x, answers_x):
     """
     Template to print answers and questions
     """
-    print(f"""    \n\n            Enter{Fore.YELLOW + '\033[1m'} L E A V E
+    print(f"""    \n            Enter{Fore.YELLOW + '\033[1m'} L E A V E
     {'\033[0m'}        to exit the Great Hall{Fore.RESET}""")
     print(question_x)
     shuffle(answers_x)

@@ -372,9 +372,9 @@ def need_more_information():
             {Fore.YELLOW + '\033[1m'}     I N S T R U C T I O N S:\n
             {'\033[0m' + Fore.RESET}Enter the {Fore.YELLOW + '\033[1m'}
             CAPITALIZED keyword(s){'\033[0m' + Fore.RESET} of your
-            preferred answer in the input field. It does not need to be
-            capitalized. After the Sorting Hat has learned enough about
-            you it will place you in the house that fits you best...good
+            preferred answer in the input field. You may use lower case
+            letters. After the Sorting Hat has learned enough about you
+            it will place you in the house that fits you best...good
             luck!\n""")
         first_question()
     elif confirm_start == "no":

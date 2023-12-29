@@ -412,7 +412,10 @@ def check_if_true(input):
     invalid input) it will trigger the same question again until the user has
     entered valid input
     """
-    if input in gryffindor_answers or input in slytherin_answers or input in ravenclaw_answers or input in hufflepuff_answers:
+    if (input in gryffindor_answers or
+       input in slytherin_answers or
+       input in ravenclaw_answers or
+       input in hufflepuff_answers):
         return True
     else:
         return False
@@ -453,16 +456,24 @@ def check_score():
     function will be triggered. If there is a tie, there will be more questions
     until one house has gained the majority of points
     """
-    if gryffindor > slytherin and gryffindor > hufflepuff and gryffindor > ravenclaw:
+    if (gryffindor > slytherin and
+        gryffindor > hufflepuff and
+            gryffindor > ravenclaw):
         enter_gryffindor()
         return True
-    elif slytherin > gryffindor and slytherin > hufflepuff and slytherin > ravenclaw:
+    elif (slytherin > gryffindor and
+          slytherin > hufflepuff and
+          slytherin > ravenclaw):
         enter_slytherin()
         return True
-    elif hufflepuff > gryffindor and hufflepuff > slytherin and hufflepuff > ravenclaw:
+    elif (hufflepuff > gryffindor and
+          hufflepuff > slytherin and
+          hufflepuff > ravenclaw):
         enter_hufflepuff()
         return True
-    elif ravenclaw > hufflepuff and ravenclaw > gryffindor and ravenclaw > slytherin:
+    elif (ravenclaw > hufflepuff and
+          ravenclaw > gryffindor and
+          ravenclaw > slytherin):
         enter_ravenclaw()
         return True
     else:

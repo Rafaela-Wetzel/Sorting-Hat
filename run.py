@@ -335,6 +335,7 @@ def check_name():
     """
     Asks for user name input and checks if it is a valid string
     """
+    global your_name
     your_name = input(f"""{Fore.CYAN + '\x1B[3m' + '\033[1m'}
         Young wizard*ess, what is your name?\n\n                 {'\033[0m' +
         Fore.RESET}""")
@@ -535,7 +536,7 @@ def enter_gryffindor():
 
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations! I am prefect Percy Weasley, and I am delighted
+    print(f"""Congratulations, {your_name}! I am prefect Percy Weasley, and I am delighted
     to welcome you to {Fore.RED + '\033[1m'} GRYFFINDOR HOUSE. {'\033[22m' +
     Fore.RESET}Our emblem is the lion, the bravest of all creatures; our house
     colors are scarlet and gold, and our common room lies up in Gryffindor
@@ -599,7 +600,7 @@ def enter_slytherin():
 
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations! I am prefect Gemma Farley, and I am delighted to
+    print(f"""Congratulations, {your_name}! I am prefect Gemma Farley, and I am delighted to
     welcome you to{Fore.GREEN + '\033[1m'} SLYTHERIN HOUSE. {'\033[22m' +
     Fore.RESET}Our emblem is the serpent, the wisest of creatures; our house
     colors are emerald green and silver, and our common room lies behind a
@@ -698,7 +699,7 @@ def enter_hufflepuff():
 
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations! I am Prefect Gabriel Truman, and I am delighted
+    print(f"""Congratulations, {your_name}! I am Prefect Gabriel Truman, and I am delighted
     to welcome you to{Fore.YELLOW + '\033[1m'} HUFFLEPUFF HOUSE.{'\033[22m' +
     Fore.RESET} Our emblem is the badger, an animal that is often
     underestimated, because it lives quietly until attacked, but which, when
@@ -787,7 +788,7 @@ def enter_ravenclaw():
 ⠀⠀⠀⠀⠀⠀
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations! I am prefect Robert Hilliard, and I am delighted
+    print(f"""Congratulations, {your_name}! I am prefect Robert Hilliard, and I am delighted
     to welcome you to{Fore.BLUE + '\033[1m'} RAVENCLAW HOUSE. {'\033[22m' +
     Fore.RESET}Our emblem is the eagle, which soars where others cannot climb;
     our house colors are blue and bronze, and our common room is found at the

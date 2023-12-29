@@ -207,19 +207,6 @@ hufflepuff_answers = ["earth", "selfish", "good", "miss", "love", "home\
 ", "magical creatures", "merpeople", "werewolves", "trolls", "mental health\
 ", "lane", "proceed with caution", "lie", "friendly", "hufflepuff"]
 
-all_answer_lists = [answers_one, answers_two, answers_three, answers_four,
-                    answers_five, answers_six, answers_seven, answers_eight,
-                    answers_nine, answers_ten, answers_eleven, answers_twelve,
-                    answers_thirteen, answers_fourteen, answers_fifteen,
-                    answers_sixteen, answers_seventeen, answers_eighteen,
-                    answers_nineteen, answers_twenty]
-
-for ans in all_answer_lists:
-    ans_str = ' '.join(ans)
-    re_str = re.findall(r'[\w,.?\-\']*', ans_str)
-    result = [Fore.CYAN + x + Fore.RESET if x.upper() in re_str else x for x in re_str]
-    print(' '.join(result))
-
 # House score
 gryffindor = 0
 slytherin = 0
@@ -279,11 +266,12 @@ def enter_hogwarts():
     print("""                      ===========================
                        ENTER HOGWARTS [YES / NO]
                       ===========================\n""")
-    enter = input()
+    enter = input("                              ")
     if enter == "yes":
         welcome_greeting()
     elif enter == "no":
-        print("You just missed your chance to become a great wizard*ess...\n")
+        print("\nYou just missed your chance to become a great wizard*ess\
+        ...\n")
         input("Press any key to take the Hogwarts Express back to London\n")
         os.system('clear')
         print_hogwarts_emblem()
@@ -348,7 +336,8 @@ def check_name():
     Asks for user name input and checks if it is a valid string
     """
     your_name = input(f"""{Fore.CYAN + '\x1B[3m' + '\033[1m'}
-        Young wizard*ess, what is your name?\n{'\033[0m' + Fore.RESET}""")
+        Young wizard*ess, what is your name?\n\n                 {'\033[0m' +
+        Fore.RESET}""")
     if re.match(r"[a-zA-Z]", your_name):
         print(f"""
         {Fore.CYAN + '\033[1m'}Hello {your_name}! Let me see what
@@ -373,8 +362,8 @@ def need_more_information():
     or 'no' is entered
     """
     confirm_start = input(f"""
-    Are you ready to dive deeper with me? (YES / NO)\n\n
-    {Fore.RESET}""").lower()
+    Are you ready to dive deeper with me? (YES / NO)
+    \n                           {Fore.RESET}""").lower()
     if confirm_start == "yes":
         print(f"""
             {Fore.YELLOW + '\033[1m'}     I N S T R U C T I O N S:
@@ -849,8 +838,8 @@ def print_question_answers(question_x, answers_x):
     """
     Template to print answers and questions
     """
-    print(f"""    \n\nEnter{Fore.YELLOW + '\033[1m'} L E A V E {'\033[0m'}
-    to exit the Great Hall{Fore.RESET}""")
+    print(f"""    \n\n            Enter{Fore.YELLOW + '\033[1m'} L E A V E
+    {'\033[0m'}        to exit the Great Hall{Fore.RESET}""")
     print(question_x)
     shuffle(answers_x)
     print(*answers_x, sep='\n', end='\n\n')

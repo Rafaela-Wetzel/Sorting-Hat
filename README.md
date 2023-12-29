@@ -59,6 +59,17 @@ The user starts on the main page that shows the Hogwarts Coat of Arms and enters
 
 # Libraries
 
+I used the following libraries:
+
+- *from random import shuffle* to shuffle the question answers so that the answers are not displayed in the same order as put in the variables (Gryffindor, Slytherin, Ravenclaw, Hufflepuff)
+
+- *import os* to clear the console after a house wins or the user leaves the game early
+
+- *import re* for input validation using regular expressions
+
+- *import sys* to block the print function in the very last question because the print statement is not needed there anymore
+
+- *import colorama* to add colors to the terminal 
 
 # Features 
 

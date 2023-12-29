@@ -105,8 +105,7 @@ Depending on the winning house the user is forwarded to the matching Result sect
 
 # Features Left to Implement
 
-- A continuation of the quiz could be that depending on the house result the user will get specific questions about that house that test their Harry Potter knowledge
-- Choosing A, B, C, D
+- A continuation of the quiz could be that the user would be able to take another quiz with questions specific to their winning house. This would be a quiz to test their Harry Potter knowledge instead of a 'personality quiz'. 
 
 ### Accessibility
 
@@ -126,8 +125,6 @@ Depending on the winning house the user is forwarded to the matching Result sect
 - When a user input would be checked within the increase_score function the score for the respective house was supposed to increase by 1. When the scores for all houses were printed after this step to double check if everything works correctly it would show an increase by 2 instead of 1 for the respective house. It took me a while to figure out that this was due to the step that comes straight after this: running the increase_score function again to see if the user input was valid (point gained = True) or invalid (no point gained = False) by checking for the returned value that would trigger the next question (True) or repeat the current one (False). In the process of running the increase_function a second time, even if it was only to check for a True or False return value, the respective house score would be increased by 1 for the second time so that the outcome would be 2 points instead of 1. My solution was to separate the increase_score function from the valid/invalid input check by creating a second function check_if_true. The latter would then only have the purpose to return either a True or False value and not increase any score.    
 
 - In the check if true function I first wrote: "if input in gryffindor_answers or slytherin_answers or ravenclaw_answers or hufflepuff_answers: return True" and was wondering why it did not work but skipped to the next question even if the answer was wrong. Later I realized that I would have to put "input in" before each of the houses, not only in the beginning.
-
-- reset_score positioned after os(clear) !!!!!!!!!!!
 
 ## Unfixed Bugs
 
@@ -164,9 +161,7 @@ https://www.copahost.com/blog/input-python/#:~:text=Input%20validation%20using%2
 https://www.youtube.com/watch?v=u51Zjlnui4Y 
 
 [4] How to block calls to print
-https://stackoverflow.com/questions/8391411/how-to-block-calls-to-print
-
-[5] 
+https://stackoverflow.com/questions/8391411/how-to-block-calls-to-print 
 
 ## Media
 

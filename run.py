@@ -1,8 +1,12 @@
+# Shuffle answers
 from random import shuffle
+# os.sytem clear
 import os
+# Input validation using regular expressions
 import re
+# Sys to block print
 import sys
-
+# Add colors
 import colorama
 from colorama import Fore, Back, Style
 colorama.init()
@@ -13,16 +17,16 @@ colorama.init()
 question_one = f"""{Fore.MAGENTA + '\033[1m'}\n1. Which element resonates most
 with you?\n{'\033[0m' + Fore.RESET}"""
 
-answers_one = ["- Fire", "- Water", "- Air", "- Earth"]
+answers_one = ["- FIRE", "- WATER", "- AIR", "- EARTH"]
 
 question_two = f"""{Fore.MAGENTA + '\033[1m'}\n2. Late at night, walking alone
 down the street, you hear a peculiar cry that you believe to have a magical
 source. Do you: \n{'\033[0m' + Fore.RESET}"""
 
-answers_two = ["- Proceed with caution, keeping one hand on your concealed\
+answers_two = ["- PROCEED WITH CAUTION, keeping one hand on your concealed\
 wand and an eye out for any disturbance?\n", "- Draw your wand and try to\
-(discover the source of the noise?\n", "- Draw your wand and stand your\
-ground?\n", "- Withdraw into the shadows to await developments, while mentally\
+DISCOVER the SOURCE of the noise?\n", "- Draw your wand and STAND YOUR\
+GROUND?\n", "- WITHDRAW into the shadows to await developments, while mentally\
 reviewing the most appropriate defensive and offensive spells, should\
 trouble occur?\n"]
 
@@ -33,13 +37,13 @@ suspicious of what happened. He draws you to one side after his lesson and asks
 you whether or not your classmate used a forbidden quill. What do you do?
 \n{'\033[0m' + Fore.RESET}"""
 
-answers_three = ["- Lie and say you don't know (but hope that somebody else\
+answers_three = ["- LIE and say you don't know (but hope that somebody else\
 tells Professor Flitwick the truth).\n", "- Tell Professor Flitwick that he\
-ought to ask your classmate (and resolve to tell your classmate that if he\
-doesn't tell the truth, you will).\n", "- Tell Professor Flitwick the truth.\
+ought to ASK your CLASSMATE (and resolve to tell your classmate that if he\
+doesn't tell the truth, you will).\n", "- TELL Professor Flitwick the TRUTH.\
 If your classmate is prepared to win by cheating, he deserves to be found out.\
 also, as you are both in the same house, any points he loses will be regained\
-by you, for coming first in his place.\n", "- You would not wait to be asked\
+by you, for coming first in his place.\n", "- You would NOT WAIT to be asked\
 to tell Professor Flitwick the truth. If you knew that somebody was using a\
 forbidden quill, you would tell the teacher before the exam started.\n"]
 
@@ -47,53 +51,53 @@ question_four = f"""{Fore.MAGENTA + '\033[1m'}\n4. After you have died, what
 would you most like people to do when they hear your name? \n"{'\033[0m' +
 Fore.RESET}"""
 
-answers_four = ["- Ask for more stories about your adventures\n", "- I don't\
-care what people think of me after I'm dead, it's what they think of me while\
+answers_four = ["- Ask for more stories about your ADVENTURES\n", "- I DON'T\
+CARE what people think of me after I'm dead, it's what they think of me while\
 I'm alive that counts\n", "- Think with admiration of your\
-achievements\n", "- Miss you, but smile\n"]
+ACHIEVEMENTS\n", "- MISS you, but smile\n"]
 
 question_five = f"""{Fore.MAGENTA + '\033[1m'}\n5. You enter an enchanted
 garden. What would you be most curious to examine first? \n"{'\033[0m' +
 Fore.RESET}"""
 
-answers_five = ["- The statue of an old wizard with a strangely twinkling\
-eye\n", "- The bubbling pool, in the depths of which something luminous is\
-swirling\n", "- The silver leafed tree bearing golden apples\n", "- The fat\
-red toadstools that appear to be talking to each other\n"]
+answers_five = ["- The STATUE of an old wizard with a strangely twinkling\
+eye\n", "- The BUBBLING POOL, in the depths of which something luminous is\
+swirling\n", "- The SILVER leafed TREE bearing golden apples\n", "- The fat\
+red TOADSTOOLS that appear to be talking to each other\n"]
 
 question_six = f"""{Fore.MAGENTA + '\033[1m'}\n6. Once every century, the
 Flutterby bush produces flowers that adapt their scent to attract the unwary.
 If it lured you, it would smell of: \n{'\033[0m' + Fore.RESET}"""
 
-answers_six = ["- A crackling log fire\n", "- The sea\n", "- Fresh\
-parchment\n", "- Home\n"]
+answers_six = ["- A crackling LOG FIRE\n", "- The SEA\n", "- Fresh\
+PARCHMENT\n", "- HOME\n"]
 
 question_seven = f"""{Fore.MAGENTA + '\033[1m'}\n7. Four goblets are placed
 before you. Which would you choose to drink? \n{'\033[0m' + Fore.RESET}"""
 
-answers_seven = ["- The golden liquid so bright that it hurts the eye, and\
-which makes sunspots dance all around the room.\n", "- The mysterious black\
-liquid that gleams like ink, and gives off fumes that make you see strange\
-visions.\n", "- The foaming, frothing, silvery liquid that sparkles as though\
-containing ground diamonds.\n", "- The smooth, thick, richly purple drink that\
+answers_seven = ["- The GOLDEN LIQUID so bright that it hurts the eye, and\
+which makes sunspots dance all around the room.\n", "- The mysterious BLACK\
+LIQUID that gleams like ink, and gives off fumes that make you see strange\
+visions.\n", "- The foaming, frothing, SILVERY LIQUID that sparkles as though\
+containing ground diamonds.\n", "- The smooth, thick, richly PURPLE DRINK that\
 gives off a delicious smell of chocolate and plums.\n"]
 
 question_eight = f"""{Fore.MAGENTA + '\033[1m'}\n8. Which road tempts you most?
 \n{'\033[0m' + Fore.RESET}"""
 
-answers_eight = ["- The wide, sunny, grassy lane\n", "- The narrow, dark,\
-lantern-lit alley\n", "- The twisting, leaf-strewn path through\
-woods\n", "- The cobbled street lined with ancient buildings\n"]
+answers_eight = ["- The wide, sunny, grassy LANE\n", "- The narrow, dark,\
+lantern-lit ALLEY\n", "- The twisting, leaf-strewn path through\
+WOODS\n", "- The cobbled STREET lined with ancient buildings\n"]
 
 question_nine = f"""{Fore.MAGENTA + '\033[1m'}\n9. Four boxes are placed before
 you. Which would you try and open? \n{'\033[0m' + Fore.RESET}"""
 
-answers_nine = ["- The small pewter box, unassuming and plain, with a\
+answers_nine = ["- The small PEWTER BOX, unassuming and plain, with a\
 scratched message upon it that reads ‘I open only for the worthy.'\n", "- The\
-gleaming jet black box with a silver lock and key, marked with a mysterious\
-rune that you know to be the mark of Merlin.\n", "- The ornate golden casket,\
+gleaming jet BLACK BOX with a silver lock and key, marked with a mysterious\
+rune that you know to be the mark of Merlin.\n", "- The ornate GOLDEN CASKET,\
 standing on clawed feet, whose inscription warns that both secret knowledge\
-and unbearable temptation lie within.\n", "- The small tortoiseshell box,\
+and unbearable temptation lie within.\n", "- The small TORTOISESHELL BOX,\
 embellished with gold, inside which some small creature seems to be\
 squeaking.\n"]
 
@@ -101,72 +105,72 @@ question_ten = f"""{Fore.MAGENTA + '\033[1m'}\n10. You and two friends need to
 cross a bridge guarded by a river troll who insists on fighting one of you
 before he will let all of you pass. Do you: \n"{'\033[0m' + Fore.RESET}"""
 
-answers_ten = ["- Volunteer to fight\n", "- Suggest that all three of you\
-should fight (without telling the troll)?\n", "- Attempt to confuse the troll\
-into letting all three of you pass without fighting?\n", "- Suggest drawing\
-lots to decide which of you will fight?\n"]
+answers_ten = ["- VOLUNTEER to fight\n", "- Suggest that ALL THREE of you\
+should FIGHT (without telling the troll)?\n", "- Attempt to CONFUSE the troll\
+into letting all three of you pass without fighting?\n", "- Suggest DRAWING\
+LOTS to decide which of you will fight?\n"]
 
 question_eleven = f"""{Fore.MAGENTA + '\033[1m'}\n11. Which would you rather
 be: \n{'\033[0m' + Fore.RESET}"""
 
-answers_eleven = ["- Trusted\n", "- Praised\n", "- Envied\n", "- Feared\
-\n", "- Imitated\n", "- Liked\n"]
+answers_eleven = ["- TRUSTED\n", "- PRAISED\n", "- ENVIED\n", "- FEARED\
+\n", "- IMITATED\n", "- LIKED\n"]
 
 question_twelve = f"""{Fore.MAGENTA + '\033[1m'}\n12. If you could have any
 power, which would you choose? \n{'\033[0m' + Fore.RESET}"""
 
-answers_twelve = ["- The power of invisibility\n", "- The power to read\
-minds\n", "- The power to change your appearance at will\n", "- The power to\
-change the past\n", "- The power of superhuman strength\n", "- The power to\
-speak to animals\n"]
+answers_twelve = ["- The power of INVISIBILITY\n", "- The power to READ\
+MINDS\n", "- The power to CHANGE your APPEARANCE at will\n", "- The power to\
+CHANGE the PAST\n", "- The power of SUPERHUMAN STRENGTH\n", "- The power to\
+SPEAK TO ANIMALS\n"]
 
 question_thirteen = f"""{Fore.MAGENTA + '\033[1m'}\n13. What are you most
 looking forward to learning at Hogwarts? \n"{'\033[0m' + Fore.RESET}"""
 
-answers_thirteen = ["- Apparition and disapparition (being able to materialize\
-and dematerialize at will)\n", "- Transfiguration (turning one object into\
-another object)\n", "- Flying on a broomstick\n", "- Hexes and jinxes\
-\n", "- All about magical creatures, and how to befriend/care for them\
-\n", "- Every area of magic I can\n"]
+answers_thirteen = ["- APPARITION and disapparition (being able to materialize\
+and dematerialize at will)\n", "- TRANSFIGURATION (turning one object into\
+another object)\n", "- FLYING on a broomstick\n", "- HEXES and jinxes\
+\n", "- All about MAGICAL CREATURES, and how to befriend/care for them\
+\n", "- EVERY AREA of magic I can\n"]
 
 question_fourteen = f"""{Fore.MAGENTA + '\033[1m'}\n14. Which of the following
 would you most like to study? \n{'\033[0m' + Fore.RESET}"""
 
-answers_fourteen = ["- Centaurs\n", "- Ghosts\n", "- Werewolves\n", "- Goblins\
-\n", "- Merpeople\n", "- Trolls\n"]
+answers_fourteen = ["- CENTAURS\n", "- GHOSTS\n", "- WEREWOLVES\n", "- GOBLINS\
+\n", "- MERPEOPLE\n", "- TROLLS\n"]
 
 question_fifteen = f"""{Fore.MAGENTA + '\033[1m'}\n15. A Muggle confronts you
 and says that they are sure you are a witch or wizard. Do you: \n{'\033[0m' +
 Fore.RESET}"""
 
-answers_fifteen = ["- Ask what makes them think so?\n", "- Agree, and ask\
-whether they'd like a free sample of a jinx?\n", "- Agree, and walk away,\
-leaving them to wonder whether you are bluffing?\n", "- Tell them that you\
-are worried about their mental health, and offer to call a doctor.\n"]
+answers_fifteen = ["- Ask WHAT MAKES THEM THINK so?\n", "- Agree, and ask\
+whether they'd like a free sample of a JINX?\n", "- Agree, and walk away,\
+leaving them to wonder whether you are BLUFFING?\n", "- Tell them that you\
+are worried about their MENTAL HEALTH, and offer to call a doctor.\n"]
 
 question_sixteen = f"""{Fore.MAGENTA + '\033[1m'}\n16. How would you like to be
 known to history? \n{'\033[0m' + Fore.RESET}"""
 
-answers_sixteen = ["- The Bold\n", "- The Great\n", "- The Wise\
-\n", "- The Good\n"]
+answers_sixteen = ["- The BOLD\n", "- The GREAT\n", "- The WISE\
+\n", "- The GOOD\n"]
 
 question_seventeen = f"""{Fore.MAGENTA + '\033[1m'}\n17. Given the choice,
 would you rather invent a potion that would guarantee you: \n{'\033[0m' +
 Fore.RESET}"""
 
-answers_seventeen = ["- Glory\n", "- Power\n", "- Wisdom\n", "- Love\n"]
+answers_seventeen = ["- GLORY\n", "- POWER\n", "- WISDOM\n", "- LOVE\n"]
 
 question_eighteen = f"""{Fore.MAGENTA + '\033[1m'}\n18. Which of the following\
 would you most hate people to call you? \n{'\033[0m' + Fore.RESET}"""
 
-answers_eighteen = ["- Cowardly\n", "- Ordinary\n", "- Ignorant\
-\n", "- Selfish\n"]
+answers_eighteen = ["- COWARDLY\n", "- ORDINARY\n", "- IGNORANT\
+\n", "- SELFISH\n"]
 
 question_nineteen = f"""{Fore.MAGENTA + '\033[1m'}\n19. How would other people
 describe you? \n{'\033[0m' + Fore.RESET}"""
 
-answers_nineteen = ["- Honest, brave and adventurous\n", "- Deceitful,\
-malevolent and sexy\n", "- Curious, analytical and witty\n", "- Friendly,\
+answers_nineteen = ["- HONEST, brave and adventurous\n", "- DECEITFUL,\
+malevolent and sexy\n", "- CURIOUS, analytical and witty\n", "- FRIENDLY,\
 happy and dorky\n"]
 
 question_twenty = f"""{Fore.MAGENTA + '\033[1m'}\n20. This seems to be a very
@@ -174,34 +178,47 @@ special and unique situation. You have traits that fit more than one house...
 let me ask you: where would you like be placed? Will it be Gryffindor,
 Slytherin, Ravenclaw or Hufflepuff?\n{'\033[0m' + Fore.RESET}"""
 
-answers_twenty = ["- Gryffindor\n", "- Slytherin\n", "- Ravenclaw\
-\n", "- Hufflepuff\n"]
+answers_twenty = ["- GRYFFINDOR\n", "- SLYTHERIN\n", "- RAVENCLAW\
+\n", "- HUFFLEPUFF\n"]
 
 # All answers sorted by houses
-gryffindor_answers = ["fire", "cowardly", "the bold", "adventures", "glory\
-", "log fire", "golden liquid", "statue", "plain box", "volunteer", "trusted\
+gryffindor_answers = ["fire", "cowardly", "bold", "adventures", "glory\
+", "log fire", "golden liquid", "statue", "pewter box", "volunteer", "trusted\
 ", "praised", "invisibility", "change past", "change appearance", "apparition\
 ", "flying", "centaurs", "ghosts", "werewolves", "bluffing", "woods", "\
 discover source", "ask classmate", "honest", "gryffindor"]
 
-slytherin_answers = ["water", "ordinary", "the great", "don't care", "glory\
+slytherin_answers = ["water", "ordinary", "great", "don't care", "glory\
 ", "sea", "black liquid", "bubbling pool", "black box", "all three fight", "\
 nvied", "feared", "read minds", "superhuman strength", "change past", "\
-apparition", "hexes", "goblins", "merpeople", "trolls", "jinx", "dark alley\
+apparition", "hexes", "goblins", "merpeople", "trolls", "jinx", "alley\
 ", "stand your ground", "not wait", "deceitful", "slytherin"]
 
-ravenclaw_answers = ["air", "ignorant", "the wise", "achievements", "wisdom\
+ravenclaw_answers = ["air", "ignorant", "wise", "achievements", "wisdom\
 ", "parchment", "silvery liquid", "silver tree", "golden casket", "confuse \
 troll", "envied", "imitated", "read minds", "speak to animals", "change\
 appearance",  "transfiguration", "every area", "centaurs", "goblins", "ghosts\
-", "what makes them think so", "ancient buildings", "withdraw", "tell truth\
+", "what makes them think", "street", "withdraw", "tell truth\
 ", "curious", "ravenclaw"]
 
-hufflepuff_answers = ["earth", "selfish", "the good", "miss", "love", "home\
+hufflepuff_answers = ["earth", "selfish", "good", "miss", "love", "home\
 ", "purple drink", "toadstools", "tortoiseshell box", "drawing lots", "trusted\
 ", "liked", "invisibility", "superhuman strength", "speak to animals", "flying\
 ", "magical creatures", "merpeople", "werewolves", "trolls", "mental health\
-", "sunny lane", "proceed with caution", "lie", "friendly", "hufflepuff"]
+", "lane", "proceed with caution", "lie", "friendly", "hufflepuff"]
+
+all_answer_lists = [answers_one, answers_two, answers_three, answers_four,
+                    answers_five, answers_six, answers_seven, answers_eight,
+                    answers_nine, answers_ten, answers_eleven, answers_twelve,
+                    answers_thirteen, answers_fourteen, answers_fifteen,
+                    answers_sixteen, answers_seventeen, answers_eighteen,
+                    answers_nineteen, answers_twenty]
+
+for ans in all_answer_lists:
+    ans_str = ' '.join(ans)
+    re_str = re.findall(r'[\w,.?\-\']*', ans_str)
+    result = [Fore.CYAN + x + Fore.RESET if x.upper() in re_str else x for x in re_str]
+    print(' '.join(result))
 
 # House score
 gryffindor = 0

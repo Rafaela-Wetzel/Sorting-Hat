@@ -26,9 +26,9 @@ source. Do you: \n{'\033[0m' + Fore.RESET}"""
 answers_two = ["- PROCEED with caution, keeping one hand on your concealed \
 wand and an eye out for any disturbance?\n", "- Draw your wand and try to \
 DISCOVER the SOURCE of the noise?\n", "- Draw your wand and STAND YOUR \
-GROUND?\n", "- WITHDRAW into the shadows to await developments, while mentally \
-reviewing the most appropriate defensive and offensive spells, should \
-trouble occur?\n"]
+GROUND?\n", "- WITHDRAW into the shadows to await developments, while \
+mentally reviewing the most appropriate defensive and offensive spells, \
+should trouble occur?\n"]
 
 question_three = f"""{Fore.MAGENTA + '\033[1m'}\n3. One of your house mates has
 cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top
@@ -41,11 +41,12 @@ answers_three = ["- LIE and say you don't know (but hope that somebody else \
 tells Professor Flitwick the truth).\n", "- Tell Professor Flitwick that he \
 ought to ask your CLASSMATE (and resolve to tell your classmate that if he \
 doesn't tell the truth, you will).\n", "- Tell Professor Flitwick the TRUTH. \
-If your classmate is prepared to win by cheating, he deserves to be found out. \
-also, as you are both in the same house, any points he loses will be regained \
-by you, for coming first in his place.\n", "- You would NOT WAIT to be asked \
-to tell Professor Flitwick the truth. If you knew that somebody was using a \
-forbidden quill, you would tell the teacher before the exam started.\n"]
+If your classmate is prepared to win by cheating, he deserves to be found \
+out. Slso, as you are both in the same house, any points he loses will be \
+regained by you, for coming first in his place.\n", "- You would NOT WAIT \
+to be asked to tell Professor Flitwick the truth. If you knew that somebody \
+was using a forbidden quill, you would tell the teacher before the exam \
+started.\n"]
 
 question_four = f"""{Fore.MAGENTA + '\033[1m'}\n4. After you have died, what
 would you most like people to do when they hear your name? \n"{'\033[0m' +
@@ -78,9 +79,9 @@ before you. Which would you choose to drink? \n{'\033[0m' + Fore.RESET}"""
 answers_seven = ["- The GOLDEN liquid so bright that it hurts the eye, and \
 which makes sunspots dance all around the room.\n", "- The mysterious BLACK \
 liquid that gleams like ink, and gives off fumes that make you see strange \
-visions.\n", "- The foaming, frothing, SILVERY liquid that sparkles as though \
-containing ground diamonds.\n", "- The smooth, thick, richly PURPLE drink that \
-gives off a delicious smell of chocolate and plums.\n"]
+visions.\n", "- The foaming, frothing, SILVERY liquid that sparkles as \
+though containing ground diamonds.\n", "- The smooth, thick, richly PURPLE \
+drink that gives off a delicious smell of chocolate and plums.\n"]
 
 question_eight = f"""{Fore.MAGENTA + '\033[1m'}\n8. Which road tempts you most?
 \n{'\033[0m' + Fore.RESET}"""
@@ -127,17 +128,17 @@ speak to ANIMALS\n"]
 question_thirteen = f"""{Fore.MAGENTA + '\033[1m'}\n13. What are you most
 looking forward to learning at Hogwarts? \n"{'\033[0m' + Fore.RESET}"""
 
-answers_thirteen = ["- APPARITION and disapparition (being able to materialize \
-and dematerialize at will)\n", "- TRANSFIGURATION (turning one object into \
-another object)\n", "- FLYING on a broomstick\n", "- HEXES and jinxes \
-\n", "- All about magical CREATURES, and how to befriend/care for them \
-\n", "- EVERY AREA of magic I can\n"]
+answers_thirteen = ["- APPARITION and disapparition (being able to \
+materialize and dematerialize at will)\n", "- TRANSFIGURATION (turning \
+one object into another object)\n", "- FLYING on a broomstick\
+\n", "- HEXES and jinxes \n", "- All about magical CREATURES, and how \
+to befriend/care for them \n", "- EVERY AREA of magic I can\n"]
 
 question_fourteen = f"""{Fore.MAGENTA + '\033[1m'}\n14. Which of the following
 would you most like to study? \n{'\033[0m' + Fore.RESET}"""
 
-answers_fourteen = ["- CENTAURS\n", "- GHOSTS\n", "- WEREWOLVES\n", "- GOBLINS \
-\n", "- MERPEOPLE\n", "- TROLLS\n"]
+answers_fourteen = ["- CENTAURS\n", "- GHOSTS\n", "- WEREWOLVES \
+\n", "- GOBLINS \n", "- MERPEOPLE\n", "- TROLLS\n"]
 
 question_fifteen = f"""{Fore.MAGENTA + '\033[1m'}\n15. A Muggle confronts you
 and says that they are sure you are a witch or wizard. Do you: \n{'\033[0m' +
@@ -160,8 +161,9 @@ Fore.RESET}"""
 
 answers_seventeen = ["- GLORY\n", "- POWER\n", "- WISDOM\n", "- LOVE\n"]
 
-question_eighteen = f"""{Fore.MAGENTA + '\033[1m'}\n18. Which of the following \
-would you most hate people to call you? \n{'\033[0m' + Fore.RESET}"""
+question_eighteen = f"""{Fore.MAGENTA + '\033[1m'}\n18. Which of the \
+following would you most hate people to call you? \
+\n{'\033[0m' + Fore.RESET}"""
 
 answers_eighteen = ["- COWARDLY\n", "- ORDINARY\n", "- IGNORANT \
 \n", "- SELFISH\n"]
@@ -535,11 +537,11 @@ def enter_gryffindor():
 
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations, {your_name}! I am prefect Percy Weasley, and
-    I am delighted to welcome you to {Fore.RED + '\033[1m'} GRYFFINDOR HOUSE
-    . {'\033[22m' + Fore.RESET}Our emblem is the lion, the bravest of all
-    creatures; our house colors are scarlet and gold, and our common room lies
-    up in Gryffindor Tower.
+    print(f"""    Congratulations, {your_name}! I am prefect Percy Weasley, \
+    and I am delighted to welcome you to {Fore.RED + '\033[1m'} GRYFFINDOR \
+    HOUSE. {'\033[22m' + Fore.RESET}Our emblem is the lion, the bravest of \
+    all creatures; our house colors are scarlet and gold, and our common \
+    room lies up in Gryffindor Tower.
 
     This is, quite simply, the best house at Hogwarts.
     It is where the bravest and boldest end up - for instance: Albus
@@ -549,7 +551,7 @@ def enter_gryffindor():
     is to follow Harry Potter and his friends as I lead them up to their
     dormitories. Enjoy your time at Hogwarts - but how could you fail to? You
     have become part of the best house in the school.\n""")
-    input("Press any key to go back to the main hall\n")
+    input("             Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
@@ -601,15 +603,17 @@ def enter_slytherin():
 
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations, {your_name}! I am prefect Gemma Farley, and I
-    am delighted to welcome you to{Fore.GREEN + '\033[1m'} SLYTHERIN HOUSE
-    . {'\033[22m' + Fore.RESET}Our emblem is the serpent, the wisest of
-    creatures; our house colors are emerald green and silver, and our common
-    room lies behind a concealed entrance down in the dungeons. As you will
-    see, its windows look out into the depths of the Hogwarts lake. We often
-    see the giant squid swooshing by - and sometimes more interesting
-    creatures. We like to feel that our hangout has the aura of a mysterious,
-    underwater shipwreck.
+    print(f"""    Congratulations, {your_name}! I am prefect Gemma Farley,
+    and I am delighted to welcome you to{Fore.GREEN + '\033[1m'} SLYTHERIN
+    HOUSE.
+
+    {'\033[22m' + Fore.RESET}Our emblem is the serpent, the wisest of
+    creatures; our house colors are emerald green and silver, and our
+    common room lies behind a concealed entrance down in the dungeons.
+    As you will see, its windows look out into the depths of the Hogwarts
+    lake. We often see the giant squid swooshing by - and sometimes more
+    interesting creatures. We like to feel that our hangout has the aura
+    of a mysterious, underwater shipwreck.
 
     Now, there are a few things you should know about Slytherin – and a few you
     should forget. Firstly, let us dispel a few myths. You might have heard
@@ -652,7 +656,7 @@ def enter_slytherin():
     adventures of famous Slytherins cover the walls, and silver lanterns hang
     from the ceilings. You will sleep well; it is very soothing, listening to
     the lake water lapping against the windows at night.\n""")
-    input("Press any key to go back to the main hall\n")
+    input("            Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
@@ -701,7 +705,7 @@ def enter_hufflepuff():
 
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations, {your_name}! I am Prefect Gabriel Truman,
+    print(f"""    Congratulations, {your_name}! I am Prefect Gabriel Truman,
     and I am delighted to welcome you to{Fore.YELLOW + '\033[1m'} HUFFLEPUFF
     HOUSE.{'\033[22m' + Fore.RESET} Our emblem is the badger, an animal that
     is often underestimated, because it lives quietly until attacked, but
@@ -733,10 +737,12 @@ def enter_hufflepuff():
 
     Our house ghost is the friendliest of them all: the Fat Friar. You will
     recognise him easily enough; he is plump and wears monks robes, and he is
-    very helpful if you get lost or are in any kind of trouble.\n\nI think that
-    is nearly everything. Once again: congratulations on becoming a member of
-    the friendliest, most decent and most tenacious house of them all.\n")
-    input("Press any key to go back to the main hall\n""")
+    very helpful if you get lost or are in any kind of trouble.
+
+    I think that is nearly everything. Once again: congratulations on becoming
+    a member of the friendliest, most decent and most tenacious house of them
+    all.""")
+    input("                 Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()
@@ -790,15 +796,15 @@ def enter_ravenclaw():
 ⠀⠀⠀⠀⠀⠀
     """ + Fore.RESET)
     reset_score()
-    print(f"""Congratulations, {your_name}! I am prefect Robert Hilliard, and
-    I am delighted to welcome you to{Fore.BLUE + '\033[1m'} RAVENCLAW HOUSE
-    . {'\033[22m' + Fore.RESET}Our emblem is the eagle, which soars where
-    others cannot climb; our house colors are blue and bronze, and our common
-    room is found at the top of Ravenclaw Tower, behind a door with an
-    enchanted knocker. The arched windows set into the walls of our circular
-    common room look down at the school grounds: the lake, the Forbidden
-    Forest, the Quidditch pitch and the Herbology gardens. No other house in
-    the school has such stunning views.
+    print(f"""    Congratulations, {your_name}! I am prefect Robert Hilliard,
+    and I am delighted to welcome you to{Fore.BLUE + '\033[1m'} RAVENCLAW
+    HOUSE. {'\033[22m' + Fore.RESET}Our emblem is the eagle, which soars
+    where others cannot climb; our house colors are blue and bronze, and
+    our common room is found at the top of Ravenclaw Tower, behind a door
+    with an enchanted knocker. The arched windows set into the walls of our
+    circular common room look down at the school grounds: the lake, the
+    Forbidden Forest, the Quidditch pitch and the Herbology gardens. No
+    other house in the school has such stunning views.
 
     Without wishing to boast, this is the house where the cleverest witches and
     wizards live. Our founder, Rowena Ravenclaw, prized learning above all else
@@ -830,7 +836,7 @@ def enter_ravenclaw():
     Ravenclaws. She is particularly useful if you are lost, or you have mislaid
     something. And once again: well done on becoming a member of the cleverest,
     quirkiest and most interesting house at Hogwarts!\n""")
-    input("Press any key to go back to the main hall\n")
+    input("             Press any key to go back to the main hall\n")
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()

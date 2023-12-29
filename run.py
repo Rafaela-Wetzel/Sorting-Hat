@@ -19,12 +19,12 @@ question_two = f"""{Fore.MAGENTA + '\033[1m'}\n2. Late at night, walking alone
 down the street, you hear a peculiar cry that you believe to have a magical
 source. Do you: \n{'\033[0m' + Fore.RESET}"""
 
-answers_two = ["- PROCEED WITH CAUTION, keeping one hand on your concealed\
-wand and an eye out for any disturbance?\n", "- Draw your wand and try to\
-DISCOVER the SOURCE of the noise?\n", "- Draw your wand and STAND YOUR\
-GROUND?\n", "- WITHDRAW into the shadows to await developments, while mentally\
-reviewing the most appropriate defensive and offensive spells, should\
-trouble occur?\n"]
+answers_two = ["- PROCEED with caution, keeping one hand on your concealed \
+wand and an eye out for any disturbance?\n", "- Draw your wand and try to \
+discover the SOURCE of the noise?\n", "- Draw your wand and STAND YOUR \
+GROUND?\n", "- WITHDRAW into the shadows to await developments, while \
+mentally reviewing the most appropriate defensive and offensive spells, \
+should trouble occur?\n"]
 
 question_three = f"""{Fore.MAGENTA + '\033[1m'}\n3. One of your house mates has
 cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top
@@ -38,7 +38,7 @@ tells Professor Flitwick the truth).\n", "- Tell Professor Flitwick that he \
 ought to ask your CLASSMATE (and resolve to tell your classmate that if he \
 doesn't tell the truth, you will).\n", "- Tell Professor Flitwick the TRUTH. \
 If your classmate is prepared to win by cheating, he deserves to be found \
-out. Slso, as you are both in the same house, any points he loses will be \
+out. Also, as you are both in the same house, any points he loses will be \
 regained by you, for coming first in his place.\n", "- You would NOT WAIT \
 to be asked to tell Professor Flitwick the truth. If you knew that somebody \
 was using a forbidden quill, you would tell the teacher before the exam \
@@ -100,7 +100,7 @@ squeaking.\n"]
 
 question_ten = f"""{Fore.MAGENTA + '\033[1m'}\n10. You and two friends need to
 cross a bridge guarded by a river troll who insists on fighting one of you
-before he will let all of you pass. Do you: \n"{'\033[0m' + Fore.RESET}"""
+before he will let all of you pass. Do you: \n{'\033[0m' + Fore.RESET}"""
 
 answers_ten = ["- VOLUNTEER to fight\n", "- Suggest that ALL THREE of you \
 should FIGHT (without telling the troll)?\n", "- Attempt to CONFUSE the troll \
@@ -184,7 +184,7 @@ gryffindor_answers = ["fire", "cowardly", "bold", "adventures", "glory\
 ", "log fire", "golden", "statue", "pewter", "volunteer", "trusted\
 ", "praised", "invisibility", "past", "appearance", "apparition\
 ", "flying", "centaurs", "ghosts", "werewolves", "bluffing", "woods", "\
-discover source", "classmate", "honest", "gryffindor"]
+source", "classmate", "honest", "gryffindor"]
 
 slytherin_answers = ["water", "ordinary", "great", "alive", "glory\
 ", "sea", "black", "pool", "black box", "all three fight", "\
@@ -193,11 +193,10 @@ apparition", "hexes", "goblins", "merpeople", "trolls", "jinx", "alley\
 ", "stand your ground", "not wait", "deceitful", "slytherin"]
 
 ravenclaw_answers = ["air", "ignorant", "wise", "achievements", "wisdom\
-", "parchment", "silvery", "tree", "casket", "confuse \
-troll", "envied", "imitated", "minds", "animals", "change\
-appearance",  "transfiguration", "every area", "centaurs", "goblins", "ghosts\
-", "what makes them think", "street", "withdraw", "truth\
-", "curious", "ravenclaw"]
+", "parchment", "silvery", "tree", "casket", "confuse", "envied", "\
+imitated", "minds", "animals", "appearance",  "transfiguration", "\
+every area", "centaurs", "goblins", "ghosts", "what makes them think\
+", "street", "withdraw", "truth", "curious", "ravenclaw"]
 
 hufflepuff_answers = ["earth", "selfish", "good", "miss", "love", "home\
 ", "purple", "toadstools", "tortoiseshell", "lots", "trusted\
@@ -405,7 +404,8 @@ def increase_score(input):
     elif input == "leave":
         exit()
     else:
-        print("\nPlease enter one of the capitalized keywords")
+        print(f"""\n{Fore.RED}Please enter one of the capitalized keywords
+        {Fore.RESET}""")
 
 
 def check_if_true(input):
@@ -488,8 +488,7 @@ def check_score():
 
 def enter_gryffindor():
     """
-    Prints Gryffindor Coat of Arms and lets user know they have been placed in
-    the Gryffindor house
+    Prints Gryffindor Coat of Arms
     """
     print(Fore.RED + """
 ⠀⠀⠀⠀    ⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣶⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣶⣶⣦⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -532,11 +531,20 @@ def enter_gryffindor():
 
 
     """ + Fore.RESET)
+    input("                   Press any key to continue\n")
+    gryffindor_welcome()
+
+
+def gryffindor_welcome():
+    """
+    Prints welcome to Gryffindor house text, resets score and brings back
+    to main page
+    """
     reset_score()
-    print(f"""    Congratulations, {your_name}! I am prefect Percy Weasley, \
-    and I am delighted to welcome you to {Fore.RED + '\033[1m'} GRYFFINDOR \
-    HOUSE. {'\033[22m' + Fore.RESET}Our emblem is the lion, the bravest of \
-    all creatures; our house colors are scarlet and gold, and our common \
+    print(f"""    Congratulations, Sarah! I am prefect Percy Weasley,
+    and I am delighted to welcome you to {Fore.RED + '\033[1m'} GRYFFINDOR
+    HOUSE. {'\033[22m' + Fore.RESET}Our emblem is the lion, the bravest of
+    all creatures; our house colors are scarlet and gold, and our common
     room lies up in Gryffindor Tower.
 
     This is, quite simply, the best house at Hogwarts.
@@ -555,8 +563,7 @@ def enter_gryffindor():
 
 def enter_slytherin():
     """
-    Prints Slytherin Coat of Arms and lets user know they have been placed in
-    the Slytherin house
+    Prints Slytherin Coat of Arms
     """
     print(Fore.GREEN + """
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣄⣶⣶⣶⣶⣾⣿⣿⣿⣶⣶⣶⣦⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -598,8 +605,16 @@ def enter_slytherin():
 
 
     """ + Fore.RESET)
+    input("                   Press any key to continue\n")
+    slytherin_welcome()
+
+
+def slytherin_welcome():
+    """
+    Prints Slytherin welcome text
+    """
     reset_score()
-    print(f"""    Congratulations, {your_name}! I am prefect Gemma Farley,
+    print(f"""    Congratulations, Sarah! I am prefect Gemma Farley,
     and I am delighted to welcome you to{Fore.GREEN + '\033[1m'} SLYTHERIN
     HOUSE.
 
@@ -660,8 +675,7 @@ def enter_slytherin():
 
 def enter_hufflepuff():
     """
-    Prints Hufflepuff Coat of Arms and lets user know they have been placed in
-    the Hufflepuff house
+    Prints Hufflepuff Coat of Arms
     """
     print(Fore.YELLOW + """
     ⠀⠀⠀⠀⠀⣀⣠⣤⣶⣾⣿⢿⣻⣿⢛⣿⡿⣿⢿⣧⣿⣿⣿⣷⡾⢿⣷⣂⣴⡿⣳⣾⣿⣿⣿⣷⡾⡿⣿⣻⣯⢨⣻⣿⣽⣯⣿⡿⣿⣶⣤⡄⠀⠀⠀⠀⠀⠀⠀⠀
@@ -700,8 +714,16 @@ def enter_hufflepuff():
 
 
     """ + Fore.RESET)
+    input("                   Press any key to continue\n")
+    hufflepuff_welcome()
+
+
+def hufflepuff_welcome():
+    """
+    Prints Hufflepuff welcome text
+    """
     reset_score()
-    print(f"""    Congratulations, {your_name}! I am Prefect Gabriel Truman,
+    print(f"""    Congratulations, Sarah! I am Prefect Gabriel Truman,
     and I am delighted to welcome you to{Fore.YELLOW + '\033[1m'} HUFFLEPUFF
     HOUSE.{'\033[22m' + Fore.RESET} Our emblem is the badger, an animal that
     is often underestimated, because it lives quietly until attacked, but
@@ -746,8 +768,7 @@ def enter_hufflepuff():
 
 def enter_ravenclaw():
     """
-    Prints Ravenclaw Coat of Arms and lets user know they have been placed in
-    the Ravenclaw house
+    Prints Ravenclaw Coat of Arms
     """
     print(Fore.BLUE + """
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⣤⡀⠀⠀⢀⠀⠀⠀⠈⡇⣿⡄⠀⢰⡇⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -791,8 +812,16 @@ def enter_ravenclaw():
 
 ⠀⠀⠀⠀⠀⠀
     """ + Fore.RESET)
+    input("                   Press any key to continue\n")
+    ravenclaw_welcome()
+
+
+def ravenclaw_welcome():
+    """
+    Prints Ravenclaw welcome text
+    """
     reset_score()
-    print(f"""    Congratulations, {your_name}! I am prefect Robert Hilliard,
+    print(f"""    Congratulations, Sarah! I am prefect Robert Hilliard,
     and I am delighted to welcome you to{Fore.BLUE + '\033[1m'} RAVENCLAW
     HOUSE. {'\033[22m' + Fore.RESET}Our emblem is the eagle, which soars
     where others cannot climb; our house colors are blue and bronze, and
@@ -936,11 +965,6 @@ def fifth_question():
     increase_score(fifth_input)
 
     if check_if_true(fifth_input) is True:
-        print("\nCurrent scores:\n")
-        print("Gryffindor: " + str(gryffindor))
-        print("Slytherin: " + str(slytherin))
-        print("Ravenclaw: " + str(ravenclaw))
-        print("Hufflepuff: " + str(hufflepuff))
         sixth_question()
     elif check_if_true(fifth_input) is False:
         fifth_question()
@@ -1067,11 +1091,6 @@ def fourteenth_question():
     increase_score(fourteenth_input)
 
     if check_if_true(fourteenth_input) is True:
-        print("\nCurrent scores:\n")
-        print("Gryffindor: " + str(gryffindor))
-        print("Slytherin: " + str(slytherin))
-        print("Ravenclaw: " + str(ravenclaw))
-        print("Hufflepuff: " + str(hufflepuff))
         fifteenth_question()
     elif check_if_true(fourteenth_input) is False:
         fourteenth_question()

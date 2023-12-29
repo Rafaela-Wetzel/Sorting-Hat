@@ -40,8 +40,8 @@ I chose to create this application because the story of Harry Potter had been a 
 
 # Live Demo 
 
-![A screenshot of the Sorting Hat app on different screen sizes]()
-
+<img src="assets/readme_assets/responsive-sizes.png" style="height:35rem;width:45rem;" alt="Screenshot of Harry Potter Sorting Hat Quiz on different screen sizes">  
+  
 **You can see a deployed version of my app [here](https://magical-sorting-hat-d52437409b26.herokuapp.com/)**
 
 # How to Play  
@@ -143,8 +143,7 @@ Depending on the winning house the user is forwarded to the matching Result sect
 
 - I confirm that no errors were returned when passing through the CI Python Linter [pep8ci](https://pep8ci.herokuapp.com/).
 
-<br /><br />
-![A screenshot of the CI Python Linter result]()  
+<img src="assets/readme_assets/linter.png" style="height:40rem;width:65rem;" alt="A screenshot of the CI Python Linter result">
 
 ## Bugs & Problems
 

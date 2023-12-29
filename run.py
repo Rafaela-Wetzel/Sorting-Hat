@@ -1,12 +1,8 @@
-# Shuffle answers
 from random import shuffle
-# os.sytem clear
 import os
-# Input validation using regular expressions
 import re
-# Sys to block print
 import sys
-# Add colors
+
 import colorama
 from colorama import Fore, Back, Style
 colorama.init()
@@ -192,7 +188,7 @@ discover source", "classmate", "honest", "gryffindor"]
 
 slytherin_answers = ["water", "ordinary", "great", "alive", "glory\
 ", "sea", "black", "pool", "black box", "all three fight", "\
-nvied", "feared", "minds", "superhuman", "past", "\
+envied", "feared", "minds", "superhuman", "past", "\
 apparition", "hexes", "goblins", "merpeople", "trolls", "jinx", "alley\
 ", "stand your ground", "not wait", "deceitful", "slytherin"]
 
@@ -205,7 +201,7 @@ appearance",  "transfiguration", "every area", "centaurs", "goblins", "ghosts\
 
 hufflepuff_answers = ["earth", "selfish", "good", "miss", "love", "home\
 ", "purple", "toadstools", "tortoiseshell", "lots", "trusted\
-", "liked", "invisibility", "superhuman strength", "animals", "flying\
+", "liked", "invisibility", "superhuman", "animals", "flying\
 ", "creatures", "merpeople", "werewolves", "trolls", "health\
 ", "lane", "proceed", "lie", "friendly", "hufflepuff"]
 
@@ -365,7 +361,7 @@ def need_more_information():
     or 'no' is entered
     """
     confirm_start = input(f"""
-    Are you ready to dive deeper with me? (YES / NO)
+    Are you ready to dive deeper with me? [YES / NO]
     \n                           {Fore.RESET}""").lower()
     if confirm_start == "yes":
         print(f"""
@@ -842,11 +838,29 @@ def enter_ravenclaw():
     enter_hogwarts()
 
 
-# Quiz Questions
+def blockPrint():
+    """
+    Marks beginning of blocking the print function.
+    Here used within twentieth_question to prevent check_score
+    print statement to be shown which in this case is
+    not applicable anymore
+    """
+    sys.stdout = open(os.devnull, 'w')
+
+
+def enablePrint():
+    """
+    Marks ending of blocking the print function.
+    """
+    sys.stdout = sys.__stdout__
+
+
+# Quiz Questions 1 - 20
+
 
 def print_question_answers(question_x, answers_x):
     """
-    Template to print answers and questions
+    Template function with parameters. Prints questions and answers
     """
     print(f"""    \n            Enter{Fore.YELLOW + '\033[1m'} L E A V E
     {'\033[0m'}        to exit the Great Hall{Fore.RESET}""")
@@ -1161,24 +1175,6 @@ def twentieth_question():
         exit()
 
 
-def blockPrint():
-    """
-    Marks beginning of blocking the print function.
-    Here used within twentieth_question to prevent check_score
-    print statement to be shown which in this case is
-    not applicable anymore
-    """
-    sys.stdout = open(os.devnull, 'w')
-
-
-def enablePrint():
-    """
-    Marks ending of blocking the print function.
-    """
-    sys.stdout = sys.__stdout__
-
-
 # Call first two functions
-#print_hogwarts_emblem()
-#enter_hogwarts()
-welcome_greeting()
+print_hogwarts_emblem()
+enter_hogwarts()

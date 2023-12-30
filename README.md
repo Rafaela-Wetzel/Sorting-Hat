@@ -56,17 +56,45 @@ The user starts on the main page that shows the Hogwarts Coat of Arms and enters
 
 ## User Goals
 
-- **Entertainment**: As a user I want to visit the page to engage in a shorter form of entertainment - by answering quiz questions to find out which Hogwarts house I belong to (identification with characters).  
-- **Nostalgia**: As a user I feel reminded of my childhood and like being part of the Hogwarts world. I am being approached as a new student who is just coming to the school ready to be placed in one of the houses. (the users name is also integrated in the story)  
-- **Variety of Storylines**: Depending on my quiz choices there are different outcomes to the story. I am curious to find out how the different plot lines develop and might want to try to play more than once. 
+- **Entertainment**: The user wants to visit the page to engage in a shorter form of entertainment - by answering quiz questions to find out which Hogwarts house they belong to (identification with characters).  
+- **Nostalgia**: The user feels reminded of their childhood and like being part of the Hogwarts world. They are being approached as a new student who is just coming to the school ready to be placed in one of the houses. (the users name is also integrated in the story)  
+- **Curiousity about different Storylines**: Depending on my quiz choices there are different outcomes to the story. The user is curious to find out how the different plot lines develop and might want to try to play more than once. 
 
 ## Site Owner Goals
 
 - To create a fun and interactive quiz-like application that evaluates the users personality and choices in the context of the Harry Potter story
 - To implement authentic visual elements that are connected to the story (Coat of Arms ASCII art)
-- To highlight and differentiate between the four house types - this is accomplished by implementing the different colors that are also the same as in the actual story 
+- To highlight and differentiate between the four house types - accomplished by implementing the different colors that are identical to those in the actual story 
 - To give appropriate user input feedback where necessary
 - To provide an 'exit the game' function throughout the whole quiz
+
+# User Experience
+
+## Target Audience
+
+The target audience for the Sorting Hat quiz are people who...
+
+- ...are Harry Potter fans 
+- ...enjoy to engage in quizzes that evaluate their character and personality
+- ...want to experience a nostalgic feeling that reminds them of their childhood
+- ...parents that want to introduce their children to the story of Harry Potter
+- ...are into all things magical
+
+## User Stories
+
+- As a user I recognize the Hogwarts Coat of Arms in the start section
+- As a user I can type simple yes or no answers or short keywords to choose
+- As a user I discover different outcomes to the story depending on my decision
+- As a user I want to play more than once to see the different plot lines
+- As a user it is easier for me to recognize the different text sections through the use of colors
+- As a user I feel like being part of the story because I can enter my name and am addressed by it throughout the quiz
+- As a user I can exit the quiz anytime if I do not want to continue to play
+- As a user I can read clear instructions before starting to answer the quiz questions
+- As a user I can recognize the keyword answers by their capitalization even if my eyesight is impaired and I do not see or have a hard time recognizing colors
+- As a user I am excited to put myself in the situations described in the questions and choose an answer
+- As a user I am curious to find out which house I belong to
+- As a user I can see / recognize the Coat of Arms of the house I am sorted into by the name and color
+- As a user I am welcomed by the prefect of the house and can read some interesting / funny details about the characteristics and history of the house
 
 # Flowchart
 

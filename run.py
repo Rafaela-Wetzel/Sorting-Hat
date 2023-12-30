@@ -379,7 +379,7 @@ def need_more_information():
           I might see you again
             in a couple of years...
         \n""")
-        input("Press any key to take the Hogwarts Express back to London \n")
+        input("  Press any key to take the Hogwarts Express back to London \n")
         os.system('clear')
         print_hogwarts_emblem()
         enter_hogwarts()
@@ -407,8 +407,8 @@ def increase_score(input):
     elif input == "leave":
         exit()
     else:
-        print(f"""\n{Fore.RED + '\033[1m'}Please enter one of the capitalized keywords
-        {'\033[0m' + Fore.RESET}""")
+        print(f"""\n{Fore.RED + '\033[1m'}Please enter one of the capitalized
+        keywords{'\033[0m' + Fore.RESET}""")
 
 
 def check_if_true(input):
@@ -435,11 +435,12 @@ def exit():
     reset_score()
     print(f"""\n    While you're trying to sneak away from the Sorting Ceremony
     you are being discovered by a grim looking Hogwarts teacher. You can hear
-    him quietly whisper{Fore.YELLOW + '\x1B[3m' + '\033[1m'} Obliviate {'\033[0m' +
-    '\x1B[0m' + Fore.RESET}before your memories start to fade...
-    you find yourself at platform 9¾ at King's Cross Station in London and scratch
-    your head while looking at the platform number. But platform 9¾ does not
-    exist... or does it?\n""")
+    him quietly whisper{Fore.YELLOW + '\x1B[3m' + '\033[1m'} Obliviate
+    {'\033[0m' + '\x1B[0m' + Fore.RESET}before your memories start to fade...
+
+    You find yourself at platform 9¾ at King's Cross Station in London and
+    scratch your head while looking at the platform number. But platform 9¾
+    does not exist... or does it?\n""")
     input("                      Press any key to go home\n\n")
     os.system('clear')
     print_hogwarts_emblem()

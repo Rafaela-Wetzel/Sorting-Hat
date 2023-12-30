@@ -430,14 +430,14 @@ def exit():
     Brings back user to quiz start page
     """
     reset_score()
-    print(f"""\nWhile you are trying to sneak away from the Sorting Ceremony
+    print(f"""\n    While you're trying to sneak away from the Sorting Ceremony
     you are being discovered by a grim looking Hogwarts teacher. You can hear
-    him quietly whisper{'\x1B[3m' + '\033[1m'} Obliviate {'\033[0m' +
-    '\x1B[0m'}before your memories start to fade... you find yourself at
-    platform 9¾ at King's Cross Station in London and scratch your head while
-    looking at the platform number. But platform 9¾ does not exist... or does
-    it?\n""")
-    input("Press any key to go home\n\n")
+    him quietly whisper{Fore.YELLOW + '\x1B[3m' + '\033[1m'} Obliviate {'\033[0m' +
+    '\x1B[0m' + Fore.RESET}before your memories start to fade...
+    you find yourself at platform 9¾ at King's Cross Station in London and scratch
+    your head while looking at the platform number. But platform 9¾ does not
+    exist... or does it?\n""")
+    input("                      Press any key to go home\n\n")
     os.system('clear')
     print_hogwarts_emblem()
     enter_hogwarts()

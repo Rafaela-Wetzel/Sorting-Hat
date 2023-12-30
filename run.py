@@ -1,7 +1,6 @@
 from random import shuffle
 import os
 import re
-import sys
 
 import colorama
 from colorama import Fore, Back, Style
@@ -871,23 +870,6 @@ def ravenclaw_welcome():
     enter_hogwarts()
 
 
-def blockPrint():
-    """
-    Marks beginning of blocking the print function.
-    Here used within twentieth_question to prevent check_score
-    print statement to be shown which in this case is
-    not applicable anymore
-    """
-    sys.stdout = open(os.devnull, 'w')
-
-
-def enablePrint():
-    """
-    Marks ending of blocking the print function.
-    """
-    sys.stdout = sys.__stdout__
-
-
 # Quiz Questions 1 - 20
 
 
@@ -1132,7 +1114,7 @@ def sixteenth_question():
 
 def seventeenth_question():
 
-    print_question_answers(question_seven, answers_seven)
+    print_question_answers(question_seventeen, answers_seventeen)
     seventeenth_input = input().lower()
     increase_score(seventeenth_input)
 
@@ -1146,7 +1128,7 @@ def seventeenth_question():
 
 def eighteenth_question():
 
-    print_question_answers(question_eight, answers_eight)
+    print_question_answers(question_eighteen, answers_eighteen)
     eighteenth_input = input().lower()
     increase_score(eighteenth_input)
 
@@ -1180,10 +1162,7 @@ def twentieth_question():
     """
     print_question_answers(question_twenty, answers_twenty)
     twentieth_input = input().lower()
-    increase_score(twentieth_input)
-    blockPrint()
-    if check_if_true(twentieth_input) is True and check_score() is False:
-        enablePrint()
+    if check_if_true(twentieth_input) is True:
         if twentieth_input == "gryffindor":
             enter_gryffindor()
         elif twentieth_input == "slytherin":

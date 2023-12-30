@@ -115,7 +115,6 @@ I used the following libraries:
 - *from random import shuffle* to shuffle the question answers so that the answers are not displayed in the same order as put in the variables (Gryffindor, Slytherin, Ravenclaw, Hufflepuff)
 - *import os* to clear the console after a house wins or the user leaves the game early
 - *import re* for input validation using regular expressions
-- *import sys* to block the print function in the very last question because the print statement is not needed there anymore
 - *import colorama* to add colors to the terminal 
 
 # Design
@@ -198,19 +197,28 @@ Depending on the winning house the user is forwarded to the matching Result sect
 
 | Section Tested | Input To Validate | Expected Outcome | Actual Outcome | Pass/Fail |
 | -------------- | ----------------- | ---------------- | -------------- | --------- |
-| Start Section | N/A | ABC | As expected | Pass |
-| Welcome screen | 1 | ABC | As expected | Pass |
-| Welcome screen | Paul | ABC | As expected | Pass |
-| Game play screen | 2 | ABC | As expected | Pass |
-| Game play screen | bb | ABC | As expected | Pass |
-| Game play screen | z | ABC | As expected | Pass |
-| Game play screen | e | ABC | As expected | Pass |
-| Game play screen | e | ABC | As expected | Pass |
-| Game play screen | ABC | DEF | As expected | Pass |
-| Game play screen | ABC | DEF | As expected | Pass |
-| Game play screen | ABC | DEF | As expected | Pass |
-| Game play screen | ABC | DEF | As expected | Pass |
-| Game play screen | ABC | DEF | As expected | Pass |
+| Start Section | Yes | Continuing to Welcome Section | As expected | Pass |
+| Start Section | No | "Missed chance" text displayed | As expected | Pass |
+| Start Section | Empty or invalid | "Only yes or no answers are valid" | As expected | Pass |
+| Start Section | 'Enter' key | Clearing inputs and back to Start Section | As expected | Pass |
+| Welcome Section | Rafaela | Sorting Hat text displayed | As expected | Pass |
+| Welcome Section | Empty or invalid | "Please enter a string that consists of letters a-z or A-Z" | As expected | Pass |
+| Sorting Ceremony Section | Yes | Continuing to questions | As expected | Pass |
+| Sorting Ceremony Section | No | "Not right time yet" text displayed | As expected | Pass |
+| Sorting Ceremony Section | 'Enter' key | Back to Start Section | As expected | Pass |
+| Sorting Ceremony Section | Empty or invalid | "Only yes or no answers are valid" | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | ABC | DEF | As expected | Pass |
 
 ## Validator Testing
 

@@ -37,7 +37,7 @@ I chose to create this application because the story of Harry Potter had been a 
   - [House Result Section](#house-result-section)
 - [Features Left to Implement](#features-left-to-implement)
 - [Testing](#testing)
-  - [Testing App Functions](#testing-homepage-functions)
+  - [Manual Testing](#manual-testing)
   - [Validator Testing](#validator-testing)
   - [Bugs & Problems](#bugs--problems)
   - [Unfixed Bugs](#unfixed-bugs)
@@ -105,6 +105,8 @@ The target audience for the Sorting Hat quiz are people who...
 
 - Python for creating the Sorting Hat quiz code
 - Heroku for deployment in a mock terminal
+- Lucidchart for creating a flowchart
+- GitHub for storing the code externally
 
 # Libraries
 
@@ -192,23 +194,23 @@ Depending on the winning house the user is forwarded to the matching Result sect
 
 # Testing 
 
-## Testing App Functions  
+## Manual Testing  
 
-- I confirm that 
-
-- I confirm that
-
-- I confirm that
-
-- I confirm that
-
-- I confirm that
-
-- I confirm that
-
-- I confirm that
-
-- I confirm that
+| Section Tested | Input To Validate | Expected Outcome | Actual Outcome | Pass/Fail |
+| -------------- | ----------------- | ---------------- | -------------- | --------- |
+| Start Section | N/A | ABC | As expected | Pass |
+| Welcome screen | 1 | ABC | As expected | Pass |
+| Welcome screen | Paul | ABC | As expected | Pass |
+| Game play screen | 2 | ABC | As expected | Pass |
+| Game play screen | bb | ABC | As expected | Pass |
+| Game play screen | z | ABC | As expected | Pass |
+| Game play screen | e | ABC | As expected | Pass |
+| Game play screen | e | ABC | As expected | Pass |
+| Game play screen | ABC | DEF | As expected | Pass |
+| Game play screen | ABC | DEF | As expected | Pass |
+| Game play screen | ABC | DEF | As expected | Pass |
+| Game play screen | ABC | DEF | As expected | Pass |
+| Game play screen | ABC | DEF | As expected | Pass |
 
 ## Validator Testing
 
@@ -267,3 +269,4 @@ https://stackoverflow.com/questions/8391411/how-to-block-calls-to-print
 
 - Help and feedback from my mentor Oluwafemi Medale
 - Readme structure inspired by [hughes84](https://github.com/hughes84/hangman-pp3/blob/main/README.md)
+  - Manual testing chart adopted completely

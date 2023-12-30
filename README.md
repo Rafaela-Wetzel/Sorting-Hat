@@ -17,9 +17,13 @@ I chose to create this application because the story of Harry Potter had been a 
 - [Table of Contents](#table-of-contents)
 - [Live Demo](#live-demo)
 - [How to Play](#how-to-play)
+- [Project Goals](#goals)
+  - [User Goals](#project-goals)
+  - [Site-Owner Goals](#site-owner-goals)
 - [Flowchart](#flowchart)
 - [Technologies](#technologies)
 - [Libraries](#libraries)
+- [Game Design](#game-design)
 - [Features](#features)
   - [Start Section](#start-section)
   - [Welcome Section](#welcome-section)
@@ -48,6 +52,22 @@ I chose to create this application because the story of Harry Potter had been a 
 
 The user starts on the main page that shows the Hogwarts Coat of Arms and enters the school by typing 'yes'. There is a short introduction about the procedure and the characteristics of the four houses. The Sorting Hat is put on the users head to determine which house they should attend. It asks for their name and says that the decision is more difficult than expected; that it needs to get to know them better to be able to sort them into a house. The user then can enter 'yes' to start the display of questions. For each question there are 4 - 6 answers the user can choose from. They need to enter their chosen answer in the input field and are forewarded to the next question. After 15 questions the house scores are evaluated for the first time. If there is a clear winner (a house that has received the most answers) the user will be forwarded and shown the winning houses' Coat of Arms as well as a 'Welcome to the House'-text. If there is a tie between two or more houses after question 15 it continues to question 16, 17, ... and 20 at last. In the unlikely case that the user ends up with the 20th question and there is still a tie they can choose which house they would like to belong to.
 
+# Project Goals
+
+## User Goals
+
+- **Entertainment**: As a user I want to visit the page to engage in a shorter form of entertainment - by answering quiz questions to find out which Hogwarts house I belong to (identification with characters).  
+- **Nostalgia**: As a user I feel reminded of my childhood and like being part of the Hogwarts world. I am being approached as a new student who is just coming to the school ready to be placed in one of the houses. (the users name is also integrated in the story)  
+- **Variety of Storylines**: Depending on my quiz choices there are different outcomes to the story. I am curious to find out how the different plot lines develop and might want to try to play more than once. 
+
+## Site Owner Goals
+
+- To create a fun and interactive quiz-like application that evaluates the users personality and choices in the context of the Harry Potter story
+- To implement authentic visual elements that are connected to the story (Coat of Arms ASCII art)
+- To highlight and differentiate between the four house types - this is accomplished by implementing the different colors that are also the same as in the actual story 
+- To give appropriate user input feedback where necessary
+- To provide an 'exit the game' function throughout the whole quiz
+
 # Flowchart
 
 ![image](assets/readme_assets/flowchart.png)
@@ -70,6 +90,10 @@ I used the following libraries:
 - *import sys* to block the print function in the very last question because the print statement is not needed there anymore
 
 - *import colorama* to add colors to the terminal 
+
+# Game Design
+
+
 
 # Features 
 
@@ -118,6 +142,8 @@ Depending on the winning house the user is forwarded to the matching Result sect
 # Features Left to Implement
 
 - A continuation of the quiz could be that the user would be able to take another quiz with questions specific to their winning house. This would be a quiz to test their Harry Potter knowledge instead of a 'personality quiz'. 
+
+- In the future I would like to replace the method of entering given keywords as answers to the questions with a simpler approach by selection options A, B, C or D in that order
 
 # Testing 
 

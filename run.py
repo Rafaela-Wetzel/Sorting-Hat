@@ -404,8 +404,8 @@ def increase_score(input):
     elif input == "leave":
         exit()
     else:
-        print(f"""\n{Fore.RED}Please enter one of the capitalized keywords
-        {Fore.RESET}""")
+        print(f"""\n{Fore.RED + '\033[1m'}Please enter one of the capitalized keywords
+        {'\033[0m' + Fore.RESET}""")
 
 
 def check_if_true(input):

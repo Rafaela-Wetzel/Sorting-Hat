@@ -20,10 +20,15 @@ I chose to create this application because the story of Harry Potter had been a 
 - [Project Goals](#goals)
   - [User Goals](#project-goals)
   - [Site-Owner Goals](#site-owner-goals)
-- [Flowchart](#flowchart)
+- [User Experience](#user-experience)
+  - [Target Audience](#target-audience)
+  - [User Stories](#user-stories)
 - [Technologies](#technologies)
 - [Libraries](#libraries)
-- [Game Design](#game-design)
+- [Design](#design)
+  - [Game Design](#game-design)
+  - [Design](#design)
+  - [Flowchart](#flowchart)
 - [Features](#features)
   - [Start Section](#start-section)
   - [Welcome Section](#welcome-section)
@@ -96,10 +101,6 @@ The target audience for the Sorting Hat quiz are people who...
 - As a user I can see / recognize the Coat of Arms of the house I am sorted into by the name and color
 - As a user I am welcomed by the prefect of the house and can read some interesting / funny details about the characteristics and history of the house
 
-# Flowchart
-
-![image](assets/readme_assets/flowchart.png)
-
 # Technologies
 
 - Python for creating the Sorting Hat quiz code
@@ -110,18 +111,34 @@ The target audience for the Sorting Hat quiz are people who...
 I used the following libraries:
 
 - *from random import shuffle* to shuffle the question answers so that the answers are not displayed in the same order as put in the variables (Gryffindor, Slytherin, Ravenclaw, Hufflepuff)
-
 - *import os* to clear the console after a house wins or the user leaves the game early
-
 - *import re* for input validation using regular expressions
-
 - *import sys* to block the print function in the very last question because the print statement is not needed there anymore
-
 - *import colorama* to add colors to the terminal 
 
-# Game Design
+# Design
 
+## Game Design
 
+- The questions and corresponding four to six answers are stored in variables containing lists
+- There are four variables that contain all keyword answers of the respective house separatedly
+- There is a score for each of the four houses starting at zero
+- For each keyword entered by the user that appears in any of the house answer variables the respective house score is increased
+- After the first 15 questions the scores are checked for the first time
+  - If there is a house with a majority of points the respective house emblem and welcome text is displayed 
+  - If there is a tie between one or more houses the questions continue up to no. 20
+  - After each answer in questions 16-19 the score is checked again
+  - If there still is a tie with question no. 20 the user can choose their favorite house
+
+## Design
+
+- Use of bold and italic text to highlight important sections
+- Implementation of colors with colorama
+- Display of ASCII grapics
+
+## Flowchart
+
+![image](assets/readme_assets/flowchart.png)
 
 # Features 
 
@@ -249,3 +266,4 @@ https://stackoverflow.com/questions/8391411/how-to-block-calls-to-print
 ## Acknowledgements
 
 - Help and feedback from my mentor Oluwafemi Medale
+- Readme structure inspired by [hughes84](https://github.com/hughes84/hangman-pp3/blob/main/README.md)

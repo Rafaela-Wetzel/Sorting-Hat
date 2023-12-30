@@ -267,9 +267,10 @@ def enter_hogwarts():
     if enter == "yes":
         welcome_greeting()
     elif enter == "no":
-        print("\nYou just missed your chance to become a great wizard*ess\
-        ...\n")
-        input("Press any key to take the Hogwarts Express back to London\n")
+        print("""\n                 You just missed your chance to become
+                         a great wizard*ess...\n""")
+        input("""               Press any key to take the Hogwarts Express
+                          back to London\n""")
         os.system('clear')
         print_hogwarts_emblem()
         enter_hogwarts()
@@ -373,8 +374,10 @@ def need_more_information():
             luck!\n""")
         first_question()
     elif confirm_start == "no":
-        print(f"""\nMaybe this is not yet the right time for you to discover
-        the world of wizardry. I might see you again in a couple of years...
+        print(f"""\n      Maybe this is not yet the right time for you
+        to discover the world of wizardry.
+          I might see you again
+            in a couple of years...
         \n""")
         input("Press any key to take the Hogwarts Express back to London \n")
         os.system('clear')

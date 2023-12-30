@@ -207,18 +207,20 @@ Depending on the winning house the user is forwarded to the matching Result sect
 | Sorting Ceremony Section | No | "Not right time yet" text displayed | As expected | Pass |
 | Sorting Ceremony Section | 'Enter' key | Back to Start Section | As expected | Pass |
 | Sorting Ceremony Section | Empty or invalid | "Only yes or no answers are valid" | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
-| Questions section | ABC | DEF | As expected | Pass |
+| Questions section | Test all gryffindor variables | score increases, next question | As expected | Pass |
+| Questions section | Test all slytherin variables | score increases, next question | As expected | Pass |
+| Questions section | Test all ravenclaw variables | score increases, next question | As expected | Pass |
+| Questions section | Test all hufflepuff variables | score increases, next question | As expected | Pass |
+| Questions section | Leave | Leaving text is displayed | As expected | Pass |
+| Questions section | 'Enter' key | After leaving: Redirection to Start Section | As expected | Pass |
+| Display Coat of Arms Gryffindor | 'Enter' key | Display House Result Text | As expected | Pass |
+| Display Coat of Arms Sltherin | 'Enter' key | Display House Result Text | As expected | Pass |
+| Display Coat of Arms Ravenclaw | 'Enter' key | Display House Result Text | As expected | Pass |
+| Display Coat of Hufflepuff | 'Enter' key | Display House Result Text | As expected | Pass |
+| Gryffindor Result Section | 'Enter' key | Redirection to Start Section | As expected | Pass |
+| Slytherin Result Section | 'Enter' key | Redirection to Start Section | As expected | Pass |
+| Ravenclaw  Result Section | 'Enter' key | Redirection to Start Section | As expected | Pass |
+| Hufflepuff Result Section | 'Enter' key | Redirection to Start Section | As expected | Pass |
 
 ## Validator Testing
 

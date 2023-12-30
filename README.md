@@ -236,7 +236,7 @@ Depending on the winning house the user is forwarded to the matching Result sect
 
 ## Unfixed Bugs
 
-No unfixed bugs.
+- Clearing the console with "os.system('clear')" works clearing the console in my Gitpod terminal, but not on Heroku
 
 # Deployment
 
